@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 长春TV -->
+    <string name="app_name">无线长春</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- <string name="qq_appid">1103590315</string> -->
+    <!--
+    <string name="weibo_key">930178756</string>
+    <string name="weibo_redirectUrl">http://sns.whalecloud.com/app/LV44TJ</string>
+    -->
+    <!-- 分享邀请码 -->
+
+    <string name="spread_string">注册时填写我的邀请码“%1$s”，你会得更多积分哦</string>
+    <string name="spread_beizhu">分享邀请码给好友，好友使用你的邀请码注册成功，均可获赠积分！</string>
+    <!-- <string name="spread_string">邀请码：“%1$s”,我在使用可实时看长春路况视频的手机客户端，快来下载吧！</string> -->
+
+    <string name="code_share">邀请码分享</string>
+    <string name="code_share_content">分享邀请码给好友，好友使用你的邀请码注册成功，您和好友均可获赠无线长春积分！邀请好友越多，获赠积分越多，上不封顶！一起来赚积分吧！</string>
+
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" >
+
+                <!-- 默认图片 -->
+
+                <RelativeLayout
+                    android:id="@+id/default_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/setting_list_up_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/gray_title.18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/home_bg_default" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:clickable="true"
+                        android:src="@drawable/btn_setting_enter_selector" />
+                </RelativeLayout>
+
+                <!-- 本地图片 -->
+
+                <RelativeLayout
+                    android:id="@+id/local_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/setting_list_down_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/gray_title.18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/home_bg_local_pic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:clickable="true"
+                        android:src="@drawable/btn_setting_enter_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/camera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/setting_list_down_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/gray_title.18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/home_bg_camera" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:clickable="true"
+                        android:src="@drawable/btn_setting_enter_selector" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/icity_choice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/setting_list_down_normal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/gray_title.18sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/home_bg_icity" />
+
+                    <cn.ffcs.widget.GridNoScrollView
+                        android:id="@+id/icity_choice_pic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="10dip"
+                        android:listSelector="#00000000"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dip" />
+
+                    <Button
+                        style="@style/white_title.20sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_marginRight="40dip"
+                        android:background="@drawable/btn_blue_selector"
+                        android:text="@string/home_bg_get_more" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/top_shadow" />
+    </RelativeLayout>
+
+</LinearLayout>

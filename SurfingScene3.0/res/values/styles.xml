@@ -1,0 +1,118 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Glo_Blue">
+        <item name="android:textColor">#ff16afe0</item>
+    </style>
+
+    <style name="Glo_blue_0799ea">
+        <item name="android:textColor">@color/blue_0799ea</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Glo_Blue.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Glo_Gray_9e9e9e">
+        <item name="android:textColor">#ff9e9e9e</item>
+    </style>
+
+    <style name="Glo_Gray_9e9e9e.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Glo_Gray_9e9e9e.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Glo_Gray_9e9e9e.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 精品列表标题 -->
+    <style name="Glo_title_686868">
+        <item name="android:textColor">#686868</item>
+    </style>
+
+    <style name="Glo_title_686868.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Glo_descript_b0b0b0">
+        <item name="android:textColor">#b0b0b0</item>
+    </style>
+
+    <!-- 精品列表描述 -->
+    <style name="Glo_descript_b0b0b0.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Glo_Gray_title">
+        <item name="android:textColor">#ff696969</item>
+    </style>
+
+    <style name="Glo_Gray_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Glo_Gray_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Glo_Gray_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Glo_White">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Glo_White.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Glo_White.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Road_black">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Road_black.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Road_black.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Glo_Red">
+        <item name="android:textColor">#547E38</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="Glo_yellow">
+        <item name="android:textColor">@color/Glo_dis_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 设置Dialog风格 -->
+    <style name="glo_player" parent="@android:style/Theme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/player_anim</item>
+    </style>
+
+    <style name="player_anim">
+        <item name="@android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="@android:activityOpenExitAnimation">@anim/nothing</item>
+        <item name="@android:activityCloseEnterAnimation">@anim/nothing</item>
+        <item name="@android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+</resources>

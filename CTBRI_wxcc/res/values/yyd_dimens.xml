@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="community_zan_radius">2dp</dimen>
+    <dimen name="community_zan_stroke">1px</dimen>
+    <dimen name="community_zan_button_padding_left">4dp</dimen>
+    <dimen name="community_zan_button_padding_top">2dp</dimen>
+    <dimen name="vote_ratio_height">12dp</dimen>
+    <dimen name="vote_ratio_margin_top">8dp</dimen>
+    <dimen name="vote_image_bg_height">166dp</dimen>
+    <dimen name="vote_status_textview_width">54dp</dimen>
+    <dimen name="vote_status_textview_height">24dp</dimen>
+    <dimen name="vote_status_text_size">14sp</dimen>
+    <dimen name="vote_status_textview_margin_top">12dp</dimen>
+    <dimen name="vote_desc_title_height">34dp</dimen>
+    <dimen name="vote_desc_title_text_size_16sp">16sp</dimen>
+    <dimen name="vote_desc_title_padding_left_12dp">12dp</dimen>
+    <dimen name="vote_desc_title_padding_left_16dp">16dp</dimen>
+    <dimen name="vote_detail_image_bg_height">200dp</dimen>
+    <dimen name="vote_detail_chooice_mode_text_size">12sp</dimen>
+    <dimen name="vote_detail_chooice_mode_margin_left_12dp">12dp</dimen>
+    <dimen name="vote_detail_voting_button_margin_top_16dp">16dp</dimen>
+    <dimen name="vote_detail_text_content_margin_left">16dp</dimen>
+    <dimen name="vote_detail_ratio_margin_top">20dp</dimen>
+    <dimen name="text_space">6dp</dimen>
+    <dimen name="vote_voting_button_height">36dp</dimen>
+    <dimen name="vote_info_ratio_divider_height">1dp</dimen>
+    <dimen name="vote_suggest_text_size">14sp</dimen>
+    <dimen name="vote_detail_ratio_desc_margin_left">8dp</dimen>
+    <dimen name="vote_detail_ratio_desc_width">80dp</dimen>
+    <dimen name="vote_detail_ratio_default_width">2dp</dimen>
+    <dimen name="vote_selected_ratio_margin_top">8dp</dimen>
+    <dimen name="vote_selected_ratio_padding_bottom">6dp</dimen>
+    <dimen name="vote_unselect_ratio_margin_top">8dp</dimen>
+    <dimen name="vote_unselect_ratio_padding_bottom">16dp</dimen>
+    <dimen name="global_container_margin_left">8dp</dimen>
+    <dimen name="global_container_margin_top">8dp</dimen>
+    <dimen name="community_list_item_username_textsize">18sp</dimen>
+    <dimen name="community_list_item_avator_width">50dp</dimen>
+    <dimen name="comment_text_size">15sp</dimen>
+    <dimen name="comment_zan_min_width">40dp</dimen>
+    <dimen name="global_bottom_icon_margin_bottom">16dp</dimen>
+    <dimen name="global_border_width">1px</dimen>
+    <dimen name="community_item_image_height">75dp</dimen>
+    <dimen name="community_item_image_width">100dp</dimen>
+    <dimen name="community_preview_image_padding">10dp</dimen>
+    <dimen name="community_list_item_padding">12dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+
+    <!-- 调查建议 最大文字数 -->
+    <item name="vote_suggest_max_length" type="integer">1000</item>
+    <!-- 调查建议 最小文字数 -->
+    <item name="vote_suggest_min_length" type="integer">5</item>
+
+    <dimen name="image_looper_item_height">225dp</dimen>
+    <dimen name="travel_common_list_item_img_width">100dp</dimen>
+    <dimen name="travel_common_list_item_img_height">80dp</dimen>
+    <dimen name="travel_menu_container_padding">20dp</dimen>
+    <dimen name="travel_content_detail_margin_lr">8dp</dimen>
+    <dimen name="travel_menu_item_width">60dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="media_broadcast_grid_item_img_width">110dp</dimen>
+    <dimen name="media_broadcast_grid_item_img_hegiht">83dp</dimen>
+    <dimen name="coupon_recommend_padding">8dp</dimen>
+    <dimen name="audio_circle_padding">15dp</dimen>
+    <dimen name="audio_circle_image_radius">10dp</dimen>
+    <dimen name="audio_circle_row_padding">15dp</dimen>
+    <dimen name="audio_live_play_previous_button_width">58dp</dimen>
+    <dimen name="audio_live_play_button_container_padding_top">12dp</dimen>
+    <dimen name="audio_live_play_button_container_padding_bottom">11dp</dimen>
+    <dimen name="audio_live_head_height">120dp</dimen>
+    <dimen name="audio_live_head_channels_height">164dp</dimen>
+    <dimen name="media_controller_height">40dp</dimen>
+    <dimen name="audio_favorite_item_radius">20dp</dimen>
+
+</resources>

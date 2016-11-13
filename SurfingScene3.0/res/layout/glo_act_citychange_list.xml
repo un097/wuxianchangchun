@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dip" >
+
+            <ListView
+                android:id="@+id/glo_citychange_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6.0dp"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="24.0dp"
+            android:paddingTop="6.0dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_bar_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="权威播报"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/iv_tomap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableRight="@drawable/map_selector"
+            android:gravity="center"
+            android:paddingLeft="24.0dp"
+            android:paddingRight="16.0dp"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:src="#b2b2b2" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning"
+        android:layout_below="@+id/ll_title"
+        style="@style/background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:text="定制道路"
+                android:textColor="@color/title_color"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:id="@+id/iv_speeker"
+                android:layout_width="45.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/speeker_off" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_broadcast"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <LinearLayout
+            android:id="@+id/ll_warming"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/detail_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="开车时打开语音播报哟！"
+                    android:textColor="@color/title_color"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line_broadcast2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/detail_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:text="亲，点击星形就可以添加定制道路哦~"
+                    android:textColor="@color/title_color"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_below="@+id/ll_warning"
+        style="@style/background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <cn.ffcs.external.trafficbroadcast.view.MyListView
+                android:id="@+id/lv_attention"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffffffff"
+                android:dividerHeight="0.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_near"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="附近路况"
+                    android:textColor="@color/title_color"
+                    android:textSize="20.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@+id/iv_more"
+                    android:layout_toRightOf="@+id/tv_near"
+                    android:background="@drawable/line_broadcast" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="45.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/iv_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/input_oneling"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="10.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/input_icon_search" />
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@null"
+                    android:hint="请输入关键字段"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <cn.ffcs.external.trafficbroadcast.view.MyListView
+                android:id="@+id/lv_no_attention"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:divider="#ffffffff"
+                android:dividerHeight="0.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <ImageView
+        android:id="@+id/help_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+</RelativeLayout>

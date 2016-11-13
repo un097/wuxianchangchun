@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ffcs.widget.LoadingBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <!--
+         <TextView
+        android:id="@+id/progress_tip"
+        style="@style/black_title.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_loading" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmallInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip" />
+    -->
+
+</cn.ffcs.widget.LoadingBar>

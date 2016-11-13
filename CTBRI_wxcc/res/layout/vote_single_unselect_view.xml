@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/vote_unselect_ratio_margin_top"
+    android:paddingTop="@dimen/vote_unselect_ratio_padding_bottom"
+    android:paddingBottom="@dimen/vote_unselect_ratio_padding_bottom"
+    android:paddingRight="@dimen/vote_unselect_ratio_padding_bottom" >
+
+    <FrameLayout
+        android:id="@+id/vote_item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:layout_centerVertical="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <RadioButton
+            android:id="@+id/rdo_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:button="@drawable/vote_radio_button_selector"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/chk_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:button="@drawable/vote_checkbox_button_selector"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_desc"
+        style="@style/textview.voteItemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdfas adsfdasfadsfadsfadsfasdfadsadsfasdfasfadasfasfa "
+        android:layout_alignTop="@+id/vote_item_container"
+        android:layout_toRightOf="@+id/vote_item_container"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="6dp" />
+
+</RelativeLayout>

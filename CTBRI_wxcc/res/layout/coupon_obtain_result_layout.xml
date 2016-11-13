@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/action_bar" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/icon_done" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/textview.color_333.sp16" />
+
+        <View
+            style="@style/travel_detail_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+            android:layout_marginRight="@dimen/travel_content_detail_margin_lr"	
+            android:visibility="invisible"
+            android:layout_marginTop="36dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+            android:layout_marginRight="@dimen/travel_content_detail_margin_lr"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/global_bg_card"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textview.color_333.sp16"  />
+
+            <View
+                style="@style/travel_detail_line"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_valid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textview.color_333.sp16"  />
+
+            <View
+                style="@style/travel_detail_line"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_valid_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/textview.color_333.sp16"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_result"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_to_coupon_detail"
+            style="@style/button.coupon.coupon_white_bg"
+            android:layout_width="124dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="16dp"
+            android:text="查看优惠券" />
+
+        <Button
+            android:id="@+id/btn_to_cupon_list"
+             style="@style/button.coupon"
+            android:layout_width="124dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:text="继续领取" />
+    </LinearLayout>
+
+</RelativeLayout>

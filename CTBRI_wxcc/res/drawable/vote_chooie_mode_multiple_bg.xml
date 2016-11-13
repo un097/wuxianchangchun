@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="6px"/>
+	<size android:height="48px" android:width="78px"></size>
+	<stroke android:width="2px" android:color="@color/vote_chooice_mode_multiple"/>
+</shape>

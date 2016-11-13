@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ffcs.wisdom.city.v6"
+    android:versionCode="683"
+    android:versionName="6.8.3" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+
+</manifest>

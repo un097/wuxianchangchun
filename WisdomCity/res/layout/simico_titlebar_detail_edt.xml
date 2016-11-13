@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_actionbar"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/simico_btn_back_selector"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_median" />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn_back"
+        android:background="@drawable/simico_popwindow_bg"
+        android:singleLine="true"
+        android:text="更多服务"
+        android:padding="5dp"
+        android:textColor="#999999"
+        android:textSize="@dimen/txt_size_small" />
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/city_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_wz_pull_box"
+            android:orientation="horizontal" >
+            
+
+            <TextView
+                android:id="@+id/city"
+                style="@style/gray_title.16sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@null"
+                android:paddingRight="6dip"
+                android:src="@drawable/widget_wz_pull_arrow" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/car_no"
+            style="@style/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:background="@drawable/widget_wz_input"
+            android:gravity="center_vertical"
+            android:hint="@string/widget_violation_car_number_hint"
+            android:paddingLeft="6dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/car_type_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_wz_pull_box"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/city_type"
+                style="@style/gray_title.16sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxWidth="30dip"
+                android:paddingLeft="6dip"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@null"
+                android:paddingRight="6dip"
+                android:src="@drawable/widget_wz_pull_arrow"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/car_last_4"
+            style="@style/input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/widget_wz_input"
+            android:hint="@string/widget_violation_car_number_last_4_hint"
+            android:maxLength="4"
+            android:paddingLeft="6dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="4dip" >
+
+        <Button
+            android:id="@+id/search"
+            style="@style/white_title.16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:text="@string/violation_query" />
+
+        <ProgressBar
+            android:id="@+id/car_search_status"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/search"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/car_search_last_refresh_time"
+            style="@style/gray_title.12sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search"
+            android:text="@string/violation_query_last_refresh_time" />
+    </RelativeLayout>
+
+</LinearLayout>

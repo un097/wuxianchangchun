@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/weatherfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!-- 轮播 -->
+    <!--
+    <FrameLayout
+        android:id="@+id/home_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/bannerroot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <!-- 路况 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+
+        <cn.ffcs.wisdom.city.simico.ui.grid.UnScrollableGridView
+            android:id="@+id/traffic_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth" >
+        </cn.ffcs.wisdom.city.simico.ui.grid.UnScrollableGridView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_margin="10dp"
+            android:background="#CECECE" />
+
+        <LinearLayout
+            android:id="@+id/newtraffic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/newtraffic_info" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:layout_toLeftOf="@+id/newtraffic_time" -->
+            <!-- android:ellipsize="marquee" -->
+            <!-- android:focusable="true" -->
+            <!-- android:focusableInTouchMode="true" -->
+            <!-- android:marqueeRepeatLimit="marquee_forever" -->
+            <!-- android:singleLine="true" -->
+            <!-- android:textColor="#333333" /> -->
+
+            <cn.ffcs.wisdom.city.home.widget.MarqueeTextView
+                android:id="@+id/newtraffic_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/newtraffic_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="3dp"
+                android:layout_weight="4"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+    </LinearLayout>
+
+    <!-- 百家讲坛 -->
+    <!--
+    <LinearLayout
+        android:id="@+id/baijiajiangtan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    -->
+
+
+    <!-- 音视频的小插件 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+
+        <FrameLayout
+            android:id="@+id/home_audio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+    </LinearLayout>
+
+    <!-- 优惠活动 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/more_advertising"
+                android:text="优惠活动"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/more_advertising"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="更多"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- 优惠活动的view -->
+
+        <FrameLayout
+            android:id="@+id/home_advertising"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BCBCBC" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/more_news"
+                android:text="今日推荐"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@id/more_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="更多"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#CECECE" />
+
+        <View
+            style="@style/home_split"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

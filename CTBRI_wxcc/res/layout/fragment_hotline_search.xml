@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/hotline_g"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="8.0dp"
+        android:paddingBottom="8.0dp"
+        android:background="@color/action_bar_bg_color">
+
+        <EditText
+            android:id="@+id/hotline_search"
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dp" 
+            android:background="@drawable/edit_text_bg"
+            android:textSize="15.0sp"
+            android:textColor="#111111"
+            android:layout_marginLeft="8.0dp"
+            android:layout_marginRight="8.0dp"
+            android:paddingLeft="35.0dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:paddingRight="35.0dp"
+            />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_icon_search"
+            android:layout_marginLeft="16.0dp"/>
+        <ImageView android:id="@+id/hotline_delete_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/hotline_search"
+            android:src="@drawable/common_icon_clear_search"
+            android:padding="10.0dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <TextView android:id="@+id/hotline_search_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17.0dp"
+        android:text="@string/hotline_result_text"
+        android:visibility="invisible"
+        android:layout_below="@+id/hotline_g"
+        android:textColor="#111111"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:layout_marginLeft="8.0dp"
+        />
+    
+    <RelativeLayout android:id="@+id/hotline_zero_g"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/hotline_search_zero">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_icon_wusousuojieguo"
+            android:layout_marginTop="93.0dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，再尝试一下其他的关键字吧"
+            android:textSize="17.0sp"
+            android:textColor="#f58181"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="208.5dp"/>
+        
+    </RelativeLayout>
+    
+    <ListView android:id="@+id/hotline_search_result_list"
+        android:layout_below="@+id/hotline_search_zero"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:dividerHeight="0dp"
+        android:divider="@null"/>
+</RelativeLayout>

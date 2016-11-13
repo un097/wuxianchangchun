@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btn_show_coupon"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/textview.color111.sp20" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clipChildren="false"
+            android:layout_below="@+id/tv_title"
+            android:layout_toLeftOf="@+id/btn_show_coupon" >
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_chooice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="24dp"
+                android:scrollbars="none" >
+
+                <RadioGroup
+                    android:id="@+id/rdo_group_item_stub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rl_info"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_video_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    android:textAppearance="@style/textview.color999.sp14" />
+
+                <TextView
+                    android:id="@+id/tv_play_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_video_desc"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/ic_list_bofangshu"
+                    android:drawablePadding="4dp"
+                    android:textAppearance="@style/textview.color999.sp14" />
+
+                <TextView
+                    android:id="@+id/tv_zan_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_play_count"
+                    android:layout_alignBottom="@+id/tv_play_count"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/tv_play_count"
+                    android:drawableLeft="@drawable/ic_list_zan"
+                    android:drawablePadding="4dp"
+                    android:textAppearance="@style/textview.color999.sp14"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_show_coupon"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right|top"
+            android:background="@drawable/crown_button_pressd_bg"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:src="@drawable/ic_crown" />
+
+        <Button
+            android:id="@+id/btn_show_info"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/vote_voting_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_show_coupon"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/voting_button_selector"
+            android:gravity="center"
+            android:text="@string/txt_detail"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		<ScrollView 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/tv_video_info"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_marginTop="6dp"
+	            android:lineSpacingExtra="4dp"
+	            android:scrollbars="none"
+	            android:textAppearance="@style/textview.color999.sp14"
+	            android:visibility="gone" />
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/lv_video_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

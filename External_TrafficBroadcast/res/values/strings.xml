@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">External_TrafficBroadcast</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="glo_loaction_ing">正在定位中&#8230;</string>
+    
+    <string name="road_loading_again">数据加载失败，点此重新加载</string>
+    <string name="road_loading_network_error">网络异常，请检查您的手机网络</string>
+    <string name="road_loading_server_error">服务器或网络异常，请稍后再试</string>
+    <string name="road_loading_refresh_complete">刷新数据成功</string>
+    <string name="road_loading_more_no_data">已经到底了噢</string>
+    <string name="road_play_complete">本次播报结束</string>
+    <string name="road_login_notice">\n亲，登录后才能使用\"%1$s\"哦！\n</string>
+    <string name="road_login_notice_name">路况播报</string>
+    <string name="road_all_road_no_data">暂无路况数据</string>
+    <string name="load_simple_list_err">网络异常，获取路况列表出错</string>
+    
+    <!-- 下拉刷新控件 -->
+    <string name="foot_pull_label">加载更多</string>
+    <string name="foot_refreshing_label">正在加载</string>
+    <string name="foot_release_label">释放刷新数据</string>
+
+</resources>

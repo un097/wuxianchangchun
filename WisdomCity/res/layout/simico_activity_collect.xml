@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/titlebar_collect"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/simico_titlebar_collection"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list"
+            style="@style/pinned_header_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ly_login"
+            android:headerDividersEnabled="false"
+            ptr:ptrDrawable="@drawable/icon_pulltorefresh"
+            ptr:ptrHeaderTextColor="@color/txt_gray" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="您未收藏资讯，赶紧去收藏吧！"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ly_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_login"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/simico_login_btn" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="登录后收藏将保存在服务器，永不丢失哦！" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/simico_closely_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

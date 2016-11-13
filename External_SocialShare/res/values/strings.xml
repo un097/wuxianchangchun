@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">External_SocialShare</string>
+    <string name="umeng_social_wechat_app_id">wx94aaa715a689cdc9</string>
+    <string name="umeng_social_yixin_app_id">yxba548c68b3964ba9ba249c1eed53dcf3</string>
+    <string name="social_weibo_app_key">930178756</string>
+    <string name="social_weibo_redirect_url">http://sns.whalecloud.com/app/LV44TJ</string>
+    <string name="social_qq_app_id">1103590315</string>
+    <string name="dialog_title_default">提示</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancle">取消</string>
+    <string name="photo_share_notice">亲，登录后才能分享哦</string>
+	<string name="spread_string_weixin">下载无线长春，邀请码“%1$s”</string>
+</resources>

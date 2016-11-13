@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dip" >
+
+            <ImageView
+                android:id="@+id/glo_city_child_icon"
+                android:layout_width="60dip"
+                android:layout_height="43dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/glo_city_icon_default" 
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip" >
+
+            <TextView
+                android:id="@+id/glo_city_child_title"
+                style="@style/Glo_title_686868.16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/glo_city_child_collect" />
+
+            <TextView
+                android:id="@+id/glo_city_child_content"
+                style="@style/Glo_descript_b0b0b0.12sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/glo_city_child_title"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="3dip"
+                android:layout_toLeftOf="@+id/glo_city_child_collect" />
+
+            <ImageView
+                android:id="@+id/glo_city_child_collect"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/glo_icon_favorite_selector"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

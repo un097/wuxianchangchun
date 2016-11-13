@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">爱城市</string>
+
+    <string name="progress_subming">正在提交…</string>
+    
+    <!-- Empty View -->
+    <string name="ellipsis">…</string>
+    <string name="empty_click_to_refresh">点击屏幕刷新</string>
+    <string name="empty_error">对不起</string> 
+    <string name="empty_error_tip">你的网络不给力啊</string>
+    <string name="empty_network">无连接</string>
+    <string name="empty_network_tip">请检查网络连接并重试</string>
+    <string name="empty_no_data">暂无数据</string>
+    <string name="empty_no_data_tip">敬请期待更多精彩内容</string>
+    <string name="refresh">refresh</string>
+    <string name="login_generic_fail">哎呦，服务器开小差了.</string>
+    <string name="loading_no_more">没有更多了</string>
+    <string name="try_again">重试</string>
+    <string name="loading">正在加载…</string>
+    
+    <!-- <string name="tip_news_update_count">爱城市推荐引擎有%s条更新</string> -->
+    <!-- 长春 -->
+    <string name="tip_news_update_count">无线长春推荐引擎有%s条更新</string>
+    <string name="tip_news_update_none">刷太快了，喝杯咖啡吧</string>
+    
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+    
+    
+    <string name="tip_max_subscribe_service">您最多可以订阅16个服务！</string>
+    <string name="tip_drag_add_service">您未添加任何服务，赶紧点击加号进行添加吧。</string>
+    <string name="tip_drag_delete_service">长按可删除、排序服务</string>
+    <string name="tip_cancel_drag_delete_service">按返回取消编辑。</string>
+    <string name="tip_system_service_delete">系统服务，不可删除！</string>
+    
+    <string name="app_download_sucess">%s下载成功,开始安装.</string>
+    <string name="app_download_fail">%s下载失败，请稍后再试.</string>
+    <string name="app_download_stop">%s下载失败，用户停止了下载。</string>
+    <string name="app_download_wait">应用%s正在下载中，请稍后再试。</string>
+</resources>

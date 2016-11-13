@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    
+	<TextView 
+	    android:id="@+id/tv_location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="长春市**区凯特啦商场"
+	    android:textColor="@color/title_color"
+	    android:textSize="16.0dip"/>
+    
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_travel_common_list_img"
+            android:layout_width="@dimen/travel_common_list_item_img_width"
+            android:layout_height="@dimen/travel_common_list_item_img_height"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="13dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textview.color111.sp18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_travel_common_list_img"
+            android:layout_toRightOf="@+id/iv_travel_common_list_img" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            style="@style/textview.travel_list_image_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_below="@+id/tv_title"
+            android:minWidth="43dp"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            style="@style/textview.travel_list_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_travel_common_list_img"
+            android:layout_alignLeft="@+id/tv_title"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="-1px"
+        android:layout_marginTop="-1px"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:src="@drawable/common_corner_recommend" />
+
+</FrameLayout>

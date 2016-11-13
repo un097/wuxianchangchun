@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:drawablePadding="0dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@color/simico_footer_text_color_selector"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tabText"
+        android:layout_alignTop="@+id/tabText"
+        android:layout_marginRight="-12dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/simico_ts_count_bubble"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

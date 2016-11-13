@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/road_main_search_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <cn.ffcs.widget.LoadingBar
+        android:id="@+id/fragment_all_road_loading_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/road_widget_resp_desc"
+        style="@style/loading_bar_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <cn.ffcs.widget.PullToRefreshListView
+        android:id="@+id/road_all_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="@null"
+        pull:mode="both" />
+
+</LinearLayout>

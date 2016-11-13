@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_marginLeft="5dip"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:layout_width="62dip"
+            android:layout_height="53dip"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="60dip"
+                android:layout_height="45dip"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dip"
+                android:src="@drawable/glo_city_img_bg"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/glo_city_parent_icon"
+                android:layout_width="60dip"
+                android:layout_height="45dip"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="2dip"
+                android:scaleType="fitXY"
+                android:contentDescription="@null"/>
+
+            <ImageView
+                android:layout_width="18dip"
+                android:layout_height="23dip"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/glo_city_clip"
+                android:contentDescription="@null" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip" >
+
+            <TextView
+                android:id="@+id/glo_city_parent_title"
+                style="@style/Glo_title_686868.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/glo_city_parent_count_text"
+                style="@style/white_title.12sp"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_above="@+id/glo_city_parent_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/glo_city_parent_title"
+                android:background="@drawable/glo_city_parent_count_bg"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/glo_city_parent_content"
+                style="@style/Glo_descript_b0b0b0.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/glo_city_parent_title"
+                android:layout_marginRight="40dip"
+                android:maxLines="2" />
+
+            <ImageView
+                android:id="@+id/glo_city_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/glo_city_arrow_down"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <!-- <include -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/titlebar_height" -->
+    <!-- layout="@layout/titlebar" /> -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/simico_profile_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/transparent" >
+
+            <TextView
+                android:id="@+id/top_left"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/top_left"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="24.0dp"
+                android:paddingRight="16.0dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#B2B2B2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <cn.ffcs.wisdom.city.simico.activity.home.view.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/headportrait"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/simico_default_avatar" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF" />
+
+                <!-- 推广码 -->
+
+                <TextView
+                    android:id="@+id/generalize_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/code_beizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/spread_beizhu"
+                android:layout_marginTop="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_personal_selector"
+                android:text="登  录"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_personal_selector"
+                android:text="注  册"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <RelativeLayout
+                    android:id="@+id/profile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_data"
+                        android:drawablePadding="10dp"
+                        android:text="个人资料"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="#CECECE" />
+
+                <RelativeLayout
+                    android:id="@+id/notification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_message"
+                        android:drawablePadding="10dp"
+                        android:text="消息中心"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <RelativeLayout
+                    android:id="@+id/mycoupon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_coupon"
+                        android:drawablePadding="10dp"
+                        android:text="我的优惠券"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="#CECECE" />
+
+                <RelativeLayout
+                    android:id="@+id/mybroke"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_tipoff"
+                        android:drawablePadding="10dp"
+                        android:text="我的爆料"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="#CECECE" />
+
+                <RelativeLayout
+                    android:id="@+id/myprogram"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_program"
+                        android:drawablePadding="10dp"
+                        android:text="我的视频"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="#CECECE" />
+
+                <RelativeLayout
+                    android:id="@+id/myvoice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_program"
+                        android:drawablePadding="10dp"
+                        android:text="我的音频"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dp"
+                    android:background="#CECECE" />
+
+                <RelativeLayout
+                    android:id="@+id/mynews"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/individual_icon_news"
+                        android:drawablePadding="10dp"
+                        android:text="我的新闻"
+                        android:textColor="#111111" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/simico_user_collect" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

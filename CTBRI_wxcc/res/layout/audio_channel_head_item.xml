@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/audio_live_head_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="4dp" >
+
+        <TextView
+            android:id="@+id/tv_channel_name"
+            style="@style/textview.audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_channel_code"
+            style="@style/textview.audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_channel_name"
+            android:layout_below="@+id/tv_channel_name"
+            android:layout_marginTop="5.5dp"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_program_name"
+            style="@style/textview.audio_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_channel_name"
+            android:layout_below="@+id/tv_channel_code"
+            android:layout_marginTop="6dp"
+            android:textSize="23sp" /><!-- 18sp -->
+    </RelativeLayout>
+
+</FrameLayout>

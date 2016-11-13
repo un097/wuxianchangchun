@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignWithParentIfMissing="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/zoomin"
+        android:layout_width="45.0dip"
+        android:layout_height="40.0dip"
+        android:layout_weight="1"
+        android:background="@drawable/zoomin_seletor" />
+
+    <Button
+        android:id="@+id/zoomout"
+        android:layout_width="45.0dip"
+        android:layout_height="40.0dip"
+        android:layout_weight="1"
+        android:background="@drawable/zoomout_seletor" />
+</LinearLayout>

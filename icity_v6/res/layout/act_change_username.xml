@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <!-- android:background="@drawable/bg_city" -->
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/input_background" >
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/lightgray16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/person_center_change_name_hint"
+            android:paddingLeft="5dp"
+            android:lines="1"
+            android:maxLength="11"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <Button
+            android:id="@+id/user_name_btn_save"
+            style="@style/ButtonBlue.White.18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_blue_selector"
+            android:paddingLeft="5dp"
+            android:text="@string/person_center_change_name_save" />
+    </LinearLayout>
+
+</LinearLayout>

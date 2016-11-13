@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/simico_btn_clear_selector" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_clear"
+        android:background="@drawable/simico_search_background"
+        android:hint="搜索您感兴趣的服务"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#cde5e3"
+        android:textSize="@dimen/txt_size_median" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/simico_ic_search" />
+
+</RelativeLayout>

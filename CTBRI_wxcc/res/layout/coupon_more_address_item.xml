@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/line"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Large Tex afdas asdasfads fad fadsdasfadsfasfast"
+                android:textAppearance="@style/textview.color_333.sp16" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="@style/textview.color999.sp12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll_container"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/line"
+            android:text="Large Text"
+            android:textAppearance="@style/textview.color999.sp16" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/iv_call"
+            android:layout_alignTop="@+id/iv_call"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/iv_call"
+            android:background="@color/line_gray" />
+
+        <ImageButton
+            android:id="@+id/iv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/call_phone_bg_selector"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:padding="8dp"
+            android:src="@drawable/phone_bg_selector" />
+    </RelativeLayout>
+
+</FrameLayout>

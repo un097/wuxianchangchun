@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background" >
+    
+    <include 
+        android:id="@+id/titlebar_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/simico_titlebar_common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/simico_search_background"
+                android:hint="搜索您感兴趣的服务"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#B5BCC4"
+                android:textSize="@dimen/txt_size_median" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/simico_btn_search_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_median" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/lv_service"
+            style="@style/base_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="4"
+            android:stretchMode="columnWidth" />
+
+        <LinearLayout
+            android:id="@+id/ly_keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/txt_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="热搜词条"
+                    android:textColor="@color/txt_gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/txt_gray" />
+            </LinearLayout>
+
+            <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+            <cn.ffcs.wisdom.city.simico.activity.search.view.FlowLayout
+                xmlns:f="http://schemas.android.com/apk/res/cn.ffcs.wisdom.city"
+                android:id="@+id/keywords"
+                style="@style/subscribe_flow_layout" />
+            <!-- f:horizontalSpacing="6dip" -->
+            <!-- f:verticalSpacing="10dp" -->
+            </ScrollView>
+        </LinearLayout>
+
+        <cn.ffcs.wisdom.city.simico.ui.grid.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" /> 
+    </FrameLayout>
+
+</LinearLayout>

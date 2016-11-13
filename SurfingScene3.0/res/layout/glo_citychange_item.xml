@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/glo_citychange_item_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/glo_citychange_item_name"
+        android:layout_width="0dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/glo_citychange_name"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/city_eye_count_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/no_bg"
+        android:gravity="center"
+        android:minHeight="18dip"
+        android:minWidth="24dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/glo_citychange_eye_count"
+            style="@style/white_title.10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="1" />
+    </LinearLayout>
+
+</LinearLayout>

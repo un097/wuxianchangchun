@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- 友盟key -->
+    <string name="umeng_key">548e7e18fd98c5e1ed001032</string>
+    <!-- 189key -->
+    <string name="v189data_appkey">95d5d327-b4fb-4f8c-a067-583f04e95a10</string>
+    
+    <!-- 城市切换contentprovider 请根据包名修改 -->
+    <string name="content_provider_authorities">cn.ffcs.changchuntv.contentprovider</string>
+ 
+    <!-- 升级标识 -->
+    <string name="version_name_update">changchuntv_ver</string>
+    
+    <!-- 推送应用ID，每个独立包，可以不一样，在此修改 -->
+    <string name="push_application_id">m00239823</string>
+    
+    <!-- 天翼景象key和密码，其他工程要用请向天翼景象申请 -->
+    <string name="glo_account_key">iCity</string>
+    <string name="glo_password_key">ffcsiCity</string>
+    
+    <!-- 是否开启推送 -->
+    <string name="isenable_push_service">true</string>
+    <!-- 是否开启城市切换 -->
+    <string name="isenable_city_change">false</string>
+    <!-- 默认城市 -->
+    <string name="default_city">2201</string>
+    
+    <!-- 爱城市sd卡根路径 ，别以为改到这里就没了，底下还有-->
+    <string name="sdcard_city_root">/changchunTV</string>
+    <!-- 应用汇下载apk位置 -->
+    <string name="sdcard_apk">/apk/</string>
+    <!-- 闪屏图 -->
+    <string name="sdcard_splash">/splash</string>
+    <!-- 地市特色闪屏图 -->
+    <string name="sdcard_splashs">/splashs</string>
+    <!-- 日志 -->
+    <string name="sdcard_logs">/logs/</string>
+    <!-- 用户头像 -->
+    <string name="sdcard_user_headphoto">/user/headphoto/</string>
+    <!-- 浏览器图片 -->
+    <string name="sdcrad_web">/web/</string>
+    <!-- 首页背景图 -->
+    <string name="sdcard_home_bg">/home/bg/</string>
+    <!-- 爱城市临时目录 -->
+    <string name="sdcard_city_tmp_dir">/tmp/</string>
+    <!-- 爱城市图片缓存 -->
+    <string name="sdcard_city_image_cache">/image/cache/</string>
+
+    <!-- 渠道上报 广播动作，不同应用，设置不同值 add by caijj 20130717-->
+    <string name="report_action">cn.ffcs.changchuntv.report</string>
+    
+    <!-- 更新消息条数，不同应用，设置不同值 add by liaodl 20130924-->
+    <string name="refresh_msg_count_action">cn.ffcs.changchuntv.refreshMsgCount</string>
+    
+    <!-- 消息通知点击，不同应用，设置不同值 add by zhangwsh 20140320 -->
+    <string name="notify_click">cn.ffcs.changchuntv.notify</string>
+    
+    <!-- 是否拼装短信分享的url地址和id -->
+    <bool name="isAssemblySMSUrl">true</bool>
+    
+    <!-- 在有切换城市的前提下，是否有默认城市 -->
+    <bool name="isHaveDefaultCity">false</bool>
+    
+    <!-- 百度推送 -->
+    <string name="baidu_push_apikey">XIG5ilLShMFnByQBlnnBUlpu</string>
+
+</resources>

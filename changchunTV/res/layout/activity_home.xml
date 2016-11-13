@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/Relat_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list"
+            style="@style/pinned_header_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:headerDividersEnabled="false"
+            ptr:ptrDrawable="@drawable/icon_pulltorefresh"
+            ptr:ptrHeaderBackground="@color/background"
+            ptr:ptrHeaderTextColor="@color/txt_gray" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/tv_update_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#f97070"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <!-- android:background="#6ECCC7" -->
+
+        <ImageView
+            android:id="@+id/btn_scrolltop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/simico_scrolltop_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- 音频插件的栏 -->
+
+    <FrameLayout
+        android:id="@+id/audio_statusbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

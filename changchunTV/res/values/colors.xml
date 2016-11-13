@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#EEEEEE</color>
+    <color name="titlebar_bg">#FBFBFB</color>
+    <color name="tab_bg">#F97070</color>
+    <color name="picture_bg">#D4E1EA</color>
+    
+    <drawable name="btn_normal1">#F7F7F7</drawable>
+    <drawable name="btn_normal2">#F3F3F3</drawable>
+    <drawable name="btn_pressed">#E8E8E8</drawable>
+
+</resources>

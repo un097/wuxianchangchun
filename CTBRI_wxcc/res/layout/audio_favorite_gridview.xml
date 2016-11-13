@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:id="@+id/vs_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout="@layout/action_bar2" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/ptr_gridview"
+        style="@style/pull_to_refresh_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="8dp"
+        android:listSelector="@drawable/common_bg_selector"
+        android:numColumns="3"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#bcbcbc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <Button
+                android:id="@+id/btn_selecte_all"
+                style="@style/button.coupon.video_favorite_all"
+                android:layout_width="135dp"
+                android:layout_height="37dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="40dp"
+                android:text="@string/tip_selecte_all" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/button.coupon.video_favorite_del_btn"
+                android:layout_width="135dp"
+                android:layout_height="37dp"
+                android:layout_gravity="bottom"
+                android:width="135dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	style="@style/background_color">
+  	
+    <include layout="@layout/top" />
+  	
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <include layout="@layout/top_shadow" android:layout_alignParentTop="true"/>
+        <cn.ffcs.wisdom.city.modular.query.widget.QueryLayout
+	        android:id="@+id/query_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+    	</cn.ffcs.wisdom.city.modular.query.widget.QueryLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

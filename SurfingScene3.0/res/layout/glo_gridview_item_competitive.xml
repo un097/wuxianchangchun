@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dip"
+    android:layout_height="0dip" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/glo_img_bf_selector"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:background="@drawable/glo_img_shadow" >
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dip"
+                android:contentDescription="@null"
+                android:src="@drawable/glo_icon_favorite_selector" />
+
+            <TextView
+                android:id="@+id/glo_title"
+                style="@style/Glo_White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toLeftOf="@+id/favorite"
+                android:ellipsize="marquee"
+                android:layout_marginRight="5dip"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true" 
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

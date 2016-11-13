@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="@dimen/travel_menu_container_padding"
+    android:paddingRight="@dimen/travel_menu_container_padding"
+    android:paddingTop="14dp" >
+
+    <include 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/travel_main_four_menu_item" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/travel_main_four_menu_item" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/travel_main_four_menu_item" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/travel_main_four_menu_item" />
+
+</LinearLayout>

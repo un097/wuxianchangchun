@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/baoliao_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_shunchang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_shunchang"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_huanman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_huanman"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_yongdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_yongdu"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_botton"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_daolufengbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_daolufengbi"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_shigu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_shigu"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.5dip" >
+
+            <ImageView
+                android:id="@+id/iv_jingchazhifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_jingchazhifa"
+                android:gravity="center"
+                android:paddingTop="6.0dip"
+                android:paddingBottom="6.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

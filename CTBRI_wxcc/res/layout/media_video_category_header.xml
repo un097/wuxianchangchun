@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+    <TextView
+        android:id="@+id/tv_category_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:gravity="center"
+        android:text="电影"
+        android:textAppearance="@style/textview.color111.sp16" />
+    <TextView
+        android:id="@+id/tv_category_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center"
+        android:text="@string/txt_more"
+        android:textAppearance="@style/textview.color999.sp14" />
+</FrameLayout>

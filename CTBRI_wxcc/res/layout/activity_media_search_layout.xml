@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/action_bar2" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/media_search_edit_layout" />
+
+    <TextView
+        android:id="@+id/tv_result_count"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/textview.color_333.sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:id="@+id/frame_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.ctbri.wxcc.widget.LoadMorePTRListView
+            android:id="@+id/lv_travel_raiders"
+            style="@style/pull_to_refresh_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </com.ctbri.wxcc.widget.LoadMorePTRListView>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="82dp"
+            layout="@layout/common_empty_result_layout" />
+    </FrameLayout>
+
+</LinearLayout>

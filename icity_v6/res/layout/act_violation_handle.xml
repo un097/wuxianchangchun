@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip" >
+
+            <!-- 详单 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/violation_car_number" />
+
+                    <TextView
+                        android:id="@+id/violation_car_no"
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/violation_count" />
+
+                    <TextView
+                        android:id="@+id/violation_car_count"
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/violation_mark_1" />
+
+                    <TextView
+                        android:id="@+id/violation_mark"
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/violation_all_money" />
+
+                    <TextView
+                        android:id="@+id/violation_all_money"
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/violation_all_agency_money" />
+
+                    <TextView
+                        android:id="@+id/violation_all_agency_money"
+                        style="@style/gray_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/agency_money"
+                        style="@style/gray_title.12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/icon"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="@string/violation_agency_detial"
+                        android:textColor="@drawable/blue_normal" />
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="6dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_setting_enter_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 总计费用 -->
+
+            <TextView
+                android:id="@+id/all_money_count"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/violation_all_money_count"
+                android:textColor="@drawable/blue_normal"
+                android:textSize="14sp" />
+
+            <!-- 去付款 -->
+            <TextView
+                android:id="@+id/goto_pay"
+                style="@style/white_title.16sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_blue_selector"
+                android:text="@string/violation_go_to_pay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="@string/violation_notice" />
+        </LinearLayout>
+
+        <include layout="@layout/top_shadow" />
+    </RelativeLayout>
+
+</LinearLayout>

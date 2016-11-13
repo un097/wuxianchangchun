@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <cn.ffcs.wisdom.city.simico.activity.home.view.ListenerScrollView
+        android:id="@+id/categoryscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" 
+        android:fadingEdgeLength="0dp">
+
+        <LinearLayout
+            android:id="@+id/category_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+    </cn.ffcs.wisdom.city.simico.activity.home.view.ListenerScrollView>
+
+    <ImageView
+        android:id="@+id/leftblock"
+        android:layout_width="10.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/channel_leftblock"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rightblock"
+        android:layout_width="10.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/channel_rightblock"
+        android:visibility="gone" />
+
+</RelativeLayout>

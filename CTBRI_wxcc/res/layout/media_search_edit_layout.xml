@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fbfbfb" >
+
+        <EditText
+            android:id="@+id/txt_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_media_search_box_bg"
+            android:drawableLeft="@drawable/common_icon_search"
+            android:drawablePadding="6dp"
+            android:hint="@string/msg_search_hint"
+            android:singleLine="true"
+			android:maxLength="50"
+            android:padding="8dp"
+            android:textAppearance="@style/textview.color111.sp15" />
+
+        <ImageButton
+            android:id="@+id/ibtn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/media_search_clear_text_selector"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/txt_search"
+        android:textColor="@color/video_search_button_text_selector"
+        android:textAppearance="@style/textview.colorpink.sp16"
+        android:visibility="gone" />
+
+</LinearLayout>

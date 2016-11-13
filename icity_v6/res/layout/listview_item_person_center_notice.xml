@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:layout_marginTop="10dip"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/personcenter_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/type_icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:singleLine="true"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/btn_setting_enter_selector" />
+
+</LinearLayout>

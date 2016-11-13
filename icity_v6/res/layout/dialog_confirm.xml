@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:background="@drawable/dialog_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:gravity="center_vertical"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:textColor="#ff666666"
+                android:text="标题"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:nextFocusDown="@+id/okbut"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1.0">
+
+        <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+
+                android:maxLines="2"
+                android:textColor="#ff666666"
+                android:text="消息\n内容"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/editTv"
+                android:background="@drawable/ic_edittext_bg"
+                android:textColor="@color/gray1"
+                android:imeOptions="actionNext"
+                android:selectAllOnFocus="true"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_line"
+            android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+        <Button
+                android:textColor="@color/gray1"
+                android:gravity="center"
+                android:id="@+id/btnOk"
+                android:text="确定"
+                android:background="@drawable/transparent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/divider_vertical"/>
+
+        <Button
+                android:textColor="@color/gray1"
+                android:gravity="center"
+                android:id="@+id/btnCancel"
+                android:text="取消"
+                android:background="@drawable/transparent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

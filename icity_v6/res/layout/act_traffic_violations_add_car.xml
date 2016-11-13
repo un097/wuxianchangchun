@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    style="@style/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violation_car_type" />
+
+                <TextView
+                    style="@style/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violation_type_small_car" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    style="@style/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violation_car_no" />
+
+                <TextView
+                    style="@style/light_gray_title.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/car_add_select_city"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dip"
+                    android:text="吉" />
+
+                <EditText
+                    android:id="@+id/car_no"
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingLeft="5dip"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    style="@style/input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violation_car_last_4" />
+
+                <EditText
+                    android:id="@+id/car_last_codes"
+                    style="@style/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/remain_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/remain_account"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:checked="true" />
+                    <!-- 
+                    android:background="@drawable/wc_checkbox_selector"
+                     -->
+
+                <TextView
+                    android:id="@+id/user_search_xieyi"
+                    style="@style/gray_title.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/blue_0799ea" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/query"
+                style="@style/white_title.18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pink_button_selector"
+                android:gravity="center"
+                android:text="@string/violation_query" />
+            <!-- android:background="@drawable/btn_blue_selector" -->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/icar_logo"
+            android:visibility="gone" />
+
+        <include layout="@layout/top_shadow" />
+    </RelativeLayout>
+
+</LinearLayout>

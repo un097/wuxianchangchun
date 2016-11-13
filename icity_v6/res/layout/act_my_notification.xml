@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top" />
+
+    <ImageView
+        android:id="@+id/topshadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:background="@drawable/titlebar_bg_shadow"
+        android:contentDescription="@null" />
+
+    <ListView
+        android:id="@+id/notification_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topshadow"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dip"
+        android:fadingEdge="none"
+        android:padding="16dip"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <TextView
+        android:id="@+id/notification_text_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/widget_no_data_bg"
+        android:gravity="center_vertical"
+        android:text="@string/notnotice"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pc_btn_del_notifi"
+        style="@style/ButtonBlue.White.18sp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_blue_selector"
+        android:text="@string/person_center_del_notice"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ViewStub
+        android:id="@+id/vs_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout="@layout/action_bar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_send_comments_layout"
+        android:layout_below="@+id/vs_actionbar" >
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/fragment_send_comments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

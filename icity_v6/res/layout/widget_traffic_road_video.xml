@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_tra_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dip"
+        android:paddingTop="10dip" 
+        android:paddingBottom="10dip"
+        >
+
+        <TextView
+            android:id="@+id/road_line"
+            style="@style/gray_title.17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:text="@string/traffic_video" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ViewFlippermain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <cn.ffcs.wisdom.city.home.widget.RoadVideoWidget
+            android:id="@+id/road_video_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+        </cn.ffcs.wisdom.city.home.widget.RoadVideoWidget>
+    </LinearLayout>
+
+</LinearLayout>

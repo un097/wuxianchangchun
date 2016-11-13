@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        layout="@layout/inc_loading_bar" />
+
+    <cn.ffcs.widget.InterceptScrollView
+        android:id="@+id/glo_currentcity_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/basic_layer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/glo_city_bannerlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip" >
+
+                <cn.ffcs.widget.SubViewPager
+                    android:id="@+id/glo_city_bannerviewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dip"
+                    android:background="@drawable/glo_city_banner_default" />
+
+                <RelativeLayout
+                    android:id="@+id/glo_bottom_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/glo_city_banner_bottom" >
+
+                    <TextView
+                        android:id="@+id/glo_banner_title"
+                        style="@style/white_title.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:id="@+id/glo_banner_indicator_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <cn.ffcs.widget.ExpandNoScrollListView
+                android:id="@+id/glo_city_expandablelistview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@drawable/list_line"
+                android:divider="@drawable/list_line"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </cn.ffcs.widget.ExpandNoScrollListView>
+        </LinearLayout>
+    </cn.ffcs.widget.InterceptScrollView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/glo_icn_loading_error" />
+
+</RelativeLayout>

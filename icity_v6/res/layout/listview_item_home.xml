@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/second_menu_name"
+        style="@style/white_title.16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        />
+
+    <cn.ffcs.widget.GridNoScrollView
+        android:id="@+id/home_menu_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="2dip"
+        android:horizontalSpacing="10dip"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip" />
+
+</LinearLayout>

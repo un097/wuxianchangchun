@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/trackinfo_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="8dip"
+                android:gravity="center" >
+
+                <cn.ffcs.widget.GridNoScrollView
+                    android:id="@+id/fragment_recent_track_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:fadeScrollbars="true"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dip"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="8dip" />
+
+                <Button
+                    android:id="@+id/fragment_recent_track_clear"
+                    style="@style/ButtonBlue.White.18sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/fragment_recent_track_gridview"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="50dip"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="@string/myfav_clearcache" />
+            </RelativeLayout>
+        </ScrollView>
+        
+        <TextView 
+            android:id="@+id/fragment_recent_track_nocentent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/myfav_nocontent"
+            style="@style/lightgray16sp"
+            android:visibility="gone"/>
+
+        <!-- <include layout="@layout/top_shadow" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

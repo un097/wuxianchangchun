@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="6px"/>
+	<size android:width="241dp" android:height="@dimen/vote_voting_button_height"/>
+	<solid android:color="@color/pink_20"/>
+	<stroke android:width="1px" android:color="@color/favorite_button_border_color"/>
+</shape>

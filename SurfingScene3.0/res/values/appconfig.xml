@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 天翼景象SD卡根目录 -->
+    <string name="glo_sdcard_root">/globaleye</string>
+    <!-- 天翼景象图片缓存 -->
+    <string name="glo_img_cache">/image/cache/</string>
+    <!-- 版本类型，可以被主工程覆盖 -->
+    <string name="version_name_update">icity_ver</string>
+
+</resources>

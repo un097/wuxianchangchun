@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 搜索输入框开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_input" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/icon_search"
+                android:contentDescription="@null"
+                android:padding="5dip" />
+
+            <EditText
+                android:id="@+id/app_search_edit"
+                style="@style/gray_b4b4b4.16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:background="@android:color/transparent"
+                android:hint="@string/search_keyword_hint"
+                android:imeOptions="actionSearch"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_b4b4b4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/white_title.18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_letters_selector"
+            android:text="@string/search" />
+    </LinearLayout>
+    <!-- 搜索输入框结束 -->
+
+
+    <!-- 搜索结果提示开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/search_hot_word_tip"
+            style="@style/gray_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_hot" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/line" />
+    </LinearLayout>
+    <!-- 搜索结果提示结束 -->
+
+    <include layout="@layout/inc_loading_bar_show" />
+
+    <include layout="@layout/widget_no_data" />
+
+    <!-- 热门应用搜索结果显示 -->
+
+    <GridView
+        android:id="@+id/search_hot_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip" >
+    </GridView>
+
+    <!-- 热门应用热词 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/search_hot_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 百度热词 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/search_hot_baidu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

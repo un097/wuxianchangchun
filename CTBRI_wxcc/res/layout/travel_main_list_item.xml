@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textview.color_333.sp16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="sp19" />
+
+        <ImageView
+            android:id="@+id/iv_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            style="@style/textview.color999.sp16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="-1dp"
+        android:layout_marginTop="-1dp"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:src="@drawable/common_corner_recommend" />
+
+</FrameLayout>

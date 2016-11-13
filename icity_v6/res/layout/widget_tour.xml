@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/tour_big_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 推荐旅游景点焦点大图 -->
+
+        <ImageView
+            android:id="@+id/tour_video_big_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/widget_bg" />
+
+        <TextView
+            android:id="@+id/tour_title"
+            style="@style/white_title.12sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tour_black_bg"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="1dip"
+            android:paddingLeft="12dip"
+            android:paddingTop="2dip"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/tour_play_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_tour_play_icon_selector"
+            android:contentDescription="@null" />
+
+        <cn.ffcs.widget.LoadingBar
+            android:id="@+id/tour_loading_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/small_pics_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tour_big_layout"
+        android:layout_alignLeft="@id/tour_big_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/tour_select_first_pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/tour_first_pic"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/tour_select_first_pic"
+                android:layout_width="62dip"
+                android:layout_height="34dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:src="@drawable/tour_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tour_select_second_pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/tour_second_pic"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/tour_select_second_pic"
+                android:layout_width="62dip"
+                android:layout_height="34dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:src="@drawable/tour_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tour_select_third_pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/tour_third_pic"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/tour_select_third_pic"
+                android:layout_width="62dip"
+                android:layout_height="34dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:src="@drawable/tour_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tour_select_fourth_pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/tour_fourth_pic"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/tour_select_fourth_pic"
+                android:layout_width="62dip"
+                android:layout_height="34dip"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@null"
+                android:src="@drawable/tour_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

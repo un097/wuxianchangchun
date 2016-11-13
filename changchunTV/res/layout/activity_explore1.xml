@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 交通信息 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/explore_top_height"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:layout_marginBottom="-6dp"
+                    android:text="交通信息"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/traffic_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="20dp"
+                                android:drawableTop="@drawable/explore_icon_trafficlamp"
+                                android:text="路况详情"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+                        <RelativeLayout
+                            android:id="@+id/bus_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/bus_line_icon"
+                                android:text="公交查询"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+                        <RelativeLayout
+                            android:id="@+id/traffic_video"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_traffic_video_114"
+                                android:text="路况视频"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/traffic_nav"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/explore_grid_height"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_navi"
+                                android:text="百度导航"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/traffic_highway"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_highway"
+                                android:text="高速路况"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/traffic_violation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_trafficweizhang"
+                                android:text="违章查询"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <!-- 新闻资讯 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/explore_top_height"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="新闻资讯"
+                    android:layout_marginBottom="-6dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/gov"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="20dp"
+                                android:drawableTop="@drawable/explore_icon_goverment"
+                                android:text="政务发布"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/hot_news"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_hotissue"
+                                android:text="热点新闻"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/changchun_news"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_localnews"
+                                android:text="长春知道"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/world_news"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_worldnews"
+                                android:text="天下新闻"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/lifestyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_lifestyle"
+                                android:text="生活娱乐"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/interesting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_funnews"
+                                android:text="趣闻轶事"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <!--
+                             <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+                        -->
+
+                        <RelativeLayout
+                            android:id="@+id/read"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_read"
+                                android:text="日读文章"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <!-- 精彩节目 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/explore_top_height"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="精彩节目"
+                    android:layout_marginBottom="-6dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/radio"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_radio"
+                                android:text="听广播"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/video"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/explore_icon_video"
+                                android:text="看电视"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/explore_fm"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="6dp"
+                                android:drawableTop="@drawable/fm_pic"
+                                android:text="豆包fm"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <!-- 生活服务 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/explore_top_height"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="生活服务"
+                    android:layout_marginBottom="-6dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/community"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_baoliao"
+                                android:text="爆料社区"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/travel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_travel"
+                                android:text="旅游资讯"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/vote"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_survey"
+                                android:text="民意调查"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/hotline"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector2"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_call"
+                                android:text="便民热线"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/coupon"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_coupon"
+                                android:text="优惠好礼"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@null" />
+
+                        <RelativeLayout
+                            android:id="@+id/booking"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/btn_selector1"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:drawablePadding="8dp"
+                                android:drawableTop="@drawable/explore_icon_booking"
+                                android:text="商旅预订"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#BCBCBC" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

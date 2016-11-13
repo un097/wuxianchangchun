@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar" />
+
+    <com.ctbri.wxcc.widget.LoadMorePTRListView
+        android:id="@+id/lv_my_communitys"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:background="@color/global_bg"
+        android:divider="@color/transparent"
+       	android:dividerHeight="6dp"
+        android:headerDividersEnabled="true"
+        
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        style="@style/pull_to_refresh_style"
+        android:scrollbars="none" >
+    </com.ctbri.wxcc.widget.LoadMorePTRListView>
+
+</RelativeLayout>

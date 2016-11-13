@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/action_bar_bg_color" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6.0dp"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="24.0dp"
+            android:paddingTop="6.0dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_bar_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="全部道路"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/tv_tomap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableRight="@drawable/map_selector"
+            android:gravity="center"
+            android:paddingLeft="24.0dp"
+            android:paddingRight="16.0dp"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0dip" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_title"
+        android:background="#b2b2b2"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_shadow"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="90.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/pink_button_selector"
+            android:text="搜索"
+            android:textColor="@color/white" />
+        <!-- android:background="@drawable/btn_cacel2" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_alignTop="@+id/btn_search"
+            android:layout_alignBottom="@+id/btn_search"
+            android:background="@drawable/input_oneling"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/input_icon_search" />
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:background="@null"
+                android:hint="请输入关键字段"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textSize="15.0dip"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <cn.ffcs.widget.PullToRefreshListView
+        android:id="@+id/road_all_search_listview"
+        android:layout_below="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:visibility="gone"
+        pull:mode="both" />
+    
+</RelativeLayout>

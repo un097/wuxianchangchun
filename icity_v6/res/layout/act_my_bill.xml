@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/bills"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="17dip"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:paddingTop="17dip"
+                android:visibility="gone" >
+
+                <!-- 通信费 -->
+
+                <LinearLayout
+                    android:id="@+id/personcenter_telephone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_white_selector"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dip"
+                        android:text="通信费" />
+
+                    <TextView
+                        android:id="@+id/telep_charge"
+                        style="@style/gray_b4b4b4.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <!-- 水电煤 -->
+
+                <RelativeLayout
+                    android:id="@+id/water_electric_coal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/btn_white_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="水电煤" />
+
+                    <ImageView
+                        android:id="@+id/wc_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/wc_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dip"
+                    android:paddingLeft="7dip"
+                    android:paddingRight="7dip"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#f1f1f1" />
+
+                    <cn.ffcs.widget.ListNoScrollView
+                        android:id="@+id/listview_wc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:dividerHeight="0px" />
+
+                    <LinearLayout
+                        android:id="@+id/other_account_wc"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/btn_blue_selector"
+                        android:gravity="center" >
+
+<!--                         <ImageView -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:src="@drawable/icon_add" /> -->
+
+                        <TextView
+                            style="@style/white_title.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="添加/删除账户" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 五险一金 -->
+
+                <RelativeLayout
+                    android:id="@+id/relevance"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/btn_white_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="五险一金" />
+
+                    <ImageView
+                        android:id="@+id/relevance_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/relevance_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dip"
+                    android:paddingLeft="7dip"
+                    android:paddingRight="7dip"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#f1f1f1" />
+
+                    <LinearLayout
+                        android:id="@+id/listview_relevance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/other_account_relevance"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/btn_blue_selector"
+                        android:gravity="center" >
+
+<!--                         <ImageView -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:src="@drawable/icon_add" /> -->
+
+                        <TextView
+                            style="@style/white_title.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="添加/删除账户" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 违章处理 -->
+
+                <RelativeLayout
+                    android:id="@+id/traffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/btn_white_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="车辆违章" />
+
+                    <ImageView
+                        android:id="@+id/traffic_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/traffic_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dip"
+                    android:paddingLeft="7dip"
+                    android:paddingRight="7dip"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#f1f1f1" />
+
+                    <LinearLayout
+                        android:id="@+id/listview_traffic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/other_account_traffic"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/btn_blue_selector"
+                        android:gravity="center" >
+
+<!--                         <ImageView -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:src="@drawable/icon_add" /> -->
+
+                        <TextView
+                            style="@style/white_title.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="添加/删除账户" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/top_shadow" />
+        </FrameLayout>
+    </ScrollView>
+
+    <cn.ffcs.widget.LoadingBar
+        android:id="@+id/loading_bar_big"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+</LinearLayout>

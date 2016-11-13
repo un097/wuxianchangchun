@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 我的收藏头部 -->
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myfav_tab_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/myfav_recent_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/myfav_tab_selector"
+                    android:text="最近访问"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#8A8A8A"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/myfav_category_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/myfav_tab_selector"
+                    android:gravity="center"
+                    android:text="分类查找"
+                    android:textColor="#8A8A8A"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myfav_viewpager"
+                style="@style/background_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/top_layout" />
+        </RelativeLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:background="@color/action_bar_bg_color" >
+
+        <ImageView
+            android:id="@+id/action_bar_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:paddingBottom="6.0dp"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="24.0dp"
+            android:paddingTop="6.0dp"
+            android:src="@drawable/action_bar_back" />
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="title"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/action_bar_right_btn"
+            style="@style/textview.colorpink.sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="24.0dp"
+            android:paddingRight="16.0dp"
+            android:text="导航" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:src="#b2b2b2" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/line" >
+            </com.baidu.mapapi.map.MapView>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_above="@+id/ll_control"
+                android:background="#b2b2b2" />
+
+            <LinearLayout
+                android:id="@+id/ll_control"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fbfbfb"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp" >
+
+                <CheckedTextView
+                    android:id="@+id/btn_walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/navi_paln_bg_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/textview.colorpink" />
+
+                <TextView
+                    android:id="@+id/tv_walk_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/textview.colorpink.sp16" />
+
+                <CheckedTextView
+                    android:id="@+id/btn_transit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:background="@drawable/navi_paln_bg_selector"
+                    android:checked="true"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="@style/textview.colorpink" />
+
+                <CheckedTextView
+                    android:id="@+id/btn_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/navi_paln_bg_selector"
+                    android:checked="true"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="@style/textview.colorpink" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/img_my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/mapView"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@null"
+                android:src="@drawable/icon_my_position" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_route_paln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

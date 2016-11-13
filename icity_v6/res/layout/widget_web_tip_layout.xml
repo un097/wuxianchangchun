@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2f2f2" >
+
+    <TableLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+<!--         <TableRow -->
+<!--             android:id="@+id/web_share" -->
+<!--             android:background="@drawable/tip_line_selector" -->
+<!--             android:gravity="center" -->
+<!--             android:paddingBottom="5dip" -->
+<!--             android:paddingTop="5dip" > -->
+
+<!--             <TextView -->
+<!--                 style="@style/gray_title.14sp" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="35dip" -->
+<!--                 android:layout_marginLeft="5dip" -->
+<!--                 android:drawableLeft="@drawable/web_pop_share" -->
+<!--                 android:drawablePadding="5dip" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:text="@string/web_share" /> -->
+<!--         </TableRow> -->
+
+<!--         <ImageView -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dip" -->
+<!--             android:layout_marginRight="10dip" -->
+<!--             android:background="@drawable/list_line_2" /> -->
+
+        <TableRow
+            android:id="@+id/web_collect"
+            android:background="@drawable/tip_line_selector"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/gray_title.14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="5dip"
+                android:drawableLeft="@drawable/web_pop_collect"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/web_collect" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/list_line_2" />
+
+        <TableRow
+            android:id="@+id/web_error"
+            android:background="@drawable/tip_line_selector"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/gray_title.14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="5dip"
+                android:drawableLeft="@drawable/web_pop_error"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/web_error" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

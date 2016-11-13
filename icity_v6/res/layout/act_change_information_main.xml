@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/change_user_head"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="7dip"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/person_center_set_head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/person_center_head_photo"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY" />
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/simico_user_collect"
+                android:padding="20dip" />
+            <!-- android:src="@drawable/btn_setting_enter_selector" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/change_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="7dip"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/person_center_change_nickname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/change_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/simico_user_collect"
+                android:padding="20dip" />
+            <!-- android:src="@drawable/btn_setting_enter_selector" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/change_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginBottom="7dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/person_center_change_password" />
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100.0dip"
+                android:drawableRight="@drawable/simico_user_collect"
+                android:paddingRight="20dip" />
+            <!-- android:src="@drawable/btn_setting_enter_selector" -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

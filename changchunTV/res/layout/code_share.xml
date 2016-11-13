@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ffcs_about_line"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/bg_city" -->
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/code_share_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="7dp"
+            android:text="@string/code_share_content"
+            android:textColor="@color/white" />
+
+<!--             android:paddingLeft="9dp"
+            android:paddingRight="7dp" -->
+        <TextView
+            android:id="@+id/my_share_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/code_share_textbg"
+            android:gravity="center"
+            android:text="@string/icity_email"
+            android:textColor="#fdff61"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/share_button"
+            style="@style/white_title.16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/code_share_button"
+            android:gravity="center"
+            android:text="点击分享"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

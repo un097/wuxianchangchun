@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/action_bar_bg_color" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6.0dp"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="24.0dp"
+            android:paddingTop="6.0dp" >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_bar_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Camera"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="24.0dp"
+            android:paddingRight="16.0dp"
+            android:text="取消"
+            android:textColor="@color/text_color_title" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:src="#b2b2b2" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:background="@drawable/shadow2"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shuju"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_line"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gv_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:listSelector="#50000000"
+            android:numColumns="3"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="65dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical" 
+            android:paddingTop="5.0dip"
+            android:paddingBottom="5.0dip">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/btn_count"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <cn.ffcs.external.trafficbroadcast.view.MyHGridView
+                        android:id="@+id/gv_photo_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="5.0dip"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_count"
+                android:layout_width="80.0dip"
+                android:layout_height="45.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/btn_yellow_selector"
+                android:text="完成（0）"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/global_bg"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/global_container_margin_left"
+        android:layout_marginRight="@dimen/global_container_margin_left"
+        android:layout_marginTop="@dimen/global_container_margin_top"
+        android:padding="@dimen/global_container_margin_top"
+		android:background="@drawable/vote_suggest_container_bg"
+        android:orientation="vertical" >
+ 
+        <EditText
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            style="@style/edittext.suggest"
+            android:hint="@string/holder_input_title" >
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vote_info_ratio_divider_height"
+            android:layout_marginBottom="@dimen/global_container_margin_top"
+            android:layout_marginTop="@dimen/global_container_margin_top"
+            android:background="@color/vote_detail_content_with_bg_divder" />
+
+        <EditText
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    style="@style/edittext.suggest"
+            android:gravity="top|left"
+            android:lineSpacingExtra="8sp"
+            android:hint="@string/holder_input_content"
+            android:lines="10" />
+    </LinearLayout>
+
+</RelativeLayout>

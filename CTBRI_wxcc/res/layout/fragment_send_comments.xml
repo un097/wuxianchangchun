@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e0e0e0" >
+
+    <ImageView
+        android:id="@+id/send_comments_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:src="#b2b2b2" />
+
+    <RelativeLayout
+        android:id="@+id/send_comments_edit_zone"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_below="@+id/send_comments_line"
+        android:background="#fbfbfb" >
+
+        <Button
+            android:id="@+id/send_comments_fire"
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dp"
+            android:layout_marginBottom="8.0dp"
+            android:layout_marginLeft="8.0dp"
+            android:layout_marginTop="8.0dp"
+            android:layout_toLeftOf="@+id/send_comments_image2"
+            android:background="@drawable/edit_text_bg" />
+
+        <ImageView
+            android:id="@+id/send_comments_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dp"
+            android:src="@drawable/common_icon_edit" />
+
+        <TextView
+            android:id="@+id/send_comments_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dp"
+            android:layout_toRightOf="@+id/send_comments_image"
+            android:text="评论"
+            android:textColor="#999999"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/send_comments_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8.0dp"
+            android:paddingLeft="18.0dp"
+            android:paddingRight="52.0dp"
+            android:paddingTop="8.0dp"
+            android:src="@drawable/button_selector_comments" />
+
+        <TextView
+            android:id="@+id/send_comments_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dp"
+            android:layout_marginRight="20.0dp"
+            android:text="0"
+            android:textColor="#999999"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/send_comments_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dp"
+            android:layout_margin="8.0dp"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="top"
+            android:padding="8.0dp"
+            android:textColor="#333"
+            android:textSize="14.0dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/send_comments_function_zone"
+        layout="@layout/send_comments_function_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

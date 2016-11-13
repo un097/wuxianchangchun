@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="9dip">
+    
+    <LinearLayout android:id="@+id/remainAccount_layout" android:layout_width="0dip" android:layout_weight="1" 
+        android:layout_height="wrap_content" android:visibility="gone">
+        <CheckBox android:id="@+id/remainAccount" android:layout_width="20dip" android:layout_height="20dip"
+	        android:layout_gravity="center_vertical" android:checked="true" android:background="@drawable/checkbox_selector" android:button="@null"/>
+	    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记住帐号" style="@style/black_title.16sp"
+	        android:layout_gravity="center_vertical" android:paddingLeft="5dip" android:gravity="center_vertical"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/remainpwd_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:visibility="gone">
+        <CheckBox android:id="@+id/remainpwd" android:layout_width="20dip" android:layout_height="20dip"
+	        android:layout_gravity="center_vertical" android:checked="true" android:background="@drawable/checkbox_selector" android:button="@null"/>
+	    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记住密码" style="@style/black_title.16sp"
+	        android:layout_gravity="center_vertical" android:paddingLeft="5dip" android:gravity="center_vertical"/>
+    </LinearLayout>
+    
+</LinearLayout>

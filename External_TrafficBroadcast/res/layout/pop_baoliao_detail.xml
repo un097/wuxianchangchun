@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_head5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/iv_head" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/iv_head5"
+            android:gravity="center_vertical"
+            android:text="189****1253"
+            android:textColor="@color/title_color"
+            android:layout_marginBottom="2dip"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center_vertical"
+            android:text="2分钟"
+            android:textColor="@color/text_color"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_huanman" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_detail5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="当前台山路清城关西路台山路口顺畅"
+                android:textColor="@color/title_color"
+                android:textSize="20.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/iv_location" />
+
+                <TextView
+                    android:id="@+id/tv_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="center_vertical"
+                    android:text="神马去台山路"
+                    android:textColor="@color/text_color"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

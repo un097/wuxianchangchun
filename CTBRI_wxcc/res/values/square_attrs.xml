@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="radius" format="dimension"></attr>
+
+    <declare-styleable name="square_imageview_style">
+        <attr name="radius" />
+        <attr name="heightRatio" format="float"/>
+    </declare-styleable>
+
+</resources>

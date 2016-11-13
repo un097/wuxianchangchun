@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <tv.danmaku.ijk.media.widget.VideoView
+        android:id="@+id/sv_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_video_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/short_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vote_desc_alpha_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:text="搞笑"
+                android:textAppearance="@style/textview.color_fff.sp17" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toLeftOf="@+id/tv_play_count"
+                android:layout_marginRight="14dp"
+                android:text="10:00"
+                android:textAppearance="@style/textview.color999.sp14" />
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_time"
+                android:layout_below="@+id/tv_title"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/tv_zan_count"
+                android:drawableLeft="@drawable/ic_list_bofangshu"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="12121"
+                android:textAppearance="@style/textview.color999.sp14" />
+
+            <TextView
+                android:id="@+id/tv_zan_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_time"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_title"
+                android:drawableLeft="@drawable/ic_list_zan"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="432"
+                android:textAppearance="@style/textview.color999.sp14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_paly"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:background="@null"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/circle_loading"
+        android:indeterminateDuration="1200"
+        android:interpolator="@android:interpolator/linear"
+        android:visibility="gone" />
+
+</FrameLayout>

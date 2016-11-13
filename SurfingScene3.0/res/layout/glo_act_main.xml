@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+ 
+        <RelativeLayout
+            android:id="@+id/glo_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/glo_nav_up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/Glo_bg_main"
+                android:paddingBottom="4dip"
+                android:paddingTop="7dip" >
+
+                <TextView
+                    android:id="@+id/glo_title_competitive"
+                    style="@style/gray_title.16sp"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/glo_tab_one" />
+
+                <RelativeLayout
+                    android:id="@+id/glo_title_city_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/glo_title_currentcity"
+                        style="@style/gray_title.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:singleLine="true"
+                        android:text="@string/glo_tab_two" />
+
+                    <ImageView
+                        android:id="@+id/glo_changecity_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/glo_city_btn_selector"
+                        android:contentDescription="@null"
+                        android:visibility="gone" 
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/glo_title_currentcity"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/glo_title_collect"
+                    style="@style/gray_title.16sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/glo_tab_three" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/glo_title_bottomline"
+                android:layout_width="90dip"
+                android:layout_height="2dip"
+                android:layout_below="@+id/glo_nav_up"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/glo_navigation_line"
+                android:contentDescription="@null" />
+
+           <LinearLayout
+                android:id="@+id/glo_city_img_help"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent_black"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:contentDescription="@null"
+                    android:src="@drawable/glo_city_help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+    <cn.ffcs.widget.InterceptViewPager
+        android:id="@+id/glo_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

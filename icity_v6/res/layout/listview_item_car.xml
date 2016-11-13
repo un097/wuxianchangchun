@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="7.5dip"
+    android:paddingTop="7.5dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:duplicateParentState="true"
+        android:background="@drawable/car_list_bg_normal" >
+        <!-- @drawable/car_list_selector -->
+
+        <TextView
+            android:id="@+id/car_no"
+            style="@style/gray_title.16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip" />
+
+        <TextView
+            android:id="@+id/violation_count_tips"
+            style="@style/black_title.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:text="次违章" />
+        
+        <TextView
+            android:id="@+id/violation_count"
+            style="@style/white_title.12sp"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_toLeftOf="@id/violation_count_tips"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/car_list_count_bg"
+            android:gravity="center" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

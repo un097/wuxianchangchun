@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <!-- android:background="@drawable/bg_city" -->
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/setting_search_input"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/contacts_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/share_sms_contact_tips"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/add_contacts"
+                    android:layout_width="60dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/pink_button_selector" >
+                    <!-- android:background="@drawable/btn_blue_selector" -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/share_icon_add_contract" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <EditText
+                        android:id="@+id/content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dip"
+                        android:background="@drawable/setting_search_input"
+                        android:gravity="top"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="5dip"
+                        android:singleLine="false" />
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        layout="@layout/inc_loading_bar"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <Button
+                    android:id="@+id/share_submit"
+                    style="@style/white_title.18sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/pink_button_selector"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/feedback_submit" />
+                <!-- android:background="@drawable/btn_blue_selector" -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+id/share_notice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_hint"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

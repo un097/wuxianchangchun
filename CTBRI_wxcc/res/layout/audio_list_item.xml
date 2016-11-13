@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:self="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_noboder_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp" >
+
+    <com.ctbri.wxcc.widget.SquareImageView
+        android:id="@+id/iv_video_img"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:scaleType="centerCrop"
+        self:radius="@dimen/audio_circle_image_radius" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_video_img"
+        android:maxLines="2"
+        android:textAppearance="@style/textview.color111.sp18" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="14dp"
+        android:textAppearance="@style/textview.color999.sp14" />
+
+    <TextView
+        android:id="@+id/tv_play_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_video_img"
+        android:layout_alignLeft="@+id/tv_time"
+        android:drawableLeft="@drawable/ic_list_bofangshu"
+        android:drawablePadding="4dp"
+        android:textAppearance="@style/textview.color999.sp14" />
+
+    <TextView
+        android:id="@+id/tv_zan_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_play_count"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/tv_comment_count"
+        android:drawableLeft="@drawable/ic_list_zan"
+        android:drawablePadding="4dp"
+        android:textAppearance="@style/textview.color999.sp14" />
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_zan_count"
+        android:layout_alignBottom="@+id/tv_play_count"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/ic_list_pinglun"
+        android:drawablePadding="4dp"
+        android:textAppearance="@style/textview.color999.sp14" />
+
+</RelativeLayout>

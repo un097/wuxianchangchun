@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:self="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <include layout="@layout/media_video_category_header" />
+
+    <com.ctbri.wxcc.widget.MenuGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dp"
+        android:listSelector="@drawable/common_bg_selector"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:transcriptMode="disabled"
+        android:verticalSpacing="4dp"
+        self:is_draw_border="false" >
+    </com.ctbri.wxcc.widget.MenuGridView>
+
+</LinearLayout>

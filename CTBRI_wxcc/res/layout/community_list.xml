@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ctbri.wxcc.widget.LoadMorePTRListView
+        android:id="@+id/pullToRefreshListView1"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:divider="@color/transparent"
+        android:scrollbars="none"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:dividerHeight="6dp"
+        android:headerDividersEnabled="true"
+        style="@style/pull_to_refresh_style"
+        android:layout_height="match_parent" >
+    </com.ctbri.wxcc.widget.LoadMorePTRListView>
+
+</LinearLayout>

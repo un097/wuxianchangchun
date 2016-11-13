@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Glo_bg_odd">#fdfdfd</color>
+    <color name="Glo_bg_even">#f1f1f1</color>
+    <color name="Glo_bg_main">#ececec</color>
+    <color name="Glo_dis_color">#ffbe20</color>
+
+</resources>

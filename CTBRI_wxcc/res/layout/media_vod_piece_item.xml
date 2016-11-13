@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_piece"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/vod_piece_item_selector"
+    android:gravity="center"
+    android:minHeight="40dp"
+    android:minWidth="58dp"
+    android:textAppearance="@style/textview.vod_piece_item" />

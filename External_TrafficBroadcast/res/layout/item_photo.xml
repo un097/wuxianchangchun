@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="100.0dip"
+        android:layout_height="105.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/close" />
+
+</RelativeLayout>

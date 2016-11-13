@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="background_color">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="light_gray_title">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="light_gray_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="light_gray_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="light_gray_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="light_gray_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_b4b4b4">
+        <item name="android:textColor">@color/gray_b4b4b4</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_b4b4b4.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gray_b4b4b4.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_b4b4b4.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gray_b4b4b4.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="gray_b5b5b5">
+        <item name="android:textColor">@color/gray_b5b5b5</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="gray_b5b5b5.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="gray_b5b5b5.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    
+    <style name="gray_b5b5b5.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="gray_b5b5b5.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_b5b5b5.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_b5b5b5.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_title">
+        <item name="android:textColor">@color/gray_3e3e3e</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_title.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="gray_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="gray_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="gray_title.19sp">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="gray_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_title.17sp">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="gray_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gray_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="gray_787878">
+        <item name="android:textColor">@color/dark_gray_787878</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_787878.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="gray_787878.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="gray_787878.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gray_787878.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_787878.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_787878.17sp">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="gray_787878.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_787878.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gray_787878.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="gray_background">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="forget_password">
+        <item name="android:textColor">@color/blue_12b0e4</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="white_title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="white_title.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <style name="white_title.11sp">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="white_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="white_title.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="white_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="white_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="white_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="white_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="white_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="white_title.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="white_title.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="black_title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="black_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="black_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="black_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="black_title.22sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="black_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="light_blue">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="light_blue.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="blue_dark">
+        <item name="android:textColor">#3bbee8</item>
+    </style>
+    
+    <style name="blue_dark.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="blue_dark.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="brown_14sp">
+        <item name="android:textColor">@color/brown_c97f00</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="input">
+        <item name="android:textColor">@color/dark_gray_787878</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/gray_b4b4b4</item>
+    </style>
+
+    <!-- 自定义加载等待进度条 -->
+    <style name="loading_bar_style">
+        <item name="android:textColor">@color/loading_bar_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 屏蔽系统activity动画 -->
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_window_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_window_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_window_close_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_window_close_out</item>
+    </style>
+    
+    <style name="icity_translucent_no_animation_theme" parent="android:Theme.Translucent">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- <style name="upAndDownTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/upAndDownAnim</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="upAndDownAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/bottom_push_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/nothing</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nothing</item>
+        <item name="android:activityCloseExitAnimation">@anim/bottom_push_up_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/bottom_push_up_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/nothing</item>
+        <item name="android:taskCloseEnterAnimation">@anim/nothing</item>
+        <item name="android:taskCloseExitAnimation">@anim/bottom_push_up_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/bottom_push_up_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/nothing</item>
+        <item name="android:taskToBackEnterAnimation">@anim/nothing</item>
+        <item name="android:taskToBackExitAnimation">@anim/bottom_push_up_out</item>
+    </style> -->
+
+    <style name="dialog_basic" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+
+    <!-- popWin进出动画 -->
+    <style name="popwinAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_big_by_top_to_down</item>
+        <item name="android:windowExitAnimation">@anim/scale_small_by_top_to_up</item>
+    </style>
+    
+    <!-- 显示大图片 -->
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimBigPic</item>
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item><!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">false</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+    </style>
+    
+    <style name="AnimBigPic" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,8 @@
+﻿<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ffcs.wisdom.city"
+    android:versionCode="704"
+    android:versionName="7.0.4" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+</manifest>

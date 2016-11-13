@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+    <TextView
+        android:id="@+id/download_group_name"
+        style="@style/gray_title.16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="6dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="6dip" />
+
+</RelativeLayout>

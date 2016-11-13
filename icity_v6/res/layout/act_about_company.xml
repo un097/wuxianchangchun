@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/white_title.20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:text="智慧城市新版客户端" />
+
+    <TextView
+        style="@style/white_title.14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:text="开发人员" />
+
+    <cn.ffcs.wisdom.city.setting.about.HotWordsFlow
+        android:id="@+id/local_search_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/umeng"
+                style="@style/white_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tel"
+                style="@style/white_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/white_title.18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_blue_selector"
+            android:text="返回" />
+    </LinearLayout>
+
+</LinearLayout>

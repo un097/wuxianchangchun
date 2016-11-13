@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_vote_detail_desc" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_info_ratio_divider_height"
+        android:layout_marginLeft="@dimen/vote_detail_text_content_margin_left"
+        android:layout_marginRight="@dimen/vote_detail_text_content_margin_left"
+        android:background="@color/vote_detail_content_with_bg_divder" />
+
+    <TextView
+        android:id="@+id/tv_vote_info"
+        style="@style/textview.voteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/vote_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vote_detail_text_content_margin_left"
+        android:layout_marginRight="@dimen/vote_detail_text_content_margin_left"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_voting"
+        style="@style/button.voting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vote_detail_text_content_margin_left"
+        android:layout_marginRight="@dimen/vote_detail_text_content_margin_left"
+        android:layout_marginTop="@dimen/vote_detail_voting_button_margin_top_16dp"
+        android:text="@string/voting"
+        android:visibility="gone" />
+
+    <include android:id="@+id/ll_comment_line" layout="@layout/common_comment_line" />
+
+</LinearLayout>

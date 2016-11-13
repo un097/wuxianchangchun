@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/glo_tab_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tab_1"
+                style="@style/Glo_Gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:text="@string/glo_all" />
+
+            <Button
+                android:id="@+id/tab_2"
+                style="@style/Glo_Gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:text="@string/glo_nearby" />
+            
+            <Button
+                android:id="@+id/tab_3"
+                style="@style/Glo_Gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:text="@string/glo_often_blocked" />
+
+            <Button
+                android:id="@+id/tab_4"
+                style="@style/Glo_Gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:text="@string/glo_collect" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout"
+            android:background="@color/background"
+            android:orientation="vertical" >
+        </FrameLayout>
+
+        <include layout="@layout/top_shadow" />
+        
+        <ImageView 
+            android:id="@+id/collect_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/glo_collect_yes"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

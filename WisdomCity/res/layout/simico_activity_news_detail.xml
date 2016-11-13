@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <cn.ffcs.wisdom.city.simico.activity.detail.view.TitleBar 
+        android:id="@+id/newsdetail_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/action_bar_bg_color"></cn.ffcs.wisdom.city.simico.activity.detail.view.TitleBar>
+    <!-- android:background="@drawable/bg_actionbar" -->
+
+    <FrameLayout
+        android:id="@+id/webviewframe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+   
+        <!-- 
+        <cn.ffcs.wisdom.city.web.view.IcityWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+         -->
+
+        <cn.ffcs.wisdom.city.simico.ui.grid.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/news_detail_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/simico_footer_bg"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/simico_ic_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/simico_ts_count_bubble"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/simico_ic_collection" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/simico_ic_share" />
+    </LinearLayout>
+
+</LinearLayout>

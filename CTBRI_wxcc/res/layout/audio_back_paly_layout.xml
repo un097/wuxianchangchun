@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/travel_menu_item_width"
+        android:layout_height="@dimen/travel_menu_item_width"
+        android:src="@drawable/common_icon_wusousuojieguo"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_centerHorizontal="true"
+		android:layout_toRightOf="@id/iv_icon"
+		android:orientation="vertical">
+	    
+		<TextView
+		    android:id="@+id/tv_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="14sp"
+		    android:text="长春新闻广播 | 8888频道"
+		    android:singleLine="true"
+		    android:ellipsize="end"
+		    android:maxWidth="200dp"
+		    />
+
+		<RelativeLayout
+		    android:layout_width="200dp"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	>
+		    <ImageView
+		        android:id="@+id/iv_left"
+		        android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:src="@drawable/cyberplayer_retreat_media_disable"
+		        android:layout_alignParentLeft="true"
+		        />
+		    
+		    <ImageView 
+		        android:id="@+id/iv_pause"
+		        android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:layout_toRightOf="@id/iv_left"
+		        android:layout_marginLeft="40dp"/>
+		        <!-- android:src="@drawable/cyberplayer_stop_media_disable" -->
+		    
+		    <ImageView 
+		        android:id="@+id/iv_right"
+		        android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:src="@drawable/cyberplayer_next_play_disable"
+		        android:layout_toRightOf="@id/iv_pause"
+		        android:layout_marginLeft="40dp"
+		        />
+		</RelativeLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120.0dip"
+    android:layout_height="120.0dip" 
+    android:padding="5dip">
+
+    <ImageButton
+        android:id="@+id/ib_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:button="@drawable/traffic_selected"  />
+
+</RelativeLayout>

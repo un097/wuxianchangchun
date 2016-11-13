@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_bg"
+    android:padding="6dp" >
+
+    <include
+        android:id="@+id/category_info"
+        layout="@layout/common_category_info" />
+
+    <com.ctbri.wxcc.widget.DetailsWebView
+        android:id="@+id/wv_community_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/category_info"/>
+
+
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/common_comment_line" android:layout_below="@+id/wv_community_details" />
+</RelativeLayout>

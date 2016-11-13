@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apk_list_top_layout"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_list_down_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip" >
+
+        <ImageView
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_blue_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/apk_icon"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/apk_name"
+            style="@style/gray_title.16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+
+        <ProgressBar
+            android:id="@+id/apk_progress"
+            style="@style/progresssBar_download_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/apk_size"
+            style="@style/gray_b4b4b4.12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 一开始是下载中，按钮应显示为暂停 -->
+
+    <Button
+        android:id="@+id/download_pause_btn"
+        style="@style/white_title.14sp"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/btn_yellow_selector"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/download_suspend" />
+
+    <Button
+        android:id="@+id/download_start_btn"
+        style="@style/white_title.14sp"
+        android:layout_width="80dip"
+        android:layout_height="25dip"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/btn_blue_selector"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/download_continue"
+        android:visibility="gone" />
+
+</LinearLayout>

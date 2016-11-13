@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="2.5dip"
+    android:paddingBottom="2.5dip" >
+    
+    <TextView 
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:text="156****0984:"
+        android:textSize="16.0dip"
+        android:textColor="@color/text_color"/>
+    
+    <TextView 
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="是啊，一路上把我堵得半死，进退两难啊！"
+        android:textSize="15.0dip"
+        android:textColor="@color/text_color"/>
+    
+</LinearLayout>

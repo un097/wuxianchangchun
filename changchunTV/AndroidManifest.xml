@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.ffcs.changchuntv"
+    android:versionCode="210"
+    android:versionName="2.1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        tools:overrideLibrary="com.ctbri.wxcc" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="cn.ffcs.wisdom.city.simico.base.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 友盟SDK -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/umeng_key" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
+
+        <!-- 189bataSDK -->
+        <meta-data
+            android:name="APP_KEY"
+            android:value="@string/v189data_appkey" />
+        <meta-data
+            android:name="APP_CHANNEL_ID"
+            android:value="${CHANNEL_VALUE}" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XIG5ilLShMFnByQBlnnBUlpu" />
+        <!-- 百度导航 每个人开发工具的debug.keystore不一样，自己要用时到http://lbsyun.baidu.com/apiconsole/key申请测试 -->
+
+        <activity
+            android:name="cn.ffcs.wisdom.city.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.simico.kit.activity.DownloadAlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Download.Dialog" />
+        <activity
+            android:name="cn.ffcs.wisdom.city.NewbieGuidActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.home.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.home.HomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.explore.ExploreActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.explore.ExploreActivity1"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.personal.PersonalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.simico.activity.detail.NewsDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:process=":webview"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewsdetailTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="ffcs.wisdomcity"
+                    android:path="/newsdetail"
+                    android:scheme="icity" />
+            </intent-filter>
+        </activity>
+        <!-- android:theme="@style/Theme.City" -->
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.news.NewsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.shake.SingMainActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 下载管理 -->
+        <activity
+            android:name="cn.ffcs.wisdom.city.download.ApkListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.news.HighWay_NewsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- android:theme="@style/Theme.City" -->
+        <activity
+            android:name="cn.ffcs.wisdom.city.simico.activity.subscribe.SubscribeDragActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- android:theme="@style/Theme.City" -->
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DropDownListView_NoScrollbar"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.personcenter.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DropDownListView_NoScrollbar"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.login.RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.login.BindingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.personcenter.ForgetPwdActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.personcenter.PersonInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.personal.PersonalInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.personal.ChangeinvitationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.personal.ChangePersonalInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.personcenter.ChangeUsernameActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.personcenter.ChangePasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.push.NotificationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.push.NotificationDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.simico.activity.collection.CollectionActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- android:theme="@style/Theme.City" -->
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.SettingPageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.feedback.FeedBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.feedback.FeedBackReplyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.share.SMSShareActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.share.SelectContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="cn.ffcs.changchuntv.activity.personal.CodeSharelActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.about.FFAboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.about.ICityAboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 3G流量设置 -->
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.Flow3gSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!-- 网络状态变化监听器 -->
+        <service android:name="cn.ffcs.wisdom.city.setting.service.ListenNetStateService"></service>
+
+        <activity
+            android:name="cn.ffcs.wisdom.city.web.BrowserActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="cn.ffcs.surfingscene.road.RoadMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlayerTheme"></activity>
+        <!-- android:theme="@style/icity_translucent_no_animation_theme" -->
+        <activity
+            android:name="cn.ffcs.surfingscene.road.OftenBlockedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ffcs.surfingscene.road.RoadMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/icity_translucent_no_animation_theme" />
+        <activity
+            android:name="cn.ffcs.surfingscene.road.MapGroupListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ffcs.surfingscene.road.RoadCollectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ffcs.surfingscene.road.SearchResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="cn.ffcs.surfingscene.road.RoadPlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlayerTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="cn.ffcs.wisdom.city.traffic.violations.TrafficViolationsListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.traffic.violations.AddCarActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.wisdom.city.traffic.violations.TrafficViolationsInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficBroadcastActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.AllTrafficationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.MyCameraActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.MyPhotoListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficLocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficPhotoAlumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficPhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficPublishActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.TrafficShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.CouponMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.CouponDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.CouponObtainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.CouponObtainResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.MoreAddressActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.community.CommunityActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.community.CommunityDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.vote.VoteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.vote.VoteDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.vote.VoteSuggestActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.hotline.HotLineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.travel.TravelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.travel.TravelDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.travel.TravelListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.travel.TravelLocateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.coupon.MyCouponActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.community.CommunityMyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.community.CommunityMyDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wookii.sendpics.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.wookii.sendpics.LocalPicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.wookii.sendpics.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.widget.ImageNavigatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.widget.LocateOldVersion"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.widget.LocateNavVersion"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.widget.LocateRouteVersion"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <!-- 视频播放 入口 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.MediaMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <!-- 视频播放列表 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.MediaPlayListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <!-- 视频播放器 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.MediaPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"
+            android:windowSoftInputMode="stateUnchanged|adjustResize"></activity>
+        <!-- 视频全部类别 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.VideoCategoryActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 直播或点播视频列表 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.VideoListActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 短视频列表 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.ShortVideoActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <activity
+            android:name="com.ctbri.comm.widget.PublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+
+        <!-- 短视频 我的收藏 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.MyFavoriteVideo"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 视频 搜索模块 -->
+        <activity
+            android:name="com.ctbri.wxcc.media.MediaSearchActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustUnspecified"></activity>
+        <!-- 音频 首页 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioMainActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 音频全部分类 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioCategoryActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <!-- 音频直播详情 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioLiveActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/noTitleBar"></activity>
+        <!-- 音频点播列表 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioListActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 音频收藏列表 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioFavoriteActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 音频搜索 -->
+        <activity
+            android:name="com.ctbri.wxcc.audio.AudioSearchActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustUnspecified"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.media.MyFavoriteActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctbri.wxcc.shake.ShakeMainActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103590315" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度导航界面 -->
+        <activity
+            android:name="cn.ffcs.external.trafficbroadcast.activity.BNavigatorActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+
+        <!-- 百度导航服务 -->
+        <service
+            android:name="com.baidu.navi.location.f"
+            android:enabled="true" />
+
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 友盟社会化组件 -->
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <!-- 查看评论页 -->
+        <activity
+            android:name="com.umeng.socialize.view.CommentActivity"
+            android:configChanges="orientation|keyboard"
+            android:theme="@style/Theme.UMDefault"></activity>
+        <!-- 详细评论页 -->
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetail"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault"></activity>
+
+        <!-- 易信 -->
+        <receiver
+            android:name="cn.ffcs.external.share.yxapi.AppRegister"
+            android:permission="im.yixin.sdk.permission.YIXIN_SDK_MESSAGE">
+            <intent-filter>
+                <action android:name="im.yixin.sdk.api.Intent.ACTION_REFRESH_YXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 二维码activity -->
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <!-- 后台播放服务开始 -->
+        <service
+            android:name="com.ctbri.wxcc.backplay.server.BackgroundPlayService"
+            android:enabled="true" />
+        <!-- 后台播放服务结束 -->
+
+
+        <!-- 消息中心推送配置开始 -->
+        <!-- 1.消息中心后台服务 -->
+        <!-- <service -->
+        <!-- android:name="com.ffcs.android.mc.MCCoreService" -->
+        <!-- android:process="cn.ffcs.changchuntv.CoreService.remote" > -->
+
+
+        <!-- android:process值用  包名+ .CoreService.remote -相应替换 -->
+
+
+        <!-- 可以配置消息中心现网环境、beta环境、开发测试环境目录服务器端口地址，默认不配置使用现网环境(dir.mimsc.com) -->
+        <!-- 正式环境地址：dir.mimsc.com -->
+        <!-- 测试环境地址：beta.mimsc.com -->
+        <!-- <meta-data -->
+        <!-- android:name="DIRECTORY_SERVER" -->
+        <!-- android:value="dir.mimsc.com" > -->
+        <!-- </meta-data> -->
+
+
+        <!-- <intent-filter> -->
+
+
+        <!-- 服务启动的权限 -->
+        <!-- <action android:name="com.ffcs.android.mc.service.start" /> -->
+        <!-- 服务停止的权限 -->
+        <!-- <action android:name="com.ffcs.android.mc.service.stop" /> -->
+
+
+        <!-- <category android:name="com.ffcs.android.mc" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- 2.消息中心广播接收器 -->
+        <!-- <receiver android:name="com.ffcs.android.mc.MCBroadcastReceiver" > -->
+        <!-- <intent-filter android:priority="10000" > -->
+
+
+        <!-- 消息到达时调用 -->
+        <!-- <action android:name="com.ffcs.android.mc.RECEIVE" /> -->
+        <!-- 应用启动后调用 -->
+        <!-- <action android:name="com.ffcs.android.mc.APP_START" /> -->
+        <!-- 网络状态改变时调用 -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- 短信回执时调用 -->
+        <!-- <action android:name="com.ffcs.android.mc.SENT_SMS_ACTION" /> -->
+        <!-- <action android:name="com.ffcs.android.mc.UP_DATE" /> -->
+        <!-- 应用升级 -->
+        <!-- <action android:name="com.ffcs.android.mc.SDK_UPDATE" /> -->
+        <!-- <action android:name="com.ffcs.android.mc.LoadSDK" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter android:priority="2147483647" > -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- 3.消息接收服务 -->
+        <!-- <service android:name="cn.ffcs.wisdom.city.push.MCIntentService" > -->
+        <!-- <intent-filter> -->
+
+
+        <!-- 第三方应用启动的权限 -->
+        <!-- <action android:name="com.ffcs.android.mc.service.APP_START" /> -->
+        <!-- 消息接收的权限 -->
+        <!-- <action android:name="com.ffcs.android.mc.RECEIVE" /> -->
+        <!-- 网络状态改变时启动的权限 -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- 短信回执时调用 -->
+        <!-- <action android:name="com.ffcs.android.mc.SENT_SMS_ACTION" /> -->
+        <!-- 通知栏消息触发 -->
+        <!-- <action android:name="com.ffcs.android.mc.service.NOTIFICATION_CLICK" /> -->
+        <!-- 应用升级 -->
+        <!-- <action android:name="com.ffcs.android.mc.SDK_UPDATE" /> -->
+        <!-- 重载SDK -->
+        <!-- <action android:name="com.ffcs.android.mc.LoadSDK" /> -->
+        <!-- 您应用的包名 -->
+        <!-- <category android:name="cn.ffcs.changchuntv" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- 消息中心推送配置结束 -->
+
+
+        <!-- 开机启动服务 -->
+        <!-- <receiver android:name="cn.ffcs.wisdom.city.push.BootCompleteReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- 外层消息通知接收器 ，负责接收消息并下发 -->
+        <!--
+        <receiver android:name="cn.ffcs.wisdom.notify.NotificationReceiver" >
+            <intent-filter>
+                <action android:name="cn.ffcs.wisdom.notify.NotificationReceiver" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- 渠道上报广播 add by caijj 20130717 -->
+        <receiver android:name="cn.ffcs.wisdom.city.report.ReportReceiver">
+            <intent-filter>
+                <action android:name="cn.ffcs.wisdom.city.report" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 189data 流量统计 add by caijj 20130802 -->
+        <receiver android:name="cn.ffcs.android.usragent.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 通知栏点击 add by zhangwsh 20140320 -->
+        <!-- <receiver android:name="cn.ffcs.wisdom.city.push.NotifyClickReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.ffcs.wisdom.city.notify" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- 城市列表内容提供器 -->
+       <!-- <provider
+            android:name="cn.ffcs.wisdom.city.sqlite.contentprovider.CityContentProvider"
+            android:authorities="@string/content_provider_authorities"
+            android:exported="false" />-->
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="@string/baidu_push_apikey" />
+
+        <!-- Required -->
+        <!-- <service -->
+        <!-- android:name="cn.jpush.android.service.PushService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.intent.REGISTER" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.REPORT" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.PushService" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.PUSH_TIME" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- Required SDK 核心功能 -->
+        <!-- since 1.8.0 -->
+        <!-- <service -->
+        <!-- android:name="cn.jpush.android.service.DaemonService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter > -->
+        <!-- <action android:name="cn.jpush.android.intent.DaemonService" /> -->
+        <!-- <category android:name="cn.ffcs.changchuntv"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- Required -->
+        <!-- <receiver -->
+        <!-- android:name="cn.jpush.android.service.PushReceiver" -->
+        <!-- android:enabled="true" > -->
+        <!-- <intent-filter android:priority="1000"> -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> -->
+        <!-- <category android:name="cn.ffcs.changchuntv"/> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.USER_PRESENT" /> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- Optional -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_ADDED" /> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+        <!-- <data android:scheme="package" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- Required SDK核心功能 -->
+        <!-- <activity -->
+        <!-- android:name="cn.jpush.android.ui.PushActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.ui.PushActivity" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="cn.ffcs.changchuntv" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- Required SDK核心功能 -->
+        <!-- <service -->
+        <!-- android:name="cn.jpush.android.service.DownloadService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" > -->
+        <!-- </service> -->
+        <!-- Required SDK核心功能 -->
+        <!-- <receiver android:name="cn.jpush.android.service.AlarmReceiver" /> -->
+
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <!-- <receiver -->
+        <!-- android:name="cn.ffcs.changchuntv.push.MyReceiver" -->
+        <!-- android:enabled="true"> -->
+        <!-- <intent-filter> -->
+        <!-- Required 用户注册SDK的intent -->
+        <!-- <action android:name="cn.jpush.android.intent.REGISTRATION" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.UNREGISTRATION" /> -->
+        <!-- Required 用户接收SDK消息的intent -->
+        <!-- <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> -->
+        <!-- Required 用户接收SDK通知栏信息的intent -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> -->
+        <!-- Required 用户打开自定义通知栏的intent -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> -->
+        <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+        <!-- <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> -->
+        <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+        <!-- <action android:name="cn.jpush.android.intent.CONNECTION" /> -->
+        <!-- <category android:name="cn.ffcs.changchuntv" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+
+
+        <!-- <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/> -->
+        <!-- Required. AppKey copied from Portal -->
+        <!-- <meta-data android:name="JPUSH_APPKEY" android:value="ea8d61a9cbb9df5f63cf26af"/> -->
+
+
+        <!--信鸽推送开始-->
+        <!--测试-->
+        <!--<meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100186822" />
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A5U4YM646UAM" />-->
+
+        <!--正式-->
+     <meta-data
+             android:name="XG_V2_ACCESS_ID"
+             android:value="2100186823" />
+         <meta-data
+             android:name="XG_V2_ACCESS_KEY"
+             android:value="AC667XY28NRY" />
+
+
+        <activity
+            android:name="cn.ffcs.wisdom.city.setting.PushSettingActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!-- 【可选】信鸽拉起其他APP应用，若应用在本地找不到可以自动下载 -->
+        <service
+            android:name="com.tencent.android.tpush.XGDownloadService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- 信鸽推送的receiver -->
+        <receiver android:name="cn.ffcs.wisdom.city.xg.XgPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!--监听注册、反注册、设置/删除标签、通知被点击等处理结果-->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!--
+【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service
+                -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+
+        </receiver>
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!--
+【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance
+
+，请根据通知的异常自查列表第8点处理
+        -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+                <!-- <action android:name="com.ct.ah.alllife.PUSH_ACTION" /> -->
+                <action android:name="cn.ffcs.changchuntv.PUSH_ACTION" />
+                <!-- 应用包名.PUSH_ACTION -->
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+    <!-- 联网的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取手机信息的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 发短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 阅读短信的权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写短信的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 检查网络的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检查wifi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读日志的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 手机震动的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 杀死后台进程权限 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- 百度LBS定位、消息推送 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 天翼景象 权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 消息中心推送个别权限 -->
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 系统对话框属性 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 消息接收权限，包名与注册时提供的包名一致 -->
+    <!-- 包名+ .mc.permission.RECIVER -相应替换 -->
+    <!-- <permission -->
+    <!-- android:name="cn.ffcs.changchuntv.mc.permission.RECIVER" -->
+    <!-- android:protectionLevel="normal" /> -->
+
+
+    <!-- 包名+ .mc.permission.RECIVER -相应替换 -->
+    <!-- <uses-permission android:name="cn.ffcs.changchuntv.mc.permission.RECIVER" /> -->
+
+<!--    <permission android:name="com.ffcs.android.mc.permission.UPDATE" />
+
+    <uses-permission android:name="com.ffcs.android.mc.permission.UPDATE" />-->
+
+    <!-- 百度云推送 权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 百度地图所需权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- tts -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 路況爆料需要拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Push service 运行需要的权限 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />-->
+
+   <!-- 信鸽SDK所需权限-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+
+</manifest>

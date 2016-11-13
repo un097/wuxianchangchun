@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/simico_titlebar_home" />
+    <!-- android:layout_height="@dimen/abs__action_bar_default_height" -->
+    
+    <com.viewpagerindicator.TabPageIndicator 
+        android:id="@+id/tab_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:visibility="gone"></com.viewpagerindicator.TabPageIndicator>
+
+    <!-- 订阅添加按钮 -->
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_category_height"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/icon_category"
+            android:layout_width="@dimen/top_category_height"
+            android:layout_height="@dimen/top_category_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/simico_channel_glide_day_bg" />
+
+        <View
+            android:id="@+id/new_category_tip"
+            android:layout_width="4.0dip"
+            android:layout_height="4.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/simico_new_category_tip"
+            android:visibility="invisible" />
+
+        <cn.ffcs.wisdom.city.simico.activity.home.view.CategoryScrollLayout
+            android:id="@+id/topcategoryscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_category_height"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/icon_category" />
+
+        <View
+            style="@style/horizontal_split"
+            android:layout_alignBottom="@id/topcategoryscroll" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

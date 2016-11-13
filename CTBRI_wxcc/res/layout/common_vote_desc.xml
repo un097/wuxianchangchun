@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector"
+    android:padding="1px" >
+
+    <ImageView
+        android:id="@+id/iv_vote_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_image_bg_height"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_vote_title"
+        style="@style/textview.voteDesc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_desc_title_height"
+        android:layout_alignBottom="@+id/iv_vote_bg"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_desc_title_height"
+        android:layout_below="@+id/iv_vote_bg"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/vote_desc_title_padding_left_12dp"
+        android:paddingRight="@dimen/vote_desc_title_padding_left_12dp" >
+
+        <TextView
+            android:id="@+id/tv_chooice_mode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            style="@style/textview.voteStatus.list_bottomInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_vote_number"
+            style="@style/textview.voteStatus.list_bottomInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_state"
+        style="@style/textview.voteStatus"
+        android:layout_width="@dimen/vote_status_textview_width"
+        android:layout_height="@dimen/vote_status_textview_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/iv_vote_bg"
+        android:layout_marginTop="@dimen/vote_status_textview_margin_top"
+        android:background="@color/vote_status_starting"
+        android:gravity="center" />
+
+</RelativeLayout>

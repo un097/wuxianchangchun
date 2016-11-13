@@ -1,0 +1,361 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <!-- android:background="@drawable/bg_city" -->
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:layout_marginTop="8dip"
+            >
+            
+            <!-- 推送设置 -->
+            <RelativeLayout
+                android:id="@+id/push_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_up_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip"
+               >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_push" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            <!-- 下载管理 -->
+
+            <RelativeLayout
+                android:id="@+id/download_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_download" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            <!-- 意见反馈 -->
+
+            <RelativeLayout
+                android:id="@+id/feedback_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/setting_list_up_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_feedback" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            <!-- 分享 -->
+
+            <RelativeLayout
+                android:id="@+id/share_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_share" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            <!-- 消息提醒 -->
+
+            <RelativeLayout
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:id="@+id/notice_text"
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/notification_title" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+
+                <TextView
+                    android:id="@+id/new_msg_count"
+                    style="@style/white_title.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/notice_text"
+                    android:background="@drawable/new_msg_count"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <!-- 微博账号绑定 -->
+
+            <RelativeLayout
+                android:id="@+id/sina_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/setting_list_up_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:id="@+id/bind_title"
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_bing_umeng_account" />
+
+                <ImageView
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            
+            <!-- FAQ -->
+            <RelativeLayout
+                android:id="@+id/faq_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_faq" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            
+            <!-- 3G流量提醒 -->
+
+            <RelativeLayout
+                android:id="@+id/flow3g_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_3g" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            
+            <!-- 清除缓存 -->
+
+            <RelativeLayout
+                android:id="@+id/cache_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_clear_cache" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            
+            <!-- 关于 -->
+
+            <RelativeLayout
+                android:id="@+id/about_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/setting_list_down_selector"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/setting_about" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:src="@drawable/simico_user_collect" />
+                <!-- android:src="@drawable/btn_setting_enter_selector" -->
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

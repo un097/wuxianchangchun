@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:background="@drawable/bobao_right">
+
+    <LinearLayout
+        android:id="@+id/ll_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="语音播报"
+            android:textColor="@color/title_color"/>
+        
+        <ImageView 
+            android:id="@+id/iv_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/open"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_road"
+        android:layout_below="@+id/ll_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="定制道路"
+            android:textColor="@color/title_color"/>
+        
+        <ImageView 
+            android:id="@+id/iv_road"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/open"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_near"
+        android:layout_below="@+id/ll_road"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="附近道路"
+            android:textColor="@color/title_color"/>
+        
+        <ImageView 
+            android:id="@+id/iv_near"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/open"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

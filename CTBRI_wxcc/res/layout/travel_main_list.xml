@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/vs_actionbar"
+        android:layout="@layout/action_bar" />
+
+    <com.ctbri.wxcc.widget.LoadMorePTRListView
+        android:id="@+id/lv_travel_raiders"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0px"
+       	android:listSelector="@color/transparent"
+       	style="@style/pull_to_refresh_style"
+        android:scrollbars="none" >
+    </com.ctbri.wxcc.widget.LoadMorePTRListView>
+
+</LinearLayout>

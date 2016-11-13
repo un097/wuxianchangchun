@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/web_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/web_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/web_inter_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/widget_web_tip_layout" />
+
+                <cn.ffcs.widget.UpToDownSlidingView
+                    android:id="@+id/up_to_down_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <cn.ffcs.wisdom.city.web.view.IcityWebView
+                        android:id="@+id/browser_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:fadeScrollbars="true"
+                        android:scrollbars="none" />
+                </cn.ffcs.widget.UpToDownSlidingView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/small_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/web_view_small_ico"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

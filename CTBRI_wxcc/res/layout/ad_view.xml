@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ad_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="180.0dp" />
+
+	<TextView android:id="@+id/ad_view_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="34.0dp"
+	    android:textSize="16.0dp"
+	    android:paddingLeft="12.0dp"
+	    android:textColor="#ffffff"
+	    android:background="#66000000"
+	    android:gravity="center_vertical"
+	    android:layout_alignBottom="@+id/ad_view_pager"/>
+	<com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/ad_view_indcator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_view_title"
+        android:layout_marginBottom="6.0dp"
+        android:layout_marginRight="12.0dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20.0dp"
+        app:w_fillColor="#ffffff"
+        app:w_pageColor="#99ffffff"
+        app:w_radius="3.0dp"
+        app:w_snap="true"
+        app:w_strokeWidth="1.0dp"
+        app:w_strokeColor="#ff000000"
+         />
+</RelativeLayout>

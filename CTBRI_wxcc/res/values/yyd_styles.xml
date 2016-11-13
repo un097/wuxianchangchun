@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"   >
+
+    <style name="noTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="vpiIconPageIndicatorStyle">@style/icon_indicator_style</item>
+        <item name="vpiTabPageIndicatorStyle">@style/community_column_style</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/image_looper_circle_style</item>
+    </style>
+    <!-- 删除动画效果  <item name="android:windowAnimationStyle">@style/AnimActivity</item> -->
+
+    <style name="tabbar">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/community_column_style</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/image_looper_circle_style</item>
+    </style>
+
+    <style name="icon_indicator_style" parent="Widget.IconPageIndicator">
+        <item name="android:background">@drawable/tabpager_pink_indicator_selector</item>
+        <item name="android:maxHeight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="self_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- dialog 背景 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="self_dialog.loading">
+
+        <!-- 背景不模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 窗口不半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <!-- 定义全局的字体样式 -->
+    <style name="customer_textAppearan" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#999</item>
+    </style>
+
+    <!-- Activity 打开与退出动画 -->
+    <style name="AnimActivity" parent="@android:style/Animation.Activity">
+
+        <!-- 新打开的 activity 进入动画 , 动画作用在 新打开的 activity -->
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <!-- 当打开一个新的 activity 时，当前的 activity 退出动画。作用在当前activity -->
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <!-- 在当前 activity 退出时，下一个activity 从栈中出现时。作用在下一个activity 。 -->
+        <item name="android:activityCloseEnterAnimation">@anim/left_in</item>
+        <!-- 在当前 activity 退出时，作用在当前activity -->
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="image_looper_circle_style">
+        <item name="w_radius">4dp</item>
+        <item name="w_fillColor">#FFFFFFFF</item>
+        <item name="w_pageColor">#64FFFFFF</item>
+        <item name="w_strokeColor">#FF00FF00</item>
+        <item name="w_strokeWidth">0dp</item>
+        <item name="w_snap">false</item>
+    </style>
+
+    <style name="nickName_style" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/vote_detail_content_text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/community_list_item_username_textsize</item>
+    </style>
+
+    <style name="community_column_style" parent="Widget.TabPageIndicator">
+        <item name="android:textColor">@color/community_tabindicator_text_color_selector</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/tabpager_pink_indicator_selector</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:maxHeight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- 所有 textview 基本样式 -->
+    <style name="textview" parent="@android:style/Widget.TextView"></style>
+    <!-- 所有 button 基本样式 -->
+    <style name="button" parent="@android:style/Widget.Button"></style>
+    <!-- 所有 edittext 基本样式 -->
+    <style name="edittext" parent="@android:style/Widget.EditText"></style>
+
+    <style name="textview.button">
+        <item name="android:background">@drawable/community_zan_selector</item>
+        <item name="android:paddingLeft">@dimen/community_zan_button_padding_left</item>
+        <item name="android:paddingRight">@dimen/community_zan_button_padding_left</item>
+        <item name="android:paddingTop">@dimen/community_zan_button_padding_top</item>
+        <item name="android:paddingBottom">@dimen/community_zan_button_padding_top</item>
+    </style>
+
+    <style name="textview.voteDesc">
+        <item name="android:background">@color/vote_desc_alpha_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/vote_desc_title_text_size_16sp</item>
+        <item name="android:paddingLeft">@dimen/vote_desc_title_padding_left_12dp</item>
+        <item name="android:paddingRight">@dimen/vote_desc_title_padding_left_12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="textview.voteStatus">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/vote_status_text_size</item>
+    </style>
+
+    <style name="textview.voteStatus.list_bottomInfo">
+        <item name="android:textColor">@color/vote_bottom_info_text_color</item>
+    </style>
+
+    <style name="textview.voteStatus.bottomInfo">
+        <item name="android:textColor">@color/vote_bottom_info_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 民意调查  投票类型 -->
+    <style name="textview.voteChooiceMode">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginRight">@dimen/vote_detail_chooice_mode_margin_left_12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="textview.voteChooiceMode.single">
+        <item name="android:background">@drawable/vote_chooie_mode_single_bg</item>
+        <item name="android:textColor">@color/vote_chooice_mode_single</item>
+    </style>
+
+    <style name="textview.voteChooiceMode.multiple">
+        <item name="android:background">@drawable/vote_chooie_mode_multiple_bg</item>
+        <item name="android:textColor">@color/vote_chooice_mode_multiple</item>
+    </style>
+    <!-- 民意调查 投票类型 结束 -->
+
+
+    <!-- 民意调查 详细描述 -->
+    <style name="textview.voteDetail">
+        <item name="android:layout_marginLeft">@dimen/vote_detail_text_content_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/vote_detail_text_content_margin_left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:lineSpacingExtra">@dimen/text_space</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/_8dp</item>
+    </style>
+
+    <style name="textview.voteItemDesc">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+    <!-- 民意调查 投票百分比 -->
+    <style name="textview.ratioDesc">
+        <item name="android:textColor">@color/vote_bottom_info_text_color</item>
+        <item name="android:textSize">@dimen/vote_detail_chooice_mode_text_size</item>
+    </style>
+
+    <!-- 民意调查 投票按钮 -->
+    <style name="button.voting">
+        <item name="android:background">@drawable/voting_button_selector</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- coupon 投票按钮 -->
+    <style name="button.coupon">
+        <item name="android:background">@drawable/voting_button_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 视频 我的收藏  删除按钮 -->
+    <style name="button.coupon.video_favorite_del_btn">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="button.coupon.video_favorite_all">
+        <item name="android:background">@drawable/white_button_media_favorite_selector</item>
+        <item name="android:textColor">#666</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- 白底样式 -->
+    <style name="button.coupon.coupon_white_bg">
+        <item name="android:background">@drawable/white_button_selector</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <!-- 民意调查 调查意见 输入框 -->
+    <style name="edittext.suggest">
+        <item name="android:textColor">#333</item>
+        <item name="android:textColorHint">#bbb</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="textview.color666">
+        <item name="android:textColor">@color/comment_color_666</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+    </style>
+
+    <style name="textview.color999">
+        <item name="android:textColor">@color/comment_color_999</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+    </style>
+
+    <style name="textview.color999.sp12">
+        <item name="android:textColor">@color/comment_color_999</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textview.color999.sp11">
+        <item name="android:textColor">@color/comment_color_999</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="textview.colorpink">
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="textview.colorpink.sp16">
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textview.zan">
+        <item name="android:textColor">@color/community_praise_text_color_selector</item>
+    </style>
+    <!-- 评论 举报 样式 -->
+    <style name="textview.report">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/comment_color_999</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+    </style>
+
+    <style name="textview.commentDetails">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/vote_detail_content_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/text_space</item>
+    </style>
+
+    <style name="textview.timeTips" parent="@style/textview.color999">
+        <item name="android:textSize">@dimen/vote_detail_chooice_mode_text_size</item>
+    </style>
+
+    <style name="textview.color111">
+        <item name="android:textColor">@color/color_111</item>
+    </style>
+
+    <!-- 爆料 类别样式 -->
+    <style name="textview.communityCategory">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/community_zan_selected</item>
+    </style>
+    <!-- 我的爆料样式 -->
+    <style name="textview.communityCategory.myCommunity">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/vote_detail_content_text_color</item>
+    </style>
+    <!-- 我的爆料 审核状态 -->
+    <style name="textview.communityCategory.status">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/community_status_passed</item>
+    </style>
+    <!-- 评论分界线 -->
+    <style name="textview.commentLine">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/comment_color_666</item>
+        <item name="android:background">@color/comment_line_bg_color</item>
+    </style>
+
+    <style name="textview.commentDesc_pubdate">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="textview.commentDesc_title">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#111111</item>
+    </style>
+
+    <style name="textview.footerInfo">
+        <item name="android:textColor">@color/comment_color_999</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">#ccc</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <!-- 旅游资讯 menu 分类样式 -->
+    <style name="textview.color999.sp14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textview.color111.sp14">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 旅游资讯  分类样式 -->
+    <style name="textview.color999.sp16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textview.color111.sp15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textview.color111.sp16">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 旅游资讯 列表主标题 -->
+    <style name="textview.color111.sp18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textview.color111.sp20">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 旅游资讯  main list item 标题 样式 -->
+    <style name="textview.color_333.sp19">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="textview.color_333.sp14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textview.color_fff">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+	<style name="textview.color_4c423c">
+        <item name="android:textColor">#4c423c</item>
+    </style>
+
+    <style name="textview.color_fff.sp14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 旅游资讯 标题样式 -->
+    <style name="textview.color_fff.sp18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="textview.color_fff.sp17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="textview.color_333">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <!-- 旅游资讯 详细信息 描述 标题 -->
+    <style name="textview.color_333.travel_detail_item_tip">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- 旅游资讯 详细信息 内容 -->
+    <style name="textview.color_333.travel_detail_item_desc">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="textview.color_333.travel_detail_item_desc_muliple_line">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="textview.travel_list_sub_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="textview.color_333.sp16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textview.color_999">
+        <item name="android:textColor">@color/comment_color_999</item>
+    </style>
+    <!-- 地图  到那去 -->
+    <style name="textview.color_999.sp_11">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- 音频 频道 文本样式 -->
+    <style name="textview.audio_channel" parent="@style/textview.color_4c423c"><!-- parent="@style/textview.color_fff" -->
+
+        <!-- 字体阴影 -->
+        <item name="android:shadowColor">#46ffffff</item><!-- #b16c5e -->
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item><!-- 2.0 -->
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="textview.audio_channel.nickname">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#99FFFFFF</item>
+    </style>
+	
+    <style name="textview.travel_image_count" parent="@style/textview.color_fff.sp14">
+        <item name="android:background">@drawable/travel_image_count_bg</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview.travel_image_star" parent="@style/textview.color_fff.sp14">
+        <item name="android:textColor">@color/travel_star_color</item>
+        <item name="android:background">@drawable/travel_star_bg</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="textview.travel_list_image_star">
+        <item name="android:textColor">@color/travel_star_color</item>
+        <item name="android:background">@drawable/travel_star_no_radius_bg</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textview.coupon_image_validaty_bg" parent="@style/textview.color_fff.sp14">
+        <item name="android:background">@drawable/coupon_validaty_bg</item>
+    </style>
+
+    <style name="textview.vod_piece_item">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/vod_piece_color</item>
+    </style>
+
+    <style name="community_preview_image">
+        <item name="android:layout_width">@dimen/community_item_image_width</item>
+        <item name="android:layout_height">@dimen/community_item_image_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/empty_imageview_desc</item>
+    </style>
+
+    <style name="radio" parent="@android:style/Widget.CompoundButton.RadioButton"></style>
+
+    <style name="vote_ratio"></style>
+
+    <style name="travel_detail_line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_gray</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="coupon_detail_item">
+        <item name="android:layout_marginLeft">@dimen/travel_content_detail_margin_lr</item>
+        <item name="android:layout_marginRight">@dimen/travel_content_detail_margin_lr</item>
+        <item name="android:background">@drawable/global_bg_card</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="button.report">
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 下拉刷新 loading 样式 -->
+    <style name="pull_to_refresh_style">
+        <item name="ptrDrawable">@drawable/icon_pulltorefresh</item>
+        <!-- 下拉标题样式 -->
+        <item name="ptrHeaderTextAppearance">@style/ptr_textAppearance</item>
+        <item name="ptrScrollingWhileRefreshingEnabled">true</item>
+    </style>
+
+    <!-- 定义全局的字体样式 -->
+    <style name="ptr_textAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#999</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="vod_choice_item_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/vod_choice_item_color</item>
+    </style>
+
+    <style name="MenuGridDefaultStyle">
+        <item name="grid_border">@color/menu_grid_border_color</item>
+    </style>
+ 
+    <style name="coupon_animation">  
+        <item name="android:windowEnterAnimation">@anim/slide_in_up_to_down</item>  
+        <item name="android:windowExitAnimation">@anim/slide_in_down_to_up</item>  
+    </style>
+</resources>

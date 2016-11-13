@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp" >
+    <!-- android:layout_height="match_parent" -->
+
+    <include
+        android:id="@+id/service_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/simico_titlebar_service_v2" />
+    <!-- android:layout_height="@dimen/abs__action_bar_default_height" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/service_title_bar"
+        android:orientation="vertical" >
+
+        <include layout="@layout/simico_list_cell_service_header" />
+
+        <include layout="@layout/simico_service_tab" />
+
+        <cn.ffcs.wisdom.city.simico.activity.service.view.MyViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anim_service"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/simico_default_service"
+        android:visibility="gone" />
+
+</RelativeLayout>

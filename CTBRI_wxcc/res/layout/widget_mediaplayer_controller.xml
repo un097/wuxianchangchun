@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_video_bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/media_controller_height"
+    android:layout_alignBottom="@+id/frame_sv"
+    android:layout_alignParentLeft="true"
+    android:background="@color/black_tranlucent_40"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <ImageButton
+        android:id="@+id/mediacontroller_play_pause"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:src="@drawable/media_palyer_play_button_selector" />
+
+    <SeekBar
+        android:id="@+id/mediacontroller_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxHeight="1dp"
+        android:progressDrawable="@drawable/media_video_progress_bar"
+        android:thumb="@drawable/icon_playpot"
+        android:thumbOffset="0dp" 
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/mediacontroller_time_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="00:00"
+        android:textAppearance="@style/textview.color999.sp16" />
+
+    <ImageButton
+        android:id="@+id/ibtn_fullscreen"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:src="@drawable/media_fullscreen_button_selector" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore">
+        <ignore path="src\cn\ffcs\wisdom\city\changecity\ChangeCityActivity.java" />
+        <ignore path="src\cn\ffcs\wisdom\city\search\SearchSwitchPageAdapter.java" />
+    </issue>
+    <issue id="ResourceAsColor" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="ignore">
+        <ignore path="src\cn\ffcs\wisdom\city\web\BrowserActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="UseSparseArrays">
+        <ignore path="src\cn\ffcs\wisdom\city\changecity\ProvinceExpandableListAdapter.java" />
+        <ignore path="src\cn\ffcs\wisdom\city\personcenter\adapter\MyNotifiAdapter.java" />
+    </issue>
+</lint>

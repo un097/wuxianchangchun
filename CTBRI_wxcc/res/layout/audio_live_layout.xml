@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:id="@+id/vs_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_listener_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_shoutingrenshu"
+                android:drawablePadding="4dp"
+                android:textAppearance="@style/textview.color999.sp14" />
+
+            <ImageButton
+                android:id="@+id/btn_show_coupon"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/crown_button_pressd_bg"
+                android:contentDescription="@string/empty_imageview_desc"
+                android:src="@drawable/ic_crown" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray" />
+
+        <ListView
+            android:id="@+id/lv_audio_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="19dp"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ibtn_previous"
+                    android:layout_width="@dimen/audio_live_play_previous_button_width"
+                    android:layout_height="@dimen/audio_live_play_previous_button_width"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="11dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/audio_vod_previous_selector" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_play"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/audio_vod_play_selector" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_next"
+                    android:layout_width="@dimen/audio_live_play_previous_button_width"
+                    android:layout_height="@dimen/audio_live_play_previous_button_width"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="11dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/audio_vod_next_selector" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

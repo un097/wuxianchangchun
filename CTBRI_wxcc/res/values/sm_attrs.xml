@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="Smooth_Menu">
+        <attr name="sm_menu_count" format="integer" />
+        <attr name="sm_menu_icon_1" format="reference"/>
+        <attr name="sm_menu_icon_2" format="reference"/>
+        <attr name="sm_menu_icon_3" format="reference"/>
+        <attr name="sm_menu_icon_4" format="reference"/>
+    </declare-styleable>
+</resources>

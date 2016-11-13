@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/global_bg_card"
+        android:layout_margin="@dimen/travel_content_detail_margin_lr"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/textview.color_333.sp16" />
+		<View style="@style/travel_detail_line" android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/tv_marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/textview.color_333.sp16" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/global_bg_card"
+        android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+        android:layout_marginRight="@dimen/travel_content_detail_margin_lr"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/textview.color_333.sp16" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_obtain"
+        style="@style/button.coupon"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/voting_button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="领取优惠券" />
+
+</LinearLayout>

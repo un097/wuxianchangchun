@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="toggle_button_selector_star_heme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/toggle_button_selector_star</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/community_column_style</item>
+    </style>    
+
+</resources>

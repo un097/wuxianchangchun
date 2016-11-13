@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="content_provider_authorities">cn.ffcs.city.contentprovider</string>
+
+    <!-- 下拉控件 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新数据&#8230;</string>
+    <string name="pull_to_refresh_release_label">释放刷新数据&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新数据&#8230;</string>
+    <string name="pull_to_refresh_tap_label">下拉刷新数据&#8230;</string>
+
+    <!-- 进度条 -->
+    <string name="common_loading">数据加载，请稍候&#8230;</string>
+    <!-- 通用 -->
+    <string name="goback">返回上一页</string>
+    <string name="default_no_data">暂无数据</string>
+    <string name="common_http_loading">数据提交中，请稍后&#8230;</string>
+    <string name="dialog_title_default">提示</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancle">取消</string>
+    <string name="btn_download">下载</string>
+    <string name="btn_yes">是</string>
+    <string name="btn_no">否</string>
+    
+    <string name="icity_return_title">返回</string>
+
+</resources>

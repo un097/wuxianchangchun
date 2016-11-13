@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alpha"
+        style="@style/gray_title.20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray_province_bg"
+        android:paddingLeft="10dip" />
+
+    <LinearLayout
+        style="@style/background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/contract_image_line"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip" >
+            <!-- android:background="@drawable/btn_setting_share_normal" -->
+
+            <ImageView
+                android:id="@+id/phone_image"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/share_icon_user" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/has_contract_image"
+            android:layout_width="65dip"
+            android:layout_height="50dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/gray_title.20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/gray_title.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/multiple_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dip"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

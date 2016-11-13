@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_p1"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p1"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d1"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_p2"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p2"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d2"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_p3"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p3"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d3"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_p4"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p4"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d4"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_p5"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p5"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d5"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_p6"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_p6"
+                android:layout_width="90.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/iv_d6"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

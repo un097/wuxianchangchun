@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_info"
+                style="@style/gray_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/personinfo_add_headphoto" />
+
+            <ImageView
+                android:id="@+id/user_headphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/info_userphoto"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/add_headphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_headphoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/user_headphoto_btn" />
+
+            <Button
+                android:id="@+id/gointo_icity"
+                style="@style/white_title.18sp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="11dip"
+                android:layout_marginRight="11dip"
+                android:background="@drawable/pink_button_selector"
+                android:text="@string/personinfo_tips" />
+            <!-- android:background="@drawable/btn_blue_selector" -->
+        </RelativeLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

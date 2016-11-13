@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:background="@color/action_bar_bg_color" >
+
+        <ImageView
+            android:id="@+id/action_bar_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:paddingBottom="6.0dp"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="24.0dp"
+            android:paddingTop="6.0dp"
+            android:src="@drawable/action_bar_back" />
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="title"
+            android:textColor="@color/text_color_title"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:src="#b2b2b2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" >
+        </com.baidu.mapapi.map.MapView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/ll_control"
+            android:background="#d0d0d0" />
+
+        <LinearLayout
+            android:id="@+id/ll_control"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#dfffffff"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:id="@+id/tv_route_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/textview.color_333.sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                                  android:layout_marginLeft="8dp"
+                	android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/textview.color999.sp14" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/line_gray" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/textview.color999.sp14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="1px"
+                android:background="#b2b2b2" />
+
+            <ListView
+                android:id="@+id/lv_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/transparent"
+                android:dividerHeight="1px"
+                android:divider="#d0d0d0"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

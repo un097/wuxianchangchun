@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available01"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available02"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available03"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available04"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available05"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available06"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available07"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/toolbar_icon_refresh_available08"
+        android:duration="100"/>
+
+</animation-list>

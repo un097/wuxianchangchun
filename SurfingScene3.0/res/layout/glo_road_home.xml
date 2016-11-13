@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/road_tv_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/choose_city_btn"
+            android:gravity="center"
+            android:paddingRight="6dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/road_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/choose_city_btn"
+            android:gravity="center"
+            android:paddingRight="6dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/road_tv_county"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/choose_city_btn"
+            android:gravity="center"
+            android:paddingRight="6dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/road_home_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_line"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+        
+        <include layout="@layout/inc_loading_bar" />
+    </RelativeLayout>
+
+</LinearLayout>

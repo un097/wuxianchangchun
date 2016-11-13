@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color> <!-- 白色 -->
+    <color name="black">#ff000000</color> <!-- 黑色 -->
+    <color name="gray">#ffe3e3e3</color> <!-- 灰色 -->
+    <color name="transparent">#00000000</color> <!-- 透明色 -->
+    <color name="red">#ee0000</color> <!-- 红色 -->
+    <color name="dark_red">#e14319</color> <!-- 暗红色 -->
+    <color name="gray_city_bg">#fefefe</color> <!-- 暗灰色-城市背景 -->
+    <color name="dark_gray_province_bg">#ececec</color> <!-- 暗灰色-省份背景 -->
+    <color name="dark_gray_787878">#787878</color> <!-- 深灰色，省份文字、下载管理应用信息颜色 -->
+    <color name="light_blue">#b8ecff</color> <!-- 浅蓝色，个人信息等级 -->
+    <color name="new_guid_bg">#191919</color> <!-- 新手指导背景 -->
+    <color name="light_gray">#c9c9c9</color> <!-- 返回按钮上文字 -->
+    <color name="background">#f8f8f8</color> <!-- 背景颜色 -->
+    <color name="gray_b4b4b4">#b4b4b4</color> <!-- 登录输入框颜色 -->
+    <color name="blue_12b0e4">#12b0e4</color> <!-- 忘记密码颜色 -->
+    <color name="blue_bbeeff">#bbeeff</color> <!-- 浅蓝色，下载进度起始色 -->
+    <color name="blue_0799ea">#0799ea</color> <!-- 深藍色，下載進度條，-1文字颜色 -->
+    <color name="gray_f4f4f4">#f4f4f4</color> <!-- 浅灰色 -->
+    <color name="loading_bar_color">#f97070</color>
+    <!-- <color name="loading_bar_color">#0595ca</color> --> <!-- loadingBar -->
+    <color name="gray_f2f2f2">#f2f2f2</color> <!-- 个人中心我的关联父级背景色 -->
+    <color name="gray_b5b5b5">#b5b5b5</color> <!-- 随手拍文字 -->
+    <color name="gray_dcdcdc">#dcdcdc</color> <!-- 随手拍详情评论背景 -->
+    <color name="transparent_black">#80000000</color> <!-- 透明黑 -->
+    <color name="poplist_line">#e5e5e5</color> <!-- popwin 分隔条 -->
+    <color name="brown_c97f00">#c97f00</color><!-- 随手拍热门顶和收藏-->
+    <color name="gray_dddddd">#dddddd</color><!-- 顶和收藏过 -->
+    <color name="gray_3e3e3e">#3e3e3e</color><!-- 最高级灰色  -->
+    <color name="gray_d0d0d0">#d0d0d0</color>
+
+    <!-- 色块 -->
+    <drawable name="blue_normal">#cc12b0e4</drawable> <!-- 首页正方形蓝色,80%透明度 -->
+    <drawable name="blue_pressed">#cc1098c5</drawable> <!-- 首页正方形蓝色，按下态， 80%透明度 -->
+    <drawable name="white_30">#4dffffff</drawable> <!-- 首页侧边栏背景，30%透明度 -->
+    <drawable name="transparent">#00000000</drawable> <!-- 全透明 -->
+    <drawable name="yellow_normal">#ffffa509</drawable><!-- 黄色按钮，100%透明度 -->
+	<drawable name="yellow_pressed">#ffe29001</drawable><!-- 黄色按钮，按下态，100%透明度 -->
+	<drawable name="white_normal">#ccffffff</drawable><!-- 白色按钮 -->
+	<drawable name="white_pressed">#fff4f4f4</drawable><!-- 白色按下态 -->
+	<drawable name="green_normal">#ff37bdb2</drawable> <!-- 绿色按钮 -->
+    <drawable name="green_pressed">#ff45a5a2</drawable> <!-- 绿色按钮按下 -->
+    <drawable name="black_50">#80000000</drawable> <!-- 50%黑色 -->
+</resources>

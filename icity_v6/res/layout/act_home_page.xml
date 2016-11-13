@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <!--
+         <cn.ffcs.wisdom.city.home.widget.MoveSurfaceView
+        android:id="@+id/move_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    -->
+
+    <cn.ffcs.widget.SlidingMenuGroupView
+        android:id="@+id/home_sliding_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/help_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshPinnedHeaderListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        style="@style/pinned_header_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:headerDividersEnabled="false"
+        ptr:ptrDrawable="@drawable/simico_ic_loading"
+        ptr:ptrHeaderTextColor="@color/txt_gray" />
+
+    <TextView
+        android:id="@+id/tv_update_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#6ECCC7"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/btn_scrolltop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/simico_scrolltop_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

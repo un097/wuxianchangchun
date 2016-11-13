@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_view_row"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:paddingBottom="4dip"
+    android:paddingLeft="6dip"
+    android:paddingTop="4dip" >
+
+    <ImageView
+        android:id="@+id/listview_image"
+        android:layout_width="70dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/listview_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/listview_image" >
+
+        <TextView
+            android:id="@+id/listview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listview_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listview_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

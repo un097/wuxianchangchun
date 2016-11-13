@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ffcs.widget.NoTouchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/city_bg_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <LinearLayout
+        android:id="@+id/app_icon_bg"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/gray_title.18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/checkLayout"
+        android:layout_toRightOf="@+id/app_icon_bg"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="2" />
+
+    <LinearLayout
+        android:id="@+id/checkLayout"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dip"
+        android:background="@drawable/list_checkbox_default" >
+
+        <CheckBox
+            android:id="@+id/app_check"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center"
+            android:button="@null" />
+    </LinearLayout>
+
+</cn.ffcs.widget.NoTouchRelativeLayout>

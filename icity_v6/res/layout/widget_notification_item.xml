@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_list_down_selector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/notification_title"
+            style="@style/gray_title.18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="标题"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/notification_date"
+            style="@style/gray_title.14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dip"
+            android:text="时间"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dip"
+        android:layout_height="10dip"
+        android:contentDescription="@null"
+        android:src="@drawable/weather_vertical_line" />
+
+    <ImageView
+        android:id="@+id/notification_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:padding="5dip"
+        android:src="@drawable/notification_new"
+        android:visibility="gone" />
+
+</LinearLayout>

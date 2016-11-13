@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="glo_title">天翼景象</string>
+    <string name="glo_road_title">路况视频</string>
+    <string name="glo_traffic">交通</string>
+    <string name="glo_baidu_key">E011E93F498360DDDDF5790595B6D02A2D180F9E</string>
+    <string name="glo_search">搜索</string>
+    <string name="glo_app_title">景点实况</string>
+    <string name="glo_tab_one">精品</string>
+    <string name="glo_tab_two">福州</string>
+    <string name="glo_tab_three">查看收藏</string>
+    <string name="glo_currentcity_error">获取数据失败</string>
+    <string name="glo_citychange_hot">热门城市</string>
+    <string name="glo_citychange_provincelist">省份列表</string>
+    <string name="glo_citychange_province">按省份选择</string>
+    <string name="glo_citychange_more">更多城市</string>
+    <string name="glo_citychange_name">城市名称</string>
+    <string name="glo_citychange_title">切换城市</string>
+    <string name="glo_citychange_city_fail">获取城市列表失败</string>
+    <string name="glo_citychange_province_fail">获取省份列表失败</string>
+    <string name="glo_favorite_empty">收藏列表为空，赶快去收藏吧</string>
+    <string name="glo_banner_empty">暂无数据</string>
+    <string name="glo_net_work_error">网络异常，请检查网络设置</string>
+    <string name="glo_choose_province">选择省份</string>
+    <string name="glo_choose_city">选择城市</string>
+    <string name="glo_choose_county">选择区域</string>
+    <string name="glo_loading_failed">请求失败，请稍后再试</string>
+    <string name="glo_loading">数据加载中&#8230;</string>
+    <string name="glo_road_map">地图</string>
+    <string name="glo_road_video">路况视频</string>
+    <string name="glo_road_all">全部</string>
+    <string name="glo_right_exit">右滑可以退出播放器哦！</string>
+    <string name="glo_road_search_hint">请输入关键字</string>
+    <string name="glo_search_result">个搜索结果</string>
+    <string name="glo_search_map_show">地图显示</string>
+    <!-- 路况 -->
+    <string name="glo_often_blocked">常常堵</string>
+    <string name="glo_nearby">附近</string>
+    <string name="glo_all">全部</string>
+    <string name="glo_collect">收藏</string>
+    <string name="glo_no_collect">您的收藏夹空空如也！</string>
+    <string name="glo_no_often_blocked">您的城市没有数据哦!</string>
+    <string name="glo_no_search_data">没有搜索到内容！</string>
+    <string name="glo_loaction_ing">正在定位中&#8230;</string>
+    <string name="glo_loaction_fail">定位失败，请检查网络和GPS</string>
+    <string name="glo_video_list_name">视频列表</string>
+    <string name="glo_no_map_list">没有视频点或数据尚未加载完毕</string>
+    <string name="glo_error">请求失败，请稍后再试</string>
+    <!-- 播放界面 -->
+    <string name="glo_shoot_screen">截屏</string>
+    <string name="glo_road_share">分享</string>
+    <string name="glo_share_content">我正通过@无线长春观看实时路况“%1$s”，想要观看，手指猛戳</string>
+    <string name="glo_share_url">http://t.cn/zWk3y6d</string>
+    <string name="glo_get_rtsp_error">请求播放地址失败</string>
+    <string name="glo_rtsp_play_error">播放地址无法播放视频</string>
+    <string name="glo_no_sdcard">当前无SD卡</string>
+    <string name="glo_wait_load_complete">请等待视频加载完成</string>
+    <string name="glo_advert_time">广告倒计时：%1$s</string>
+</resources>

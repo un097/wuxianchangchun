@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="11dip"
+                android:layout_marginRight="11dip"
+                android:layout_marginTop="12dip" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/mobile"
+                    style="@style/gray_title.16sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/input_background"
+                    android:completionThreshold="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/login_mobile"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textColorHint="@color/gray_b4b4b4" />
+
+                <ImageView
+                    android:id="@+id/delete_content"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/remember_del_normal"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/gray_title.16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="11dip"
+                android:layout_marginRight="11dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_b4b4b4" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dip"
+                android:layout_marginRight="11dip"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/forget_password"
+                    style="@style/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/login_forget_password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/remember_password"
+                    style="@style/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dip"
+                    android:text="@string/login_remember_password" />
+            </LinearLayout>
+
+            <!-- 黄金比例 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/white_title.18sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="11dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:gravity="center"
+                    android:text="@string/home_register" />
+
+                <TextView
+                    android:layout_width="10dip"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/login"
+                    style="@style/white_title.18sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_weight="0.618"
+                    android:background="@drawable/btn_blue_selector"
+                    android:gravity="center"
+                    android:text="@string/home_login" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

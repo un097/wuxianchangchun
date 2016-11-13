@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top" />
+
+    <RelativeLayout
+        android:id="@+id/notice_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar" >
+
+        <include layout="@layout/top_shadow" />
+
+        <TextView
+            android:id="@+id/notice_title"
+            style="@style/gray_title.20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dip" />
+
+        <LinearLayout
+            android:id="@+id/notice_subhead_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_title"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/notice_date"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dip" />
+
+            <TextView
+                android:id="@+id/notice_author"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/notice_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notice_title_layout"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@null"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/notice_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notice_line"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dip"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/notice_img" >
+
+        <TextView
+            android:id="@+id/notice_content"
+            style="@style/gray_title.18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" />
+    </ScrollView>
+
+</RelativeLayout>

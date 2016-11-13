@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/app_title"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <ListView
+        android:id="@+id/video_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/app_title"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:scrollingCache="false" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title"
+        layout="@layout/top_shadow" />
+
+    <!-- 进度条 -->
+
+    <include layout="@layout/inc_loading_bar" />
+
+</RelativeLayout>

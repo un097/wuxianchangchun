@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/icar_logo"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:id="@+id/violations_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:childDivider="@drawable/list_line"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_violations" />
+
+            <TextView
+                style="@style/light_gray_title.18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:text="@string/violation_no_violations" />
+        </LinearLayout>
+
+        <include layout="@layout/top_shadow" />
+    </RelativeLayout>
+
+</LinearLayout>

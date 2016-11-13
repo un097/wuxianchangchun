@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/bannerviewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+
+    <RelativeLayout
+        android:id="@+id/banner_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/banner_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/banner_indicator_group"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@id/banner_indicator_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

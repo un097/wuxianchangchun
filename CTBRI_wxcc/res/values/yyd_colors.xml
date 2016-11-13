@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="line_gray" >#CCC</color>
+	<color name="transparent">#00000000</color>
+	<color name="black_translucent">#7F000000</color>
+	<color name="black_60">#99000000</color>
+	<color name="text_black">#FF000000</color>
+	<color name="text_gray">#FF333333</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="community_zan_selected">#FFF97070</color>
+	<color name="community_zan_unselected">#999</color>
+	<color name="location_bg">#FF333333</color>
+	<color name="translucent">#FF333333</color>
+	<color name="default_bg_color">#FFEEEEEE</color>
+	
+	<color name="ratio_color0">#DE496B</color>
+	<color name="ratio_color1">#35C6CC</color>
+	<color name="ratio_color2">#FCD315</color>
+	<color name="ratio_color3">#73B2EC</color>
+	<color name="ratio_color4">#DC8BC6</color>
+	<color name="ratio_color5">#F68F52</color>
+	<color name="ratio_color6">#94C84A</color>
+	<color name="ratio_color7">#3687B5</color>
+	
+	<color name="video_category_color0">#52ccbc</color>
+	<color name="video_category_color1">#5a9be0</color>
+	<color name="video_category_color2">#f2b523</color>
+	<color name="video_category_color3">#f97070</color>
+	<color name="video_category_color4">#f6aa32</color>
+	<color name="video_category_color5">#4ebde6</color>
+	
+	<color name="vote_desc_alpha_bg">#66000000</color>
+	<color name="vote_bottom_info_text_color">#FF999999</color>
+	
+	<color name="vote_status_starting">#3FBFC5</color>
+	<color name="vote_status_ended">#8e8e8e</color>
+	<color name="vote_chooice_mode_single">#539B66</color>
+	<color name="vote_chooice_mode_multiple">#73B2EC</color>
+	<color name="vote_detail_content_text_color">#111111</color>
+	<color name="vote_detail_content_with_bg_divder">#d8d8d8</color>
+	<color name="vote_suggest_container_border_color">#999</color>
+	<color name="comment_color_666">#666</color>
+	<color name="comment_color_999">#999999</color>
+	
+	<color name="voting_buttong_pressd_color">#D96060</color>
+	<color name="voting_buttong_disabled_color">#b2b2b2</color>
+	<color name="obtain_buttong_disabled_color">#b2b2b2</color>
+	
+	<color name="global_listview_divider_color">#cecece</color>
+	<color name="global_selected_textcolor">#FF2727</color>
+	<color name="global_bg">#FFEEEEEE</color>
+	<color name="global_border_color">#BCBCBC</color>
+	<color name="comment_line_bg_color">#dcdcdc</color>
+	<color name="vote_select_item_bg">#E2E2E2</color>
+	
+	<color name="coupon_tag_color">#FFF7AC5D</color>
+	<color name="party_tag_color">#FF18C3CA</color>
+	
+	<color name="pink_20">#33F97070</color>
+	<color name="pink_70">#B2F97070</color>
+	<color name="color_111">#111111</color>
+	<color name="black_tranlucent_40">#64000000</color>
+	<color name="black">#000000</color>
+	
+	<color name="travel_star_color">#b4cc3d</color>
+	<color name="travel_name_front_color">#56D2d9</color>
+	<color name="travel_name_separator_color">#333333</color>
+	
+	<color name="call_phone_pressed_color">#f0f0f0</color>
+	<color name="menu_grid_border_color">#FFC0C0C0</color>
+	
+	<color name="media_time_line_normal_color">#FFa9b9bd</color>
+	<color name="media_time_line_expired_color">#FF999999</color>
+	<color name="media_time_line_broadcast_color">#FFFF8400</color>
+	
+	<color name="media_crown_color">#f2b523</color>
+	
+	<color name="favorite_button_border_color">#bcbcbc</color>
+	
+	<color name="media_search_key_word_color">#1975FF</color>
+</resources>

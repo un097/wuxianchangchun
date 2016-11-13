@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:paddingTop="5.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/iv_bg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_huanman_bg" />
+
+            <ImageView
+                android:id="@+id/iv_head_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_head_guanfang" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toLeftOf="@+id/ll_attention"
+            android:layout_toRightOf="@+id/rl_icon"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/iv_distance" />
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="距离1km"
+                        android:textColor="@color/distance_color"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/ll_distance"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="金山路"
+                    android:textColor="@color/title_color"
+                    android:textSize="15.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="10分钟前"
+                    android:textColor="@color/distance_color"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tv_time"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="车流量大，车多缓慢"
+                    android:textColor="@color/distance_color"
+                    android:textSize="15.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_attention" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

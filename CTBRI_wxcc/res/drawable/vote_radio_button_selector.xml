@@ -1,0 +1,25 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_window_focused="false"
+          android:drawable="@drawable/survey_single_sel" />
+    <item android:state_checked="false" android:state_window_focused="false"
+          android:drawable="@drawable/survey_single_unsel" />
+    
+     <item android:state_selected="true" android:state_window_focused="false"
+          android:drawable="@drawable/survey_single_sel" />
+    <item android:state_selected="false" android:state_window_focused="false"
+          android:drawable="@drawable/survey_single_unsel" />
+          
+    <item android:state_checked="true" android:state_pressed="true"
+        
+          android:drawable="@drawable/survey_single_sel" />
+    <item android:state_checked="false" android:state_pressed="true"
+          android:drawable="@drawable/survey_single_sel" />
+
+    <item android:state_checked="true" android:state_focused="true"
+          android:drawable="@drawable/survey_single_sel" />
+    <item android:state_checked="false" android:state_focused="true"
+          android:drawable="@drawable/survey_single_unsel" />
+
+    <item android:state_checked="false" android:drawable="@drawable/survey_single_unsel" />
+    <item android:state_checked="true" android:drawable="@drawable/survey_single_sel" />
+</selector>

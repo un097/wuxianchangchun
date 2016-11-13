@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CTBRI_wxcc</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="complaint">
+        <item >辱骂、人身攻击</item>
+        <item >广告及垃圾信息</item>
+        <item >色情、淫秽内容</item>
+        <item >激进时政、敏感信息</item>
+    </string-array>
+	<string name="hotline_result_text">共搜到%1$d个结果</string> 
+</resources>

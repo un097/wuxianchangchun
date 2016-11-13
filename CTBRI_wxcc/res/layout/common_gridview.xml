@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:id="@+id/vs_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout="@layout/action_bar" />
+
+    <com.ctbri.wxcc.widget.MenuGridView
+        xmlns:self="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dp"
+        android:listSelector="@drawable/common_bg_selector"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:transcriptMode="disabled"
+        android:verticalSpacing="4dp"
+        self:is_adjust_scroll_parent="false"
+        self:is_draw_border="false" >
+    </com.ctbri.wxcc.widget.MenuGridView>
+
+</LinearLayout>

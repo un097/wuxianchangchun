@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 数据库配置 --> 
+    <string name="db_name">changchuntv.db</string><!-- 数据库名称 -->
+    <string name="db_version">1</string><!-- 数据库版本号 -->
+
+    <!-- 数据库表名称，请配置时，直接使用实体类的类名称 -->
+    <string-array name="db_tables">
+        <item>cn.ffcs.wisdom.city.sqlite.model.FavoriteInfoModel</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.ProvinceListInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.CityListInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.MenuItem</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.CityConfig</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.ApkInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.AppItem</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.NotificationInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.WzCarInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.WidgetInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.RememberInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.Report</item><!-- add by caijj 20130717 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.TrackInfo</item>
+        <item>cn.ffcs.wisdom.city.sqlite.model.LogItem</item><!-- leo 日志配置 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.TrafficViolations</item><!-- 新版违章信息表 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.TrafficViolationsCars</item><!-- 新版违章车辆表 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.ReportMenu</item><!-- 新版违章车辆表 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.ApkReportItem</item><!-- 应用汇下载上报 -->
+        <item>cn.ffcs.wisdom.city.sqlite.model.RedPotInfo</item><!-- 小红点 -->
+        
+    </string-array>
+
+</resources>

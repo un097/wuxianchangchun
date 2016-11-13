@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_vote_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_detail_image_bg_height"
+   		android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/empty_imageview_desc" />
+
+    <TextView
+        android:id="@+id/tv_vote_title"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/vote_desc_title_height"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/iv_vote_bg"
+        style="@style/textview.voteDesc"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vote_desc_title_height"
+        android:paddingLeft="@dimen/vote_desc_title_padding_left_16dp"
+         android:paddingRight="@dimen/vote_desc_title_padding_left_16dp"
+        android:layout_below="@+id/iv_vote_bg"
+        android:layout_centerHorizontal="true" >
+
+       <TextView
+            android:id="@+id/tv_chooice_mode_multiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/vote_multiple"
+            style="@style/textview.voteChooiceMode.multiple" />
+     	<TextView
+            android:id="@+id/tv_chooice_mode_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/vote_single"
+            style="@style/textview.voteChooiceMode.single" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/textview.voteStatus.list_bottomInfo"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_vote_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            style="@style/textview.voteStatus.list_bottomInfo"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_state"
+        android:layout_width="@dimen/vote_status_textview_width"
+        android:layout_height="@dimen/vote_status_textview_height"
+        android:gravity="center"
+		android:layout_alignTop="@id/iv_vote_bg"
+		android:layout_marginTop="@dimen/vote_status_textview_margin_top"
+        style="@style/textview.voteStatus"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

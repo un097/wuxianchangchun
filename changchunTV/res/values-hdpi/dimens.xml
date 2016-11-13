@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="explore_grid_height">50dp</dimen>
+    <!--as 转换过程度重复 <dimen name="explore_grid_height">100dp</dimen>-->
+    <dimen name="explore_top_height">40dp</dimen>
+</resources>

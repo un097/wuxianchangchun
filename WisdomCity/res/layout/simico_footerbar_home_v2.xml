@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simico_footer_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_simico_footer_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:drawableTop="@drawable/simico_footer_home"
+        android:gravity="center"
+        android:text="资讯"
+        android:textColor="@color/simico_footer_text_color_selector"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_simico_footer_find"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:drawableTop="@drawable/simico_footer_find"
+        android:gravity="center"
+        android:text="发现"
+        android:textColor="@color/simico_footer_text_color_selector"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_simico_footer_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_simico_footer_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:drawableTop="@drawable/simico_footer_user"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/simico_footer_text_color_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_simico_footer_user"
+            android:layout_alignTop="@+id/tv_simico_footer_user"
+            android:layout_marginRight="-12dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/simico_subsrcibe_service_count_bubble"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

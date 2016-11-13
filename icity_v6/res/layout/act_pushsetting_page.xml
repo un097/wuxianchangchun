@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+         >
+
+        <RelativeLayout
+            android:id="@+id/pullsent_setting_line"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/push_setting" />
+
+            <ImageView
+                android:id="@+id/pullsent_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/btn_setting_switch" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/second_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/dnd_setting_line"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/setting_list_up_selector"
+                android:paddingBottom="5dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/gray_title.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/dnd_setting" />
+
+                <ImageView
+                    android:id="@+id/dnd_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/btn_setting_switch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sound_setting_line"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_up_selector"
+                android:paddingBottom="5dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/gray_title.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/sound_setting" />
+
+                <ImageView
+                    android:id="@+id/sound_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/btn_setting_switch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shake_setting_line"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_list_up_selector"
+                android:paddingBottom="5dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/gray_title.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/shake_setting" />
+
+                <ImageView
+                    android:id="@+id/shake_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/btn_setting_switch" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

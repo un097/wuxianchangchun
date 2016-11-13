@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center" >
+
+            <GridView
+                android:id="@+id/myapp_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:fadeScrollbars="true"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/myapp_nocentent"
+                style="@style/lightgray16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/myfav_app_nocontent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include layout="@layout/top_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

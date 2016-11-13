@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/tip_drag_delete_service"
+        android:textColor="@color/txt_gray"
+        android:textSize="16sp" />
+
+    <cn.ffcs.wisdom.city.simico.activity.service.view.DynamicGridView
+        android:id="@+id/gv_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_tip"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth" />
+
+    <cn.ffcs.wisdom.city.simico.ui.grid.EmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_tip"
+        android:visibility="gone" />
+
+</RelativeLayout>

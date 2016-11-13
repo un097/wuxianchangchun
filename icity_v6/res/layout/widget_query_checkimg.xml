@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    
+    <EditText android:id="@+id/check" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"
+        android:singleLine="true" />
+    <RelativeLayout android:layout_width="80dip" android:layout_height="fill_parent" android:layout_marginLeft="5dip" >
+        <ImageView android:id="@+id/checknumber" android:layout_width="fill_parent" android:layout_height="fill_parent" android:visibility="gone"/>
+        <ProgressBar android:id="@+id/check_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            style="?android:attr/progressBarStyleSmallInverse" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    
+</LinearLayout>

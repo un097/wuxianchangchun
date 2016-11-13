@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#5e5e5e</color>
+   
+    
+    <color name="main_background">#F0F5F9</color>
+    <color name="titlebar_background">#4DBDB2</color>
+    <color name="picture_background">#D4E1EA</color>
+    <color name="txt_gray">#B9B9B9</color>
+    
+    <color name="dialog_header_background">#FD5353</color>
+    <color name="dialog_list_text">#5E5E5E</color>
+    <color name="ui_dialog_divider">#FF5152</color>
+    <color name="ui_bg_divider">#636363</color>
+    <color name="ui_touch">#55cccccc</color>
+    
+    <color name="txt_service">#545456</color>
+    <color name="txt_pinned_header">#91A2B2</color>
+    <color name="txt_deep_black">#545454</color>
+     
+    <color name="news_title">#1A1A1A</color>
+    <color name="news_type">#868583</color>
+    <color name="news_source">#48B9B3</color>
+
+    
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="subscribe_item_text_color">#ff454545</color>
+    <color name="subscribe_item_drag_stroke">#43A6A1</color>
+    <color name="subscribe_item_drag_bg">#D6DADF</color>
+    <color name="subscribe_item_selected_stroke">#43A6A1</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#43A6A1</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#D6DADF</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#F0F5F9</color>
+    
+    
+    <color name="top_category_bar_background_day">#fff3f3f3</color>
+    <color name="top_category_scroll_view_text_normal_day">#ff909090</color>
+    <color name="top_category_scroll_view_text_selected_day">#ffffffff</color>
+    <color name="top_category_scroll_view_background_selected_day">#f97070</color>
+    <!-- <color name="top_category_scroll_view_background_selected_day">#35BCAE</color> -->
+    
+    <color name="menu_item_pressed">#292929</color>
+    <color name="menu_item_normal">#353636</color>
+</resources>

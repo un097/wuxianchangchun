@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:self="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" > 
+
+    <com.ctbri.wxcc.widget.SquareImageView
+        android:id="@+id/iv_audio_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        self:heightRatio="1.0"
+        self:radius="@dimen/audio_circle_image_radius" />
+
+    <TextView
+        android:id="@+id/tv_audio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/textview.color111.sp14" />
+
+</LinearLayout>

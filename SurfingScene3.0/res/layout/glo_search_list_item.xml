@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="@color/gray_city_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/search_word"
+        style="@style/Glo_Gray_title.18sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip"
+        android:paddingTop="10dip"
+        android:singleLine="true" />
+
+</LinearLayout>

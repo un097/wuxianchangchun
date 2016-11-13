@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingBottom="12.0dp"
+    android:paddingTop="12.0dp"
+    android:paddingLeft="8.0dp"
+    android:paddingRight="8.0dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="9.0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠活动"
+            android:textSize="16.0dp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1.0dp"
+            android:layout_centerVertical="true"
+            
+            />
+        <TextView android:id="@+id/main_coupon_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16.0dp"
+            android:textColor="#999999"
+            android:paddingRight="1.0dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_coupon_first"
+        android:layout_width="match_parent"
+        android:layout_height="138.0dp" 
+        android:layout_marginBottom="8.0dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/ll_coupon_recommend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_coupon_second"
+            android:layout_width="0dp"
+            android:layout_height="95.5dp"
+            android:layout_weight="1" 
+            android:layout_marginRight="@dimen/coupon_recommend_padding"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/main_coupon_third"
+            android:layout_width="0dp"
+            android:layout_height="95.5dp"
+            android:layout_weight="1" 
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</LinearLayout>

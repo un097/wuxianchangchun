@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_list_down_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/contextTv"
+        style="@style/gray_title.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="10dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dip"
+        android:src="@drawable/setting_list_enter_normal" />
+
+</LinearLayout>

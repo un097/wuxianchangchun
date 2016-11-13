@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_position"
+            android:layout_width="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_start"
+             android:scaleType="centerInside"
+            android:src="@drawable/icon_position_normal" />
+        <ImageView
+            android:layout_below="@+id/line"
+            android:layout_alignBottom="@+id/tv_end"
+            android:id="@+id/iv_target_position"
+            android:layout_width="40dp"
+            android:scaleType="centerInside"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_circle" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_position"
+            android:layout_toLeftOf="@+id/btn_swap_locate"
+            android:textAppearance="@style/textview.color_333.sp16" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_start"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/btn_swap_locate"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_target_position"
+            android:layout_below="@+id/line"
+            android:layout_toLeftOf="@+id/btn_swap_locate"
+            android:drawablePadding="10dp"
+            android:textAppearance="@style/textview.color_333.sp16" />
+
+        <ImageButton
+            android:id="@+id/btn_swap_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/icon_default_img_button_bg"
+            android:src="@drawable/icon_change" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <com.viewpagerindicator.IconClickablePageIndicator
+            android:id="@+id/tab_page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/noTitleBar"
+            android:background="#F5F5F5" >
+        </com.viewpagerindicator.IconClickablePageIndicator>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

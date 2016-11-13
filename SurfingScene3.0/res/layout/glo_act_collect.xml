@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/favorite_empty"
+        style="@style/Glo_Gray_9e9e9e.16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/glo_favorite_empty"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/favorite_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="2dip"
+        android:dividerHeight="0dip"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@null"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

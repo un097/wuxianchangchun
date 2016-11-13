@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/default_bg_color"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar" />
+
+    <com.ctbri.wxcc.widget.LoadMorePTRListView
+        android:layout_below="@+id/action_bar"
+        android:id="@+id/lv_vote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:listSelector="@color/transparent"
+        android:background="@color/default_bg_color"
+        android:divider="@null"
+        android:scrollbars="none"
+                style="@style/pull_to_refresh_style"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="8dp" >
+ 
+
+
+    </com.ctbri.wxcc.widget.LoadMorePTRListView>
+ 
+    <ImageButton
+        android:id="@+id/btn_new_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/global_bottom_icon_margin_bottom"
+        
+        android:contentDescription="@string/empty_imageview_desc"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/vote_new_suggest_button_selector" />
+
+</RelativeLayout>

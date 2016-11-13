@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="zan_with_number">赞  %1$s</string>
+    <string name="report">举  报</string>
+    <string name="empty_imageview_desc"></string>
+
+    <string name="title_community">爆料社区</string>
+    <string name="title_vote">民意调查</string>
+    <string name="title_suggest">调查建议</string>
+    <string name="title_my_community">我的爆料</string>
+    <string name="title_all_comment">全部评论</string>
+    <string name="title_coupon">优惠券</string>
+    <string name="title_travel">旅游资讯</string>
+    <string name="title_coupon_detail">优惠券详情</string>
+    <string name="title_locate">地理位置</string>
+    <string name="title_obtain_coupon">领取优惠券</string>
+    <string name="title_my_coupon">我的优惠券</string>
+    <string name="title_raiders">线路攻略</string>
+    <string name="title_merchant">店铺列表</string>
+    <string name="title_route_plan">路线规划</string>
+    <string name="title_route_nav">路线导航</string>
+    <string name="title_all_video_category">全部分组</string>
+    <string name="title_vod_list">电影</string>
+    <string name="title_broadcast_list">直播</string>
+    <string name="title_search">搜索</string>
+    <string name="title_audio">音频</string>
+    <string name="title_video">视频</string>
+    <string name="title_my_favorite">我的收藏</string>
+    <string name="title_myvod_favorite">我的视频</string>
+    <string name="title_myaod_favorite">我的音频</string>
+    <string name="title_audio_broadcast">广播直播</string>
+
+    <string name="msg_coupon_obtain_succ">您已经成功领取此优惠券！</string>
+    <string name="msg_coupon_obtain_fail">优惠券领取失败！</string>
+    <string name="msg_comment_text_tips">评论内容字数不能少于5个多于200个。</string>
+    <string name="msg_text_not_long">字数不能少于10个</string>
+    <string name="msg_empty_address">没有位置信息</string>
+    <string name="msg_empty_telephone">没有电话信息</string>
+    <string name="msg_empty_msg">亲，再尝试一下其他的关键字吧</string>
+    <string name="msg_search_result_count">共搜索到 &lt;font color=&quot;#FF7E00&quot;&gt;%1$d&lt;/font&gt; 条结果</string>
+    <string name="msg_search_hint">输入关键词搜索</string>
+    <string name="msg_video_play_error">该视频无法播放</string>
+    <string name="msg_comment_publisher_succ">评论发表成功!!</string>
+
+    <string name="vote_number">投票人数：%1$s</string>
+    <string name="vote_source">来源：%1$s</string>
+    <string name="vote_single">单选</string>
+    <string name="vote_multiple">多选</string>
+    <string name="holder_input_title">(字数不能少于5个) 输入发起投票的标题</string>
+    <string name="holder_input_content">(字数不能少于5个) 请输入发起的建议内容，包括发起建议的原因，和该投票的选项建议。</string>
+    <string name="voting">投票</string>
+    <string name="comment">热门评论</string>
+    <string name="new_comment">最新评论</string>
+    <string name="all_comment">所有评论</string>
+    <string name="loadMore">加载更多</string>
+    <string name="loading">正在加载</string>
+    <string name="seeMore">查看更多</string>
+    <string name="noMore">已显示全部内容</string>
+    <string name="piece">%1$d张</string>
+
+    <string name="travel_menu_title_spot">景区景点</string>
+    <string name="travel_menu_title_party">演出活动</string>
+    <string name="travel_menu_title_food">餐饮美食</string>
+    <string name="travel_menu_title_locale">本地特产</string>
+
+    <string name="tip_validate_code_tip">验证码　：</string>
+    <string name="tip_validate_code">验证码：%1$s</string>
+    <string name="tip_validity">有效期限：%1$s</string>
+    <string name="tip_marks">所需积分：%1$s</string>
+    <string name="tip_phone_number">电话号码：%1$s</string>
+    <string name="tip_validate">有效期：%1$s</string>
+    <string name="tip_more_address">查看全部 %1$d 家分店</string>
+    <string name="tip_my_location">我的位置</string>
+    <string name="tip_merchants_used">%1$d 店通用</string>
+    <string name="tip_walk_distance">步行%1$s</string>
+    <string name="tip_plan_index">方案 %1$d</string>
+    <string name="tip_more_video_category">• • •</string>
+    <string name="tip_image_navigation_index">%1$d/%1$d</string>
+    <string name="tip_delete_my_favorite">删 除(%1$d)</string>
+    <string name="tip_selecte_all">全 选</string>
+
+    <string name="coupon_obtain">我要领取</string>
+    <string name="coupon_obtained">已领取</string>
+    <string name="coupon_expired">已过期</string>
+    <string name="coupon_empty">抢光了</string>
+    <string name="coupon_converted">已兑换</string>
+    <string-array name="coupon_columns">
+        <item>所有优惠券</item>
+        <item>我的优惠券</item>
+    </string-array>
+    <string-array name="statusText">
+        <item> </item>
+        <item >已领取</item>
+        <item >已兑换</item>
+        <item >抢光了</item>
+        <item >已过期</item>
+    </string-array>
+
+    <!-- 投票状态码 -->
+    <string-array name="vote_status">
+        <item>已结束</item>
+        <item>进行中</item>
+    </string-array>
+
+    <string name="walk">步行</string>
+    <string name="driver">驾车</string>
+    <string name="transite">公交</string>
+
+    <string name="share_content_vote">我参与了 @无线长春 的民意调查，说了我的心声，你也来参与一下吧！</string>
+    <string name="share_content_community">\@无线长春 爆料社区欢迎您入驻。</string>
+    <string name="share_content_coupon">我正在使用 @无线长春 优惠劵，好东西要与好朋友分享。</string>
+    <string name="share_content_travel">\@无线长春 乐享生活，文化名城，四季长春欢迎您。</string>
+    <string name="share_content_audio">我正通过 @无线长春 手机客户端收听《%1$s》</string>
+    <string name="share_content_video">我正通过 @无线长春 手机客户端观看《%1$s》</string>
+    <string name="share_content_shake">我正在参加《%1$s》，你也来试试手气吧！</string>
+    <!-- <string name="share_content_shake">我在无线长春发现了一个《%1$s》活动很有意思，推荐给大家。</string> -->
+
+    <string name="txt_detail">详 情</string>
+    <string name="txt_edit">编辑</string>
+    <string name="txt_edit_success">完成</string>
+    <string name="txt_program">节目单</string>
+    <string name="txt_more">更多</string>
+    <string name="txt_chooice_piece">选 集</string>
+    <string name="txt_search"> 搜 索 </string>
+
+    <string name="hello_world_test"></string>
+</resources>

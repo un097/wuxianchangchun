@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simico_menu_item_selector"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="service" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/simico_service_icon_size"
+            android:layout_height="@dimen/simico_service_icon_size"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/simico_default_service"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_cloer"
+            android:layout_width="@dimen/simico_service_icon_size"
+            android:layout_height="@dimen/simico_service_icon_size"
+            android:layout_alignBottom="@id/iv_icon"
+            android:layout_alignLeft="@id/iv_icon"
+            android:layout_alignRight="@id/iv_icon"
+            android:layout_alignTop="@id/iv_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/simico_avatar_clover2"
+            android:visibility="visible" />
+	<ImageView
+            android:id="@+id/iv_up"
+            android:layout_width="@dimen/simico_service_icon_size"
+            android:layout_height="@dimen/simico_service_icon_size"
+            android:layout_alignBottom="@id/iv_icon"
+            android:layout_alignLeft="@id/iv_icon"
+            android:layout_alignRight="@id/iv_icon"
+            android:layout_alignTop="@id/iv_icon"
+            android:background="@drawable/simico_default_service_up"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违章查询"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="这是违章描述"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

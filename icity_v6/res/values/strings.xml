@@ -1,0 +1,448 @@
+<resources>
+
+<string name="app_name">爱城市</string>
+<string name="start_city">开始智慧城市之旅</string>
+
+<!-- 系统类型 -->
+<string name="os_type">1</string>
+<!-- 系统名称 -->
+<string name="os_name">android</string>
+
+<!-- 城市切换 -->
+<string name="city_change">切换城市</string>
+<string name="city_title">当前城市%1$s</string>
+<string name="city_title_default">选择城市</string>
+<string name="city_search_hint">搜索城市名称···</string>
+<string name="city_letter_choice">A-Z</string>
+<string name="city_letter_all">全部</string>
+<string name="city_change_ing">正在加载城市信息&#8230;</string>
+<string name="city_buiding">当前城市尚未开通，敬请期待！</string>
+<string name="city_load_fail">城市列表加载失败，点此重新加载。</string>
+<string name="city_search_result">搜索结果</string>
+<string name="current_city_do_not_click">您已经在%s,请选择其他城市。</string>
+<string name="current_location_city">当前定位城市</string>
+<string name="loc_citychanged_tips">系统定位您在%1$s，是否切换？</string>
+<string name="loc_citychanged_error">切换到定位城市失败</string>
+
+<!-- 网络连接不可用 -->
+<string name="net_error">网络异常，请检查网络设置</string>
+<string name="net_warn">网络连接不可用</string>
+<string name="net_warn_desc1">未能连接到互联网</string>
+<string name="net_warn_desc2">您的设备未启用移动网络或Wi-Fi网络</string>
+<string name="net_warn_not_connected">如需要连接到互联网，请参考以下几点：</string>
+<string name="net_warn_not_connected_tip1">检查手机的Wi-Fi设置，查看是否有可接入的Wi-Fi信号。</string>
+<string name="net_warn_not_connected_tip2">检查手机是否已接入移动网络，并且手机未停机。</string>
+<string name="net_warn_wifi">如果您已接入Wi-Fi网络：</string>
+<string name="net_warn_wifi_tip1">请检查您所连接的Wi-Fi特点是否已接入互联网，或该热点是否允许您的设备访问互联网。</string>
+
+<!-- 首页，左边部分 -->
+<string name="home_name">主页</string>
+<string name="home_register">注册</string>
+<string name="home_login">登录</string>
+<string name="home_fav">收藏</string>
+<string name="home_seach">搜索</string>
+<string name="home_setting">设置</string>
+<string name="home_widget_error">获取数据失败，点击重新加载&#8230;</string>
+<string name="home_logining">自动登录中&#8230;</string>
+<string name="home_please_login">请登录</string>
+
+<!-- 首页 -->
+<string name="home_hot">热门</string>
+
+<!-- 天气 -->
+<string name="home_weather">%1$s~%2$s</string>
+<string name="home_weather_refresh_sucess">刷新成功</string>
+<string name="home_weather_refresh_fail">刷新成功</string>
+<string name="home_weather_fail">天气加载失败</string>
+<string name="home_weather_fail_renew">点击刷新天气</string>
+<string name="home_weather_loading">天气加载中&#8230;</string>
+<string name="home_weather_net_error">网络异常</string>
+<string name="home_weather_unit">°C</string>
+<string name="home_weather_yesterday">比昨天%1$s%2$s°</string>
+<string name="home_weather_yesterday_no_change">与昨天温度相同</string>
+<string name="home_weather_aqi">空气质量</string>
+
+<!-- 个人中心 -->
+<string name="person_center_user_center">个人中心</string>
+<string name="person_center_sign_in">签到</string>
+<string name="person_center_sign_in_already">已签到</string>
+<string name="person_center_my_relevance">我的帐户</string>
+<string name="person_center_my_notice">我的消息</string>
+<string name="person_center_credit_and_level">积分规则</string>
+<string name="person_center_account_tip">(%1$s)</string>
+<string name="person_center_urban_foot_print">城市历程</string>
+<string name="person_center_change_password">修改密码</string>
+<string name="person_center_change_information">编辑</string>
+<string name="person_center_change_nickname">修改用户名</string>
+<string name="person_center_set_head">修改头像 </string>
+<string name="person_center_eixt">退出登录</string>
+<string name="person_center_level">等级：%1$s（%2$s/%3$s）</string>
+<string name="person_center_level_new">等级：%1$s</string>
+<string name="person_center_balance"> 余额 %1$s元</string>
+<string name="person_center_sign_succeed">签到成功</string>
+<string name="person_center_sign_fail">签到失败</string>
+<string name="person_center_up_head">上传头像中&#8230;</string>
+<string name="user_headphoto_name">/user_head.jpg</string>
+<string name="refresh_data">获取个人中心数据....</string>
+<string name="refresh_data_fail">获取个人中心数据失败</string>
+<string name="update_head_fail">图片传失败</string>
+<string name="update_head_succeed">图片传成功</string>
+<string name="change_susseed">修改成功</string>
+<string name="change_fail">修改失败</string>
+<string name="done_fail">操作失败</string>
+<string name="notnotice">没有你消息</string>
+<string name="person_center_clear_notice">清空</string>
+<string name="person_center_del_notice">删除</string>
+<string name="preson_center_not_edit">对不起，你没有可编辑的数据</string>
+<string name="person_center_time">%1$s-%2$s%3$s</string>
+<string name="person_center_can_relevance">添加/删除账户</string>
+<string name="person_center_no_data_can_relevance">您暂未添加任何账单数据</string>
+<string name="person_center_my_aixiu">我的来电秀</string>
+<string name="person_center_receive_calls_free">接听电话免费秀不停</string>
+
+<!-- 个人中心 编辑 -->
+<string name="person_center_change_name">修改昵称</string>
+<string name="person_center_change_name_save">确定</string>
+<string name="person_center_change_name_hint">请输入新昵称</string>
+<string name="person_center_change_name_input_diff_name">新昵称与原昵称相同，请输入不同的昵称</string>
+<string name="person_center_change_name_net_fail">修改昵称失败，请检查网络连接</string>
+<string name="person_center_change_name_too_long">昵称过长，请小于6个字</string>
+<string name="person_center_change_mobile">修改手机号</string>
+<string name="person_center_oldpsw">请输入旧密码</string>
+<string name="person_center_newpsw">请输入新密码</string>
+<string name="person_center_retrypsw">再次输入密码</string>
+<string name="person_center_psw_wrong">密码错误</string>
+<string name="person_center_psw_empty">密码不能为空</string>
+<string name="person_center_retry_psw_empty">再次输入密码不能为空</string>
+<string name="person_center_psw_nosame">两次输入密码不一致</string>
+<string name="person_center_pwd_valid">新密码(最长20位字母或数字)</string>
+
+<!-- 登录 -->
+<string name="login_mobile">手机号码</string>
+<string name="login_password">密码</string>
+<string name="login_forget_password"><u>忘记密码</u></string>
+<string name="login_get_password">获取密码</string>
+<string name="login_find_password">找回密码</string>
+<string name="login_mobile_empty">手机号不能为空</string>
+<string name="login_not_mobile_number">请输入正确的手机号码</string>
+<string name="login_password_empty">密码不能为空</string>
+<string name="login_success">登录成功</string>
+<string name="login_process">正在登录&#8230;</string>
+<string name="login_no_account">该账户不存在</string>
+<string name="login_login_failed">登录失败,密码错误</string>
+<string name="login_os_wrong">系统异常</string>
+<string name="login_mobile_error">请输入正确的手机号码</string>
+<string name="login_error">登录失败,请稍后再试</string>
+<string name="login_remember_password">记住密码</string>
+
+<!-- 忘记密码 -->
+<string name="forget_get_password_success">密码已发送至注册手机</string>
+<string name="forget_get_password_fail">获取密码失败</string>
+<string name="forget_mobile_empty">手机号不能为空</string>
+<string name="forget_mobile_error">请输入正确的手机号码</string>
+<string name="forget_password_get">正在获取密码，请稍后&#8230;</string>
+
+<!-- 注册 -->
+<string name="register_get_verifyCode">获取验证码</string>
+<string name="register_repeat_get_verify">重新获取验证码</string>
+<string name="register_verifyCode">验证码</string>
+<string name="register_nickname">昵称</string>
+<string name="register_password">密码</string>
+<string name="register_password_again">再次输入密码</string>
+<string name="register_email">邮箱</string>
+<string name="register_invitation">邀请码(选填)</string>
+<string name="register_tip1">为确保获取正确的验证码,请输入真实的手机号</string>
+<string name="register_tip2">验证码已发送，60s后可重新获取</string>
+<string name="register_get_verify_running">正在获取验证码&#8230;</string>
+<string name="register_get_verify_code_success">获取验证码成功</string>
+<string name="register_get_verify_code_fail">获取验证码失败</string>
+<string name="register_mobile_empty">手机号不能为空</string>
+<string name="register_mobile_error">请输入正确的手机号码</string>
+<string name="register_verify_code_empty">请输入验证码</string>
+<string name="register_password_empty">密码不能为空</string>
+<string name="register_password_valid">密码最长20位，包含字母或数字</string>
+<string name="register_password_not_equal">两次输入密码不一致</string>
+<string name="register_nickname_empty">昵称不能为空</string>
+<string name="register_nickname_valid">请输入字母数字或汉字</string>
+<string name="register_running">正在注册&#8230;</string>
+<string name="register_success">注册成功</string>
+<string name="register_fail">注册失败,请稍后再试</string>
+<string name="register_get_verifycode_again">重新获取验证码</string>
+
+<!-- 个人信息 -->
+<string name="personinfo_fill_info">完善个人资料</string>
+<string name="personinfo_add_headphoto">请您添加头像</string>
+<!-- 跳过,直接进入爱城市 -->
+<string name="personinfo_tips">跳过,直接进入应用</string>
+<string name="personinfo_update_fail">更改用户信息失败</string>
+<string name="personinfo_upload_fail">头像上传失败</string>
+<string name="personinfo_uploding">正在上传头像&#8230;</string>
+<string name="personinfo_img_empty">请先选择一张图片</string>
+
+<!-- web -->
+<string name="web_page_no_find">您的连接访问失败</string>
+<string name="web_image_upload_success">文件上传成功</string>
+<string name="web_image_upload_fail">文件上传失败</string>
+<string name="web_image_uping">图片上传中&#8230;</string>
+<string name="sure_up_load">确定要上传图片吗？</string>
+<string name="web_share">分享</string>
+<string name="web_error">截屏报错</string>
+<!-- <string name="category_default_msg">我正在使用“%1$s”，城市装进口袋，精彩掌间绽放，爱城市，爱精彩，点击下载！</string> -->
+<string name="category_default_msg">我正在使用“%1$s”，@无线长春高速路况分享给您。大家帮大家，方便你我他</string>
+<string name="category_default_url">http://www.ccradio.cn/node_1154.shtml</string>
+<string name="category_share_msg">我正在使用“%1$s”，%2$s</string>
+<string name="web_collect">添加到我的收藏</string>
+<string name="web_collect_successed">收藏成功</string>
+<string name="web_collect_is_exist">该应用已收藏</string>
+<string name="web_collect_faild">收藏失败</string>
+<string name="web_collecting">收藏中</string>
+<string name="web_cuting">截取中</string>
+    <string name="web_no_find">无法打开此协议</string>
+
+<!-- 设置 -->
+<string name="setting">设置</string>
+<string name="setting_home">首页设置</string>
+<string name="setting_my_application">我的应用</string>
+<string name="setting_push">推送设置</string>
+<string name="setting_change_bg">首页背景</string>
+<string name="setting_download">下载管理</string>
+<string name="setting_video">视频设置</string>
+<string name="setting_change_succes">修改成功</string>
+
+<!-- 首页背景设置 -->
+<string name="home_bg_local_pic">本地图片</string>
+<string name="home_bg_camera">拍照</string>
+<string name="home_bg_icity">使用爱城市精选图片</string>
+<string name="home_bg_get_more">获取更多图片</string>
+<string name="home_bg_default">默认背景</string>
+
+<!-- 意见反馈 -->
+<string name="feedback_default_reply">\u0020感谢您的反馈！意见处理中，请稍候&#8230;</string>
+<string name="setting_feedback">意见反馈</string>
+<string name="feedback_content_hint">请填写您的问题和建议</string>
+<string name="feedback_submit">发送</string>
+<string name="feedback_sent_progress">正在提交中,请稍等···</string>
+<string name="feedback_conversations">反馈信息</string>
+<string name="notification">消息推送</string>
+<string name="setting_share">分享</string>
+
+<!-- 友盟分享平台设置 -->
+<string name="umeng_share_auth_setting_unauthtip">未授权</string>
+<string name="umeng_share_auth_delete_msg">确认解除授权吗?</string>
+
+<!-- 设置 -->
+<string name="setting_bing_umeng_account">绑定账号</string>
+<string name="setting_bind_binded">已绑定</string>
+<string name="setting_bind_tips">绑定后可分享或同步内容</string>
+<string name="setting_bind_exe">绑定异常</string>
+<string name="setting_bind_error">绑定错误</string>
+<string name="setting_bind_cancle_title">取消绑定</string>
+<string name="setting_cancle_msg">取消后无法同步或分享内容</string>
+<string name="setting_confirm_msg">绑定后可同步或分享内容</string>
+<string name="setting_about">关于</string>
+<string name="setting_3g">3G流量提醒</string>
+<string name="setting_clear_cache">清除缓存</string>
+<string name="setting_faq">FAQ</string>
+
+<!-- 推送设置 -->
+<string name="push_setting">推送设置</string>
+<string name="dnd_setting">免打扰</string>
+<string name="sound_setting">声音</string>
+<string name="shake_setting">震动</string>
+<string name="notify_apllication_setting">已开启推送消息的应用</string>
+<string name="watercost_setting">水费</string>
+<string name="notification_settings_timeinterval">夜间免打扰时间：23:00&#8211;07:00</string>
+
+<!-- 分享有礼 -->
+<string name="share">分享有礼</string>
+<string name="share_describe">将智慧城市分享给您的好友，同时短信分享会有机会获得话费奖励</string>
+<string name="share_hint">温馨提示：</string>
+<string name="share_hint_describe">非福建天翼用户分享短信需要收取短信信息费。</string>
+<string name="share_message">短信分享</string>
+<string name="share_net">社交网络平台分享</string>
+<string name="share_tengxun">腾讯微博</string>
+<string name="share_xinlang">新浪微博</string>
+<string name="share_weixin">微信</string>
+<string name="share_number">完成(%1$s)</string>
+<string name="share_int_number">完成(0)</string>
+<string name="share_sms_send_success">分享短信发送成功</string>
+<string name="share_sms_contact_tips">请输入或添加联系人</string>
+<string name="share_sms_contact_null">联系人列表无数据，请手动输入联系人号码，谢谢！</string>
+<string name="share_sms_contact_invalid_mobile">手机号码格式有误，请输入手机号码并以分号(;)隔开！</string>
+<string name="share_sms_add_contact">添加联系人</string>
+<string name="share_no_contacts">无联系人信息</string>
+<string name="share_sent_progress">正在发送,请稍等···</string>
+
+<!-- 搜索 -->
+<string name="search">搜索</string>
+<string name="search_hot">热门搜索</string>
+<string name="search_hot_word">热门词条</string>
+<string name="search_app">应用搜索</string>
+<string name="search_baidu">百度搜索</string>
+<string name="search_keyword_hint">请输入关键字···</string>
+<string name="search_refresh_hint">已帮您换了一批热词</string>
+<string name="search_result">关于\"%1$s\"搜索到%2$d个应用</string>
+<string name="search_result_without_num_tip">关于\"%1$s\"搜索到以下应用</string>
+<string name="search_result_no_find">没有找到关于\"%s\"的搜索结果</string>
+
+<!-- 我的应用 -->
+<string name="myapp_title">我的收藏</string>
+<string name="myapp_addapp">添加应用</string>
+<string name="search_hint">请输入搜索关键字</string>
+<string name="myapp_empty">请先选择应用</string>
+<string name="myapp_add_fail">添加应用失败</string>
+<string name="myapp_edit">编辑</string>
+<string name="myapp_no_select">请先选择需要删除的应用</string>
+<string name="myapp_del_fail">删除应用失败</string>
+<string name="myapp_load_fail">加载应用列表失败,请稍后重试</string>
+<!-- MPlayer -->
+<string name="mplayer_error">对不起，无法获取该视频内容。</string>
+<string name="mplayer_end">视频播放结束&#8230;</string>
+
+<!-- MenuItemClickUtils -->
+<string name="menu_item_click_login_notice">亲，登录后才能使用"%1$s"哦！</string>
+
+<!-- 下载管理 -->
+<string name="download_manager">下载管理</string>
+<string name="download_running">下载中(%1$d)</string>
+<string name="download_finished">已下载(%1$d)</string>
+<string name="download_installed">已安装(%1$d)</string>
+<string name="download_no_installed">未安装(%1$d)</string>
+<string name="download_sd_nomount">sd卡不存在,无法下载！</string>
+<string name="download_is_done">您已下载或安装过了,即将为您开启应用！</string>
+<string name="download_is_exist">已在下载队列中！</string>
+<string name="download_is_install">已在安装列表中！</string>
+<string name="download_is_no_install">已在未安装列表中！</string>
+<string name="download_install_again">应用已被卸载,请重新安装！</string>
+<string name="download_again">安装包已被删除,请重新下载安装包安装！</string>
+<string name="download_continue">继续</string>
+<string name="download_suspend">暂停</string>
+<string name="download_install">安装</string>
+<string name="download_dialog_desc">是否下载该应用？</string>
+<string name="download_dialog_app_size">大小:</string>
+<string name="download_dialog_desc_index">描述:</string>
+<string name="download_run_error">未能正确获取应用信息,请从手机系统程序列表里直接运行该应用！</string>
+<string name="download_delete_success">删除成功</string>
+<string name="download_delete_fail">删除失败</string>
+<string name="download_delete_file_fail">安装包被系统占用中，删除失败!</string>
+<string name="download_complete">[%1$s]下载完成!\n请到已下载栏目查看。</string>
+<string name="download_re_down_tip">服务器或网络异常，[%1$s]下载异常!</string>
+<string name="download_pause_afinal_tip">user stop download thread</string>
+<string name="download_afinal_http_error_tip">Circular redirect to</string>
+<string name="download_url_no_exits">下载地址不存在!</string>
+<string name="download_apk_default_name">未知应用名称</string>
+
+<!-- 退出应用 -->
+<string name="exit_platform">再按一次返回键退出应用！</string>
+
+<!-- 关于 -->
+<string name="icity_about">“无线长春”是由长春广播电视台重点打造的综合服务类城市应用客户端，功能覆盖市民生活方方面面。最新鲜的资讯，最及时的广播电视节目，最贴心的出行服务，还有更多专享优惠服务，尽在“无线长春”，让我们做您的“万能口袋”。</string>
+<!-- <string name="icity_about">&#160&#160无线长春由长春广播电视台、长春公安交警支队、中科院、中国电信等单位联合打造，由长春视听传媒有限公司负责运营。无线长春力争建设成为长春市信息发布的主平台、舆论宣传的主阵地、惠民服务的主力军,努力打造成本地乃至与全省移动互联网品牌媒体。 -->
+<!--     ;\n;&#160;&#160;无线长春充分利用了本地的政府资源和媒体资源,可以提供：新闻资讯、政务发布、民意调查、路况详情、路况视频、交通违章查询、广播电视直播点播、旅游资讯、商旅预订、便民热线、天气、广告与电子优惠券等服务。在设计理念上,无线长春借鉴了国际发达国家和国内发达地区的先进经验,充分体现了“以人为本”的服务理念。无线长春的UI界面突出了当今最流行的“清新、简洁、美观”的特点。在用户体验上，强调“有用、易用”。 -->
+<!--     ;\n;&#160;&#160;无线长春的“新闻资讯”,将提供24小时滚动新闻,重要信息实时推送;“路况详情”功能会通过红、绿、黄三种颜色显示全市的交通状况;“路况视频”可以通过交警的监控摄像头查看部分路口的车流变化;“违章查询”功能里,不仅可以查询车辆违法信息,还可以把信息主动推送给车主;“旅游资讯”里,有长春市最热门的景区景点介绍,还有本地特产、美食展示,将来还可以实现线上消费。 -->
+<!--     ;\n;&#160;&#160;为了让APP功能更全，为了让用户的体验更好，我们将不断努力……\n 联系电话：0431—88462250;13843000307，期待与您合作！</string> -->
+<string name="about_version">版本 : %1$s</string>
+<string name="check_update">检查更新</string>
+<string name="free_statement">免责声明</string>
+<string name="icity_envir">适用环境: android 2.2 以上</string>
+<string name="icity_address">官方网址: http://t.cn/zWk3y6d</string>
+<string name="icity_qq">客服 Q Q: 1747377008</string>
+<string name="icity_email">邮件 : i-city@189.cn</string>
+<string name="icity_version_disp">信息版权说明</string>
+<string name="icity_com1">中国电信</string>
+<string name="icity_com2">中国电信北京研究院</string>
+<string name="icity_com3">福建讯盟软件有限公司</string>
+<string name="version_explan">\n爱城市为应用聚合平台，部分应用在接入时可能包含网络转载内容，如您是该类内容著作权人或其他权利人，可与爱城市支撑方联系协商处理版权相关事宜。\n</string>
+
+<!-- 升级版本 -->
+<string name="version_newest">您的版本已经是最新的，无需升级。</string>
+<string name="version_update">版本升级</string>
+<string name="version_is_update">是否要升级版本?</string>
+<string name="version_checking">开始检查新版本&#8230;</string>
+<string name="version_high_update">版本升级(紧急)</string>
+<string name="version_high_update_desc">新版本有紧急更新，为不影响正常使用请先等待升级，谢谢！</string>
+
+<!-- 消息推送 -->
+<string name="notification_title">消息通知</string>
+<string name="notification_detail">消息详情</string>
+<string name="notice_cancel">删除该消息？</string>
+<string name="notice_clear">清空消息？</string>
+<string name="notice_cancel_success">删除消息成功</string>
+<string name="notice_clear_success">清空消息成功</string>
+<string name="notice_run_error">消息出错，应用无法启动</string>
+<string name="notice_run_error_without_app">找不到该应用，去下载安装试试!</string>
+<string name="notice_delete_desc">\n是否删除该消息?\n</string>
+<string name="notice_clear_desc">\n是否清空消息?\n</string>
+<string name="notice_msg_list">消息列表</string>
+<string name="notice_person_msg_login_tip">您还未登录，请登录后查看消息</string>
+
+<!-- 违章新 -->
+<string name="traffic_video">路况视频</string>
+<string name="violation_title">违章查询</string>
+<string name="violation_add_car">查询违章车辆</string>
+<string name="violation_query_other_car">查询其他车辆</string>
+<string name="violation_query">查询</string>
+<string name="violation_query_last_refresh_time">最后更新时间：%s</string>
+<string name="violation_car_type">车辆类型：</string>
+<string name="violation_type_small_car">小型汽车</string>
+<string name="violation_car_no">车牌号：</string>
+<string name="violation_car_last_4">车架后四位：</string>
+<string name="violation_time">违章时间：</string>
+<string name="violation_money">处罚金额：%1$s</string>
+<string name="violation_mark">违法记分：%1$s</string>
+<string name="violation_action">违法行为：</string>
+<string name="violation_address">违章地点：</string>
+<string name="violation_sure_delete">确定要删除：%1$s吗？</string>
+<string name="violation_delete_failed">删除失败，请稍后再试</string>
+<string name="violation_no_violations">您的爱车没有违章信息</string>
+<string name="violation_input_car_number_error">车牌号输入有误</string>
+<string name="violation_input_last_codes_error">车架后四位输入有误</string>
+<string name="violation_is_exist">车辆已存在</string>
+<string name="violation_querying">查询中</string>
+<string name="widget_violation_car_number_hint">车牌号</string>
+<string name="widget_violation_car_number_last_4_hint">车架后四位</string>
+<string name="violation_order_mgr">订单管理</string>
+<string name="violation_order_number">订单编号：</string>
+<string name="violation_order_no_data">当前没有订单信息</string>
+<string name="violation_car_number">车牌号码：</string>
+<string name="violation_count">违章次数：</string>
+<string name="violation_mark_1">违章扣分：</string>
+<string name="violation_all_money">总处罚金：</string>
+<string name="violation_all_agency_money">总代办费：</string>
+<string name="violation_agency_detial">代办费收费明细</string>
+<string name="violation_all_money_count">总计：</string>
+<string name="violation_go_to_pay">去付款</string>
+<string name="violation_notice">我们将在3&#8211;5个工作日为您处理</string>
+<string name="violation_all_handle">全部处理</string>
+<string name="violation_money_detial">账单详情</string>
+
+<!-- 路况视频widget -->
+<string name="widget_road_video_keyport">关键字不能为空</string>
+<string name="widget_road_video_title">搜索路况视频</string>
+
+<!-- 话费查询 -->
+<string name="personcenter_fare_search">通信费</string>
+
+<!-- 多图闪屏 -->
+<string name="splahs_img_exist">图片已存在sd卡icity_pic文件夹下！</string>
+<string name="splahs_img_save_success">图片已保存在sd卡icity_pic文件夹下！</string>
+<string name="splahs_img_save_fail">图片保存失败！</string>
+
+<!-- 积分规则 -->
+<string name="suport_system">Android 2.2以上</string>
+
+<!-- 我的收藏 -->
+<string name="myfav_clearcache">清除记录</string>
+<string name="myfav_nocontent">没有任何最近访问记录</string>
+<string name="myfav_app_nocontent">您未收藏应用，赶紧点击加号进行收藏吧</string>
+
+<!-- 五险一金查询协议 -->
+<string name="query_agreement_title">爱城市用户服务协议</string>
+
+<!-- 厦门路况 -->
+<string name="road_title">实时路况</string>
+<string name="road_loadmessage">正在加载数据&#8230;</string>
+<string name="road_place_list_fail">获取地址列表失败</string>
+<string name="road_location_error">无法获取您所在的位置</string>
+
+</resources>

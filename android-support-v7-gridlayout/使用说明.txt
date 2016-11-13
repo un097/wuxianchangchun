@@ -1,0 +1,49 @@
+1.要能使用GridLayout，必须依赖此项目。
+     不能直接把android-support-v7-gridlayout.jar包放在项目的libs文件夹里。
+     
+2.在xml布局文件里要写全名：android.support.v7.widget.GridLayout
+要用到GridLayout里的一些属性，必须使用自己命名空间，如下的：gridlayout,
+注意写法xmlns:gridlayout="http://schemas.android.com/apk/res/cn.ffcs.wisdom.city"
+
+<android.support.v7.widget.GridLayout
+        xmlns:gridlayout="http://schemas.android.com/apk/res/cn.ffcs.wisdom.city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        gridlayout:alignmentMode="alignBounds"
+        gridlayout:columnCount="3"
+        gridlayout:columnOrderPreserved="false"
+        gridlayout:rowCount="1" >
+
+        <Button
+            android:id="@+id/a"
+            style="@style/white_20sp"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/btn_letter_selector"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/b"
+            style="@style/white_20sp"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/btn_letter_selector"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/c"
+            style="@style/white_20sp"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/btn_letter_selector"
+            android:text="C" />
+</android.support.v7.widget.GridLayout>
+
+3.可以阅读下本项目的README.txt

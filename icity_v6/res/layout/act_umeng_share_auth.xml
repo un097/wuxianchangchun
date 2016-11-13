@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/dnd_setting_line"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/sina_icon"
+                android:layout_width="33dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/photo_share_sina_unfocus_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/sina_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/sina_toggle"
+                android:layout_toRightOf="@+id/sina_icon"
+                android:singleLine="true"
+                android:text="@string/umeng_share_auth_setting_unauthtip" />
+
+            <ToggleButton
+                android:id="@+id/sina_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_newssetting_switch_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sound_setting_line"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            >
+
+            <ImageView
+                android:id="@+id/tencent_icon"
+                android:layout_width="33dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/photo_share_tencent_unfocus_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tencent_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/tencent_toggle"
+                android:layout_toRightOf="@+id/tencent_icon"
+                android:singleLine="true"
+                android:text="@string/umeng_share_auth_setting_unauthtip" />
+
+            <ToggleButton
+                android:id="@+id/tencent_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_newssetting_switch_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/qzone_icon"
+                android:layout_width="33dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/photo_share_zone_unfocus_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/qzone_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/qzone_toggle"
+                android:layout_toRightOf="@+id/qzone_icon"
+                android:singleLine="true"
+                android:text="@string/umeng_share_auth_setting_unauthtip" />
+
+            <ToggleButton
+                android:id="@+id/qzone_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_newssetting_switch_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/renren_icon"
+                android:layout_width="33dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/photo_share_renren_unfocus_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/renren_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/renren_toggle"
+                android:layout_toRightOf="@+id/renren_icon"
+                android:singleLine="true"
+                android:text="@string/umeng_share_auth_setting_unauthtip" />
+
+            <ToggleButton
+                android:id="@+id/renren_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_newssetting_switch_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_list_up_selector"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/douban_icon"
+                android:layout_width="33dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/photo_share_douban_unfocus_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/douban_username"
+                style="@style/gray_title.16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/douban_toggle"
+                android:layout_toRightOf="@+id/douban_icon"
+                android:singleLine="true"
+                android:text="@string/umeng_share_auth_setting_unauthtip" />
+
+            <ToggleButton
+                android:id="@+id/douban_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_newssetting_switch_off"
+                android:text="@string/umeng_share_auth_setting_unauthtip"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<com.ctbri.wxcc.widget.MenuGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:self="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:horizontalSpacing="8dp"
+    android:listSelector="@drawable/common_bg_selector"
+    android:numColumns="3"
+    android:stretchMode="columnWidth"
+    android:transcriptMode="disabled"
+    android:verticalSpacing="8dp"
+    self:is_draw_border="false" >
+
+</com.ctbri.wxcc.widget.MenuGridView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/global_bg"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_topbar"
+        layout="@layout/action_bar" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/tab_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_topbar"
+        android:background="#F5F5F5"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true" >
+    </com.viewpagerindicator.TabPageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_page_indicator" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/btn_new_community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/global_bottom_icon_margin_bottom"
+        android:background="@null"
+        android:contentDescription="@string/empty_imageview_desc"
+        android:src="@drawable/community_new_button_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/inc_loading_bar" />
+
+<!--     <FrameLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" > -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <cn.ffcs.widget.TopFixExpandableListView
+                android:id="@+id/addapp_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:childDivider="@drawable/list_line"
+                android:divider="@drawable/list_line"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </RelativeLayout>
+
+<!--         <include layout="@layout/top_shadow" /> -->
+<!--     </FrameLayout> -->
+
+</LinearLayout>

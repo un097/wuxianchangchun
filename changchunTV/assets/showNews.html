@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"
+	content="application/vnd.wap.xhtml+xml;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+.body {
+	margin: 0px 0px;
+	padding: 0;
+	line-height: 150%;
+	background: #f1f1f1
+}
+
+.tCenter {
+	text-align: center
+}
+
+.marTop2 {
+	margin-top: 2px
+}
+
+.marTop6 {
+	margin-top: 6px
+}
+
+.marTop10 {
+	margin-top: 10px
+}
+
+.marTop20 {
+	margin-top: 20px
+}
+
+.marTop30 {
+	margin-top: 30px
+}
+
+.marTop63 {
+	margin-top: 63px
+}
+
+.marLeft10 {
+	margin-left: 10px
+}
+
+.marRight10 {
+	margin-right: 10px
+}
+
+.marBottom10 {
+	margin-bottom: 10px
+}
+
+.atitle {
+	color: #464646;
+	padding: 3px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.atime {
+	color: #949494;
+	padding: 0px 0;
+	font-size: 10px;
+}
+
+.viewMore {
+	margin: 20px 10px 0 10px;
+	text-align: center;
+}
+
+.viewMore .loading {
+	display: none;
+	cursor: pointer;
+	left: 50%;
+	line-height: 21px;
+	margin: -10px 0 0 -30px;
+	padding-right: 18px;
+	position: absolute;
+	top: 50%;
+}
+
+.loading {
+	text-align: center;
+}
+
+.content {
+	color: #5c5c5c;
+	font-size: 18px;
+	padding: 5px 10px 5px 10px
+}
+
+.content p {
+	margin: 3px 0;
+}
+
+.em {
+	font-style: normal;
+	font-weight: 400;
+}
+
+.a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.img {
+	border: none;
+}
+
+.STYLE1 {
+	font-size: 10px
+}
+
+.STYLE2 {
+	color: #FF0000
+}
+</style>
+<script type="text/javascript">
+	var title;
+	var ptime;
+	var body;
+	var replyCount;
+	var replyBoard;
+	var source;
+	var more;
+	var moreButton;
+	var myBody;
+	var myTitle;
+	var myMore;
+	var myCommentCount;
+	var commentCount;
+
+	function getTitle() {
+		myTitle = document.getElementById("title");
+		if (window.news) {
+			title = window.news.getTitle();
+			myTitle.innerHTML = title;
+			var height = window.news.getScreenHeight();
+			if (height >= 800) {
+				myTitle.style.fontSize = "19px";
+				myTitle.style.lineHeight = "26px";
+			}
+		}
+	}
+
+	function getSource() {
+		var mySource = document.getElementById('source');
+		if (window.news) {
+			source = window.news.getSource();
+			mySource.innerHTML = source;
+			var height = window.news.getScreenHeight();
+			if (height >= 800) {
+				mySource.style.fontSize = "13px";
+			}
+		}
+	}
+
+	function getTime() {
+		var myTime = document.getElementById('ptime');
+		if (window.news) {
+			ptime = window.news.getTime();
+			myTime.innerHTML = ptime;
+			var height = window.news.getScreenHeight();
+			if (height >= 800) {
+				myTime.style.fontSize = "13px";
+			}
+		}
+	}
+
+	function getBody() {
+		myBody = document.getElementById('article_body');
+
+		if (window.news) {
+			body = window.news.getBody();
+			myBody.innerHTML = body;
+			var height = window.news.getScreenHeight();
+			if (height >= 800) {
+				myBody.style.fontSize = "18px";
+				myBody.style.lineHeight = "26px";
+			}
+		}
+	}
+
+	function initialize() {
+		getTitle();
+		//getCommentCount();
+		getSource();
+		getTime();
+		getBody();
+		getCurFontSize();
+	}
+
+	function getCurFontSize() {
+		if (window.news) {
+			var mFontSize = window.news.getCurFontSize();
+			setFontSize(mFontSize);
+		}
+	}
+
+	function setFontSize(mFontSize) {
+		if (mFontSize == 20) {
+			showBigSize();
+		} else if (mFontSize == 18) {
+			showMidSize();
+		} else if (mFontSize == 14) {
+			showSmallSize();
+		}
+	}
+
+	function showMoreButton() {
+		moreButton = document.getElementById('moreButton');
+
+		if (window.news) {
+			var isShown = window.news.hasNext();
+			console.log(isShown);
+			if (isShown == 1) {
+				moreButton.style.display = "block";
+			} else {
+				moreButton.style.display = "none";
+			}
+		} else {
+			moreButton.style.display = "none";
+		}
+	}
+
+	function tiggerFullScreen() {
+		if (window.news)
+			window.news.triggerFullScreen();
+	}
+
+	function isLink(node) {
+		var node = node;
+		while (node.nodeName != "A") {
+			console.log(node.nodeName);
+			if (node.nodeName == "HTML")
+				return false;
+			node = node.parentNode;
+		}
+		return true;
+	}
+
+	function clickEvent() {
+		if (isLink(event.target))
+			return;
+		else
+			tiggerFullScreen();
+	}
+
+	function showBigSize() {
+		myBody.style.fontSize = "20px";
+		myBody.style.lineHeight = "160%";
+	}
+
+	function showMidSize() {
+		myBody.style.fontSize = "18px";
+		myBody.style.lineHeight = "150%";
+	}
+
+	function showSmallSize() {
+		myBody.style.fontSize = "14px";
+		myBody.style.lineHeight = "150%";
+	}
+
+	function getFontSize() {
+		var fontSize = myBody.style.fontSize
+		if (window.news) {
+			window.news.setDeFontSize(fontSize);
+		}
+	}
+
+	function gotoComment() {
+		if (window.news) {
+			window.news.gotoComment();
+		}
+	}
+
+	window.onload = function() {
+		initialize();
+	}
+</script>
+</head>
+<body style="margin: 0px; padding: 0px;">
+	<center>
+		<div id="title" class="marRight10 marLeft10 marTop63 atitle "
+			style="padding-top: 5px;">标题</div>
+		<div id="source" style="display: inline;lineHeight:15px" class="marRight10 atime">
+			來源</div>
+		<div id="ptime" style="display: inline;lineHeight:15px" class="atime">
+			時間</div>
+	</center>
+	<table ><tr height="5"></tr></table>
+	<img src="file:///android_asset/news_divider.png" />
+	<div id="article_body" class="content"
+		style="padding: 5px 5px 50px 5px;"></div>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.wookii.widget.ryg.expandable.ui.PinnedHeaderExpandableListView
+        android:id="@+id/hotline_expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:childDivider="#ffffff"
+        android:childIndicatorLeft="0dp"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false" >
+    </com.wookii.widget.ryg.expandable.ui.PinnedHeaderExpandableListView>
+
+</RelativeLayout>

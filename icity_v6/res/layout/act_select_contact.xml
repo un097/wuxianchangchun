@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <!-- android:background="@drawable/bg_city" -->
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/top_shadow" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/search_input"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/icon_search" />
+
+            <EditText
+                android:id="@+id/search_keyword"
+                android:layout_width="250dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="搜索"
+                android:paddingLeft="10dip"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search_bar" >
+
+            <ListView
+                android:id="@+id/select_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none" 
+                android:divider="@drawable/share_contrats_line"
+                android:fastScrollEnabled="false" />
+
+            <include layout="@layout/inc_loading_bar" />
+
+            <LinearLayout
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/widget_no_data_bg" />
+
+                <TextView
+                    style="@style/gray_title.20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/share_no_contacts" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contact_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="无联系人"
+            android:visibility="gone" />
+
+        <cn.ffcs.wisdom.city.setting.share.SideLetterBar
+            android:id="@+id/sideBar"
+            android:layout_width="22dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_list_down_selector"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_list_down_selector"
+            android:text="@string/share_int_number" />
+    </LinearLayout>
+
+</LinearLayout>

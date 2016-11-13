@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_comment_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/line_gray" />
+
+    <TextView
+        android:id="@+id/tv_comment_line"
+        style="@style/textview.commentLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_comment_tag"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/comment" />
+
+</LinearLayout>

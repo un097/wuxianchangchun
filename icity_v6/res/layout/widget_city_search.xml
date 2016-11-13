@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="15dip"
+    android:layout_marginTop="10dip" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/search_input" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/icon_search"
+            android:contentDescription="@null"
+            android:padding="5dip" />
+
+        <EditText
+            android:id="@+id/city_search"
+            style="@style/gray_b4b4b4.16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:background="@android:color/transparent"
+            android:hint="@string/city_search_hint"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_b4b4b4" />
+    </LinearLayout>
+
+    <Button
+        android:padding="5dip"
+        android:id="@+id/btn_search"
+        android:gravity="center"
+        style="@style/white_title.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/btn_letters_selector"
+        android:text="@string/city_letter_choice" />
+
+</LinearLayout>

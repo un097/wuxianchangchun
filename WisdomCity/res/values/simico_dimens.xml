@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="txt_size_small">14sp</dimen>
+    <dimen name="txt_size_small_15">15sp</dimen>
+    <dimen name="txt_size_median">16sp</dimen>
+    <dimen name="txt_size_large">18sp</dimen>
+    <dimen name="txt_size_large_17">17sp</dimen>
+    <dimen name="news_title">16sp</dimen>
+    <dimen name="news_content">14.5sp</dimen>
+    <dimen name="dialog_margin">7.0dip</dimen>
+    <dimen name="global_padding">8.0dip</dimen>
+    <dimen name="global_dialog_padding">16.0dip</dimen>
+
+    <!-- Action bar -->
+    <dimen name="header_text_size">18.0sp</dimen>
+    <dimen name="sub_header_text_size">12.0sp</dimen>
+
+    <!-- 服务图标大小 -->
+    <dimen name="simico_service_icon_size">45dp</dimen>
+    <dimen name="top_category_height">40.0dip</dimen>
+    <dimen name="top_category_scroll_text_padding">5.0dip</dimen>
+    <dimen name="top_category_scroll_item_margin">8.0dip</dimen>
+    <dimen name="profile_img_size">50dip</dimen>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:tag="ctg_service" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_ctg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近使用"
+            android:textColor="#48A8A6"
+            android:textSize="@dimen/txt_size_large" />
+
+        <TextView
+            android:id="@+id/tv_ctg_enname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Recently used"
+            android:textColor="#94A7B5"
+            android:textSize="@dimen/txt_size_median" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_split"
+        android:visibility="gone" />
+
+    <cn.ffcs.wisdom.city.simico.ui.grid.UnScrollableGridView
+        android:id="@+id/gv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" />
+
+    <View
+        style="@style/horizontal_split"
+        android:visibility="gone" />
+
+</LinearLayout>

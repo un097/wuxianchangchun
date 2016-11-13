@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/travel_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_looper_item_height" >
+    </FrameLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/travel_main_four_menu" />
+
+    <View
+		android:background="@color/line_gray"
+		android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+        android:layout_marginRight="@dimen/travel_content_detail_margin_lr" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+        android:layout_marginRight="@dimen/travel_content_detail_margin_lr" >
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f97070" />
+
+        <TextView
+            android:id="@+id/tv_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            style="@style/textview.color111.sp16"
+            android:text="线路攻略"/>
+    </FrameLayout>
+
+</LinearLayout>

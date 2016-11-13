@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/top" />
+
+    <ScrollView android:id="@+id/relevance_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_layout" >
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            
+            <LinearLayout android:id="@+id/no_data" style="@style/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:visibility="gone" android:gravity="center_horizontal" android:paddingTop="15dip" android:paddingBottom="13dip">
+		        <TextView android:id="@+id/no_data_text" style="@style/gray_b5b5b5.16sp" android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" android:text="您没有关联数据"  android:lineSpacingMultiplier="1.3"/>
+		    </LinearLayout>
+		    
+            <LinearLayout android:id="@+id/relevance_add_part" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:paddingBottom="10dip">
+                <TextView android:id="@+id/other_account" style="@style/gray_b5b5b5.16sp"
+                    android:lineSpacingMultiplier="1.2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:paddingBottom="3dip" android:paddingLeft="15dip" android:paddingTop="5dip"
+                    android:text="@string/person_center_can_relevance"/>
+                <cn.ffcs.widget.GridNoScrollView android:id="@+id/relevance_gridview" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dip" android:gravity="center" android:horizontalSpacing="10dip"
+                    android:listSelector="#00000000" android:numColumns="3" android:paddingLeft="15dip" android:paddingRight="15dip"
+                    android:stretchMode="columnWidth" android:verticalSpacing="10dip" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/relvancelayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"  android:layout_marginLeft="15dip" android:layout_marginRight="15dip" android:paddingLeft="8dip"
+                android:paddingRight="8dip" android:background="#ffffff" android:layout_marginTop="5dip"/>
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_layout" layout="@layout/top_shadow" />
+
+</RelativeLayout>

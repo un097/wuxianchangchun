@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48.0dp"
+    android:background="@color/action_bar_bg_color" >
+
+    <ImageView
+        android:id="@+id/action_bar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16.0dp"
+        android:paddingRight="24.0dp" 
+        android:paddingTop="6.0dp"
+        android:paddingBottom="6.0dp"
+        android:scaleType="center"
+        android:src="@drawable/action_bar_back"/>
+    <TextView android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20.0sp"
+        android:text="title"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color_title"/>
+     <ImageView
+        android:id="@+id/action_bar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="24.0dp"
+        android:scaleType="center"
+        android:paddingRight="16.0dp"
+        android:paddingTop="6.0dp"
+        android:paddingBottom="6.0dp"
+        />
+<!--         android:src="@drawable/video_favorite_button_selector" -->
+     <ImageView android:layout_width="fill_parent"
+         android:layout_height="1px"
+         android:src="#b2b2b2"
+         android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

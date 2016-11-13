@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_01"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/community_action_bar"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/community_type_id"
+        android:layout_width="fill_parent"
+        android:layout_height="38.0dp"
+        android:layout_below="@+id/community_action_bar"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="8.0dp"
+        android:background="@drawable/edit_text_bg" >
+        <TextView android:id="@+id/community_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择栏目"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8.0dp"
+            android:textColorHint="#bbbbbb"
+            android:textColor="#333"
+            android:textSize="16.0sp"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12.0dp"
+            android:src="@drawable/common_icon_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/community_send_text"
+        android:layout_width="match_parent"
+        android:layout_height="140.0dp"
+        android:layout_below="@+id/community_type_id"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="8.0dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="top"
+        android:hint="(字数不能少于5个) 请输入爆料内容，为了方便记者和您联系，请务必留下联系方式."
+        android:paddingBottom="40.0dp"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp"
+        android:paddingTop="10.0dp"
+        android:textColor="#333"
+        android:textColorHint="#bbbbbb"
+        android:textSize="16.0sp" >
+    </EditText>
+
+    <com.wookii.widget.IconButton
+        xmlns:ib="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/community_send_location"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dp"
+        android:layout_alignBottom="@+id/community_send_text"
+        android:layout_alignLeft="@+id/community_send_text"
+        android:layout_marginBottom="8.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:background="@drawable/location_bg_shape"
+        android:gravity="center"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp"
+        ib:between="7.0dp"
+        ib:button_icon="@drawable/common_icon_location_normal"
+        ib:text="添加位置"
+        ib:textColor="#666666"
+        ib:textSize="12.0sp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_community_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/community_send_text"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginTop="2.0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment_community_send"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dp"
+        android:text="最多添加3张照片"
+        android:textColor="#999999"
+        android:textSize="13.0dp" />
+
+</RelativeLayout>

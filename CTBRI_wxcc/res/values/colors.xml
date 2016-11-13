@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<color name="action_bar_bg_color">#fbfbfb</color>
+	<color name="text_color_title">#333333</color>
+	<color name="group_bg">#f8f8f8</color>
+	<color name="group_pressed">#ffffff</color>
+	<color name="text_color_hui">#8e8e8e</color>
+	<color name="bg_01">#eeeeee</color>
+	<color name="bg_02">#e0e0e0</color>
+	<color name="pink">#f97070</color>
+	<color name="result_blue">#1975ff</color>
+	<color name="result_red">#ff7e00</color>
+</resources>

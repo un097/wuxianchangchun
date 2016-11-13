@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta charset="gb2312">
+<title>爱城市能力开放SDK</title>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	var phone;
+	$(document).ready(function(){
+  	  location.href='api:{"func_id":"2"}';
+ 	});
+ 	
+// 	$(document).ready(function(){
+//  	   	if (window.devicePixelRatio == 1.5) {
+//  			alert("This is a high-density screen");
+//		} else if (window.devicePixelRatio == 0.75) {
+//  			alert("This is a low-density screen");
+//		} else if(window.devicePixelRatio == 1.0){
+//			alert("This is a medium-density screen");
+//		} else {
+//			alert(window.devicePixelRatio);
+//		}
+// 	});
+  
+	function icity_func(json)
+    {
+    	alert(json);
+        var funcid = eval('('+json+')');
+        if(funcid.func_id == 1)
+        {
+            document.getElementById("msg").innerHTML="拍照功能调用成功</br><div><img width='100%' hight='300' src=\""+funcid.fileurl+"\"/></div>";
+        }
+        else if(funcid.func_id == 2)
+        {
+        	phone=funcid.phone;
+            //document.getElementById("msg").innerHTML="个人信息获取成功</br>用户名："+funcid.username+"</br>电话："+funcid.phone+"</br>城市："+funcid.city;
+        }
+        else if(funcid.func_id == 3)
+        {
+            document.getElementById("msg").innerHTML="位置信息获取成功</br>经度："+funcid.lng+"</br>纬度："+funcid.lat;
+        }
+        else if(funcid.func_id == 9)
+        {
+            document.getElementById("msg").innerHTML="电话为："+funcid.phone_num;
+        }else if(funcid.func_id == 11)
+        {
+            document.getElementById("msg").innerHTML="摇动了："+funcid.shake_num;
+        }
+        else if(funcid.func_id == 16)
+        {
+            document.getElementById("msg").innerHTML="截屏功能调用成功</br><div><img width='100%' hight='300' src=\""+funcid.fileurl+"\"/></div>";
+        }
+        else if(funcid.func_id == 19){
+        	document.getElementById("msg").innerHTML="imsi: "+funcid.imsi;
+        }
+        else if(funcid.func_id == 20){
+        	document.getElementById("msg").innerHTML="版本号: "+funcid.version_code;
+        }
+        else if(funcid.func_id == 22){
+        	document.getElementById("msg").innerHTML="解码内容："+funcid.decode_content;
+        }
+        else if(funcid.func_id == 25){
+        	alert("当前城市编码："+funcid.city_code+"\n当前城市名："+funcid.city_name);
+        }
+        else if(funcid.func_id == 30000){
+            var a=funcid.phone_nums.split(",");
+            var b="";
+            for(var i=0;i<a.length;i++){
+            	b+=a[i];
+            	b+="</br>";
+            }
+        	document.getElementById("msg").innerHTML=b;
+        }
+        else if(funcid.func_id == 100000){
+        	//alert("到100000了")
+        	//window.location.href='API:{"func_id":"15"}';
+        	//window.history.back(-1);
+        	//alert("http://d.153.cn");
+        	//self.opener=null;
+			//self.close();
+        	var returnVal = window.confirm("当前客户端为旧版本是否下载新版本?", "标题");
+        	if(returnVal){
+        		window.location.href="http://d.153.cn";
+        	}
+        }
+    }
+    
+    function internalPay(){
+		location.href='API:{"func_id":"30001","city_code":"3501","phone":"'+phone+'"}';
+    }
+
+	function extraPay(){
+		location.href='API:{"func_id":"23","login_phone":"'+phone+'","pay_type":1,"order_count":1,"unit_price":1,"fare":0.01,"discount":1,"goods_name":"测试商品名","goods_desc":"测试商品描述","merchant_no":"2088801295377600"}';
+	}
+	
+</script>
+
+<style>
+
+#backgroud{background:url(http://img4.duitang.com/uploads/item/201204/10/20120410210023_8GWLT.thumb.600_0.jpeg); height:100%; width:100%;position:fixed;}
+
+@media screen and (-webkit-device-pixel-ratio: 1.0) {
+	#backgroud{background:url(http://img.159.net/theme/pic/2011/5/17/20115171646126.jpg); height:100%; width:100%;position:fixed;}
+}
+
+@media screen and (-webkit-device-pixel-ratio: 1.5) { 
+	#backgroud{background:url(http://img4.duitang.com/uploads/item/201204/10/20120410210023_8GWLT.thumb.600_0.jpeg); height:100%; width:100%;position:fixed;}
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2.0) {
+	#backgroud{background:url(http://img.article.pchome.net/00/50/27/84/keaidongwu2shouji.jpg); height:100%; width:100%;position:fixed;}
+}
+
+#allnet{
+	filter:alpha(Opacity=100);-moz-opacity:1.0;opacity:1.0;z-index:100; line-height:200%; position:absolute;
+}
+
+a{
+	color:#1e95f0;
+}
+
+div{
+	border:none; margin:0px; padding:0px
+}
+
+body {
+	margin:0px;
+}
+
+.top{
+	color:#1e95f0;
+}
+
+li{
+	color:#1e95f0;
+}
+
+</style>
+
+<meta name="viewport" content="target-densitydpi=160, height=device-height, width=100%"/>
+</head>
+
+<body>
+    <div id="backgroud"></div>
+	<div id="allnet" >
+		<div class="top"><span>爱城市能力开放SDK</span></div>
+		<div id="content">
+			<ul>
+				<li><a href='API:{"func_id":"1","httpurl":"http://test.oicity.net:8080/page/file/upload.htm","phototype":"1"}'>拍 照(外部测试地址)</a></li>  
+				<li><a href='API:{"func_id":"2"}'>个人信息</a></li>
+				<li><a href='API:{"func_id":"3"}'>定 位 </a></li>
+				<li><a href='API:{"func_id":"4","title":"这是对话框标题","info":"这是对话框内容"}'>弹出对话框</a></li>
+				<li><a href='API:{"func_id":"5","client_param":{"item_type":"external_app","must_login":"","url_wap":"","app_size":"","scheme_url":"","scheme_name":"","url_ios":"","url_android":"0","item_desc":"","cls":"cn.ffcs.news.NewsRead","pkg":"cn.ffcs.wisdom.city"}}'>功能调用（福州新闻网）</a></li>
+				<li><a href='API:{"func_id":"6","phone_num":"12345678901","content":"我是短信内容"}'>客户端短信能力</a></li>
+				<li><a href='API:{"func_id":"8","title":"标题","content":"内容"}'>分享好友</a></li>
+				<li><a href='API:{"func_id":"9"}'>选择联系人</a></li>
+				<li><a href='API:{"func_id":"11"}'>开启摇动</a></li>
+				<li><a href='API:{"func_id":"12"}'>加密个人信息</a></li>
+				<li><a href='API:{"func_id":"13"}'>登 陆</a></li>
+				<li><a href='API:{"func_id":"14"}'>意见反馈</a></li>
+				<li><a href='API:{"func_id":"15"}'>关闭页面</a></li>
+				<li><a href='API:{"func_id":"16","httpurl":"http://218.5.99.35:8081/uploadFile.action?cityCode=3501&businessType=1"}'>截屏（8081测试环境）</a></li>
+				<li><a href='API:{"func_id":"17","video_url":"http://117.27.144.51/13-05/1369354844296.mp4"}'>视频能力</a></li>
+				<li><a href='API:{"func_id":"18","eye_id":"1504","eye_title":"珠穆朗玛峰","eye_des":"好风景","action_id":"1054","glo_type":"1001","high_flag":1,"video_type":"1","play_type":1}'>单点视频(天翼景象测试环境)</a></li>
+				<li><a href='API:{"func_id":"19"}'>获取手机相关信息</a></li>
+				<li><a href='API:{"func_id":"20"}'>获取版本号</a></li>
+				<li><a href='API:{"func_id":"21","share_content":"爱城市分享","share_url":"http://www.153.cn"}'>社会化分享</a></li>
+				<li><a href='API:{"func_id":"100000"}'>无能力测试</a></li>
+				<li><a href='API:{"func_id":"30000"}'>选择全部联系人</a></li>
+				<li><a href='API:{"func_id":"17","video_url":"rtsp://222.177.15.68:554/service?UserId=jxw1234&PuId-ChannelNo=232311000202148000-232311010502148001&PlayMethod=0&PuProperty=1&VauPtzAdd=222.177.15.84&VauPtzPort=5060&VauRtspAdd=222.177.15.84&VauRtspPort=554&StreamingType=2&hashtoken=0"}'>全球眼</a></li>
+				<li><a href='API:{"func_id":"22"}'>二维码扫描</a></li>
+				<li><a href='http://d.153.cn'>下载测试</a></li>
+				<li><a href="javascript:internalPay();">支付</a></li>
+				<li><a href="javascript:extraPay();">外部支付</a></li>
+				<li><a href='API:{"func_id":"24","speech_content":"您现在正在收听爱城市能力开放语音播报测试，以下是测试内容：爱城市客户端是为智能手机用户量身打造的权威移动互联网门户，其汇聚政务、娱乐、商务、民生等综合资讯为一身，为城市用户提供随时、随地随身的应用服务。"}'>语音播报</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='API:{"func_id":"24","play_flag":1}'>暂停</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='API:{"func_id":"24","play_flag":2}'>继续</a></li>
+				<li><a href='API:{"func_id":"25"}'>获取当前客户端城市</a></li>
+				<li><a href='API:{"func_id":"26","photo_entity":{"guid":"193806","pubDate":"2014-02-21 21:41","thumbnail":"/resources/universalPhoto/small/2301/1392990089170_2532809944467989327911731134.jpg","link":"/resources/universalPhoto/big/2301/1392990089169_18718919928126962492004583798.jpg","title":null,"desc":"花心恋","cityCode":"2301","commentCount":0,"collectCount":0,"voteCount":0,"trueMobile":"18039675659","mobile":"180****5659","userName":"180****5659","photoUrl":null,"lat":"35.679514","lng":"114.659638","locationName":"鹤壁市浚县","subjectName":null,"subjectId":0,"isVote":false,"isCollect":false,"isCheck":true,"isDel":false,"isAudit":false}}'>随手拍详情</a></li>
+				<li><input id="File" name="UpLoadFile" type="file" /></li>
+			</ul>
+		</div>
+        <div id="msg"></div>
+	</div>
+</body>	
+
+</html>

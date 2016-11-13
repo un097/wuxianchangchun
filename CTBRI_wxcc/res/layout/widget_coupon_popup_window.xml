@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:src="@drawable/coupon_colose_button_selector" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <FrameLayout
+                android:id="@+id/coupon_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="1px" >
+
+                <ImageView
+                    android:id="@+id/iv_coupon_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:contentDescription="@string/empty_imageview_desc"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_coupon_image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coupon_image_container"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/textview.color_333.sp16" />
+
+            <TextView
+                android:id="@+id/tv_valid_or_code"
+                style="@style/textview.color999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_coupon_image_title"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

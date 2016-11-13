@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:self="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" >
+
+        <tv.danmaku.ijk.media.widget.VideoView
+            android:id="@+id/sv_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_video_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/mediacontroller"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/media_controller_height"
+            android:layout_gravity="bottom"
+            layout="@layout/widget_mediaplayer_controller" />
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/circle_loading"
+            android:indeterminateDuration="1200"
+            android:interpolator="@android:interpolator/linear" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_video_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_tranlucent_40"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/action_bar_left_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:src="@drawable/action_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/textview.color_fff.sp18"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/ibtn_favorite"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:background="@null"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:src="@drawable/media_favourite_button_selector"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibtn_share"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:contentDescription="@string/empty_imageview_desc"
+            android:paddingRight="8dp"
+            android:src="@drawable/share_button_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

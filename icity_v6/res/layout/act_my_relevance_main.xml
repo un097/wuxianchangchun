@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_city"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_layout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/relvancelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relevance_add_part"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/title_text"
+                    style="@style/gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip"
+                    android:text="@string/person_center_can_relevance" />
+
+                <cn.ffcs.widget.GridNoScrollView
+                    android:id="@+id/relevance_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        style="@style/background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relevance_add_part"
+        android:layout_below="@id/top_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/widget_no_data_bg" />
+
+        <TextView
+            style="@style/gray_title.20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您没有关联数据" />
+    </LinearLayout>
+
+    <include layout="@layout/inc_loading_bar" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        layout="@layout/top_shadow" />
+
+</RelativeLayout>

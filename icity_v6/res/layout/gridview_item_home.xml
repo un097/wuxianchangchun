@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="@dimen/grid_w_and_h"
+    android:layout_height="@dimen/grid_w_and_h"
+    android:background="@drawable/btn_blue_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/gird_item_indicator"
+            android:layout_width="@dimen/grid_image_w_and_h"
+            android:layout_height="@dimen/grid_image_w_and_h"
+            android:layout_marginBottom="8dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_default" />
+
+        <cn.ffcs.widget.AutoMarqueeTextView
+            android:id="@+id/gird_item_content"
+            style="@style/white_title.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/is_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:paddingRight="3dip"
+        android:paddingTop="3dip"
+        android:src="@drawable/icon_isapp"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/is_redpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:src="@drawable/ic_red_dot"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/is_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:paddingRight="3dip"
+        android:paddingTop="3dip"
+        android:src="@drawable/icon_new"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/is_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:paddingRight="3dip"
+        android:paddingTop="3dip"
+        android:src="@drawable/icon_hot"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/video_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="true" />
+
+        <LinearLayout
+            android:id="@+id/no_data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/glo_collect_normal" />
+
+            <TextView
+                style="@style/Glo_Gray_title.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/glo_no_often_blocked" />
+        </LinearLayout>
+
+        <include layout="@layout/inc_loading_bar_show" />
+    </RelativeLayout>
+
+</LinearLayout>

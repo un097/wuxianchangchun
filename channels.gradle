@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+// load properties
+Properties properties = new Properties()
+properties.load(project.rootProject.file('channels.properties').newDataInputStream())
+String channelDefault = properties.getProperty('channel.default')
+String channleList = properties.getProperty('channel.list')
+String[] channelArray = channleList.split(',')
+
+android {
+    defaultConfig {
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+        manifestPlaceholders = [CHANNEL_VALUE: channelDefault]
+    }
+
+    productFlavors {
+        for (int i = 0 ; i < channelArray.size(); i++) {
+            def channel = channelArray[i]
+            "${channel}"{
+                manifestPlaceholders = [CHANNEL_VALUE: channel]
+            }
+        }
+    }
+
+    // 签名
+    signingConfigs {
+        myConfig {
+            storeFile file("ffcs_public.keystore")
+            storePassword "123456"
+            keyAlias "ffcs"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.myConfig
+        }
+        release {
+            signingConfig signingConfigs.myConfig
+        }
+    }
+
+    //爱城市签名里面的元素
+    //MD5 : 5C:59:AE:BE:96:28:09:9F:60:A8:D5:C9:B5:90:5F:D0
+    //SHA1: 67:E5:3A:C9:74:DF:B2:FD:94:0C:0E:A3:84:3F:C4:10:4C:89:F2:1C
+
+    //打包之前先执行
+    //gradle check
+    //有问题就在build/link-result.html查看异常详情
+    //批量打包命令
+    //gradle assembleRelease
+    //打单独包的命令，比如icity
+    //gradle assemblechangChunTvRelease
+    //gradle assemblewxcc_zytx2Release
+
+    //清除build目录
+    //gradle clean build
+
+
+}
+

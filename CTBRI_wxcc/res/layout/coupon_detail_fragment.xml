@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/action_bar"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="@string/empty_imageview_desc"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_detail_image_title"
+                style="@style/textview.color_333.travel_detail_item_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/ll_introduction"
+                style="@style/coupon_detail_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_marks_tip"
+                    style="@style/textview.color_333.sp16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:minWidth="90sp"
+                    android:text="所需积分：" />
+
+                <TextView
+                    android:id="@+id/tv_marks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_marks_tip"
+                    android:textAppearance="@style/textview.color_333.travel_detail_item_desc" />
+
+                <View
+                    android:id="@+id/llLayout_line1"
+                    style="@style/travel_detail_line"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/tv_marks_tip" />
+
+                <TextView
+                    android:id="@+id/tv_valid_tip"
+                    style="@style/textview.color_333.sp16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llLayout_line1"
+                    android:minWidth="90sp"
+                    android:text="有效期限：" />
+
+                <TextView
+                    android:id="@+id/tv_valid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_valid_tip"
+                    android:layout_toRightOf="@+id/tv_valid_tip"
+                    android:textAppearance="@style/textview.color_333.travel_detail_item_desc" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+                android:layout_marginTop="10dp"
+                android:text="店铺信息"
+                android:textAppearance="@style/textview.color_333.sp16" />
+
+            <!-- 位置 和 电话 -->
+
+            <LinearLayout
+                style="@style/coupon_detail_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/iv_locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/position_bg_selector" />
+
+                    <TextView
+                        android:id="@+id/tv_locate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+                        android:layout_marginRight="@dimen/travel_content_detail_margin_lr"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/textview.color_333.travel_detail_item_desc" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/line_gray" />
+
+                    <ImageButton
+                        android:id="@+id/iv_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/call_phone_bg_selector"
+                        android:contentDescription="@string/empty_imageview_desc"
+                        android:padding="8dp"
+                        android:src="@drawable/phone_bg_selector" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line_more_address"
+                    style="@style/travel_detail_line"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_more_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_selector"
+                    android:gravity="center_vertical"
+                    android:text="查看更多地址"
+                    android:textAppearance="@style/textview.color_333.sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+                android:layout_marginTop="10dp"
+                android:text="优惠券详情"
+                android:textAppearance="@style/textview.color_333.sp16" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/travel_content_detail_margin_lr"
+                android:layout_marginRight="@dimen/travel_content_detail_margin_lr"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:background="@drawable/global_bg_card" >
+
+                <com.ctbri.wxcc.widget.DetailsWebView
+                    android:id="@+id/wv_coupon_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="6dp" >
+
+        <View
+            android:id="@+id/line"
+            style="@style/travel_detail_line"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0px" />
+
+        <Button
+            android:id="@+id/btn_obtain"
+            style="@style/button.coupon"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

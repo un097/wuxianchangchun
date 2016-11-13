@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/vs_actionbar"
+        android:layout="@layout/action_bar" />
+
+    <com.ctbri.wxcc.widget.LoadMorePTRListView
+        android:id="@+id/lv_community_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+                style="@style/pull_to_refresh_style"
+        android:listSelector="@color/transparent" >
+    </com.ctbri.wxcc.widget.LoadMorePTRListView>
+
+</LinearLayout>

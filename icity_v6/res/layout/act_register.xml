@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/register_mobile"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="12dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/login_mobile"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/register_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="3dip"
+                    android:text="@string/register_tip1" />
+
+                <Button
+                    android:id="@+id/register_verifyBtn"
+                    style="@style/white_title.18sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="12dip"
+                    android:background="@drawable/pink_button_selector"
+                    android:paddingLeft="10dip"
+                    android:text="@string/register_get_verifyCode" />
+                <!-- android:background="@drawable/btn_blue_selector" -->
+
+                <EditText
+                    android:id="@+id/register_verifycode"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_verifyCode"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/register_username"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_nickname"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/register_password"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/person_center_pwd_valid"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/register_password_again"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_password_again"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/register_email"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:hint="@string/register_email"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                
+                  <EditText
+                    android:id="@+id/register_invitation"
+                    style="@style/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_invitation"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <include layout="@layout/top_shadow" />
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/profile_img_size"
+            android:layout_height="@dimen/profile_img_size" />
+
+        <TextView
+            android:id="@+id/tv_mess_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_avatar"
+            android:layout_alignTop="@+id/iv_avatar"
+            android:layout_marginRight="-8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/simico_ts_count_bubble"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违章查询"
+            android:textColor="@color/txt_deep_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="这是违章描述"
+            android:textColor="@color/txt_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_jiantou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/simico_user_collect" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_expand_head"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frame_audio_looper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/audio_live_head_channels_height" >
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/fragment_channels"
+        android:tag="fragment_channels"
+        android:name="com.ctbri.wxcc.audio.AudioChanelHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/audio_live_head_height" />
+
+</LinearLayout>

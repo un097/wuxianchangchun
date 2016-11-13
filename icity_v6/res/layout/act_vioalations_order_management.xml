@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/icar_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="7.5dip" >
+
+            <LinearLayout
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_violations" />
+
+                <TextView
+                    style="@style/light_gray_title.18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dip"
+                    android:text="@string/violation_order_no_data" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/order_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/list_line"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <include layout="@layout/top_shadow" />
+    </RelativeLayout>
+
+</LinearLayout>

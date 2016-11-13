@@ -1,0 +1,5 @@
+新闻的字体大小 simico_dimens.xml
+主页面 MainActivity  --- HomeActivity.class,	ExploreActivity1.class, PersonalActivity.class
+路况视频 RoadMainActivity---( 1. MapGroupListActivity ---(点击的时候跳转的RoadPlayActivity视频列表界面)  2. RoadMapActivity   常常堵 3. OftenBlockedActivity  4. RoadCollectActivity) 
+路况详情 TrafficBroadcastActivity     TrafficListActivity (路况播报文字列表页面 权威播报)          TrafficDetailActivity(路况详情明细页面)        TrafficPublishActivity(发布页面)    
+违章查询 TrafficViolationsListActivity

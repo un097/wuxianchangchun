@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/init_download_finished_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        layout="@layout/widget_no_data" />
+
+    <ExpandableListView
+        android:layout_below="@id/init_download_finished_pic"
+        android:id="@+id/download_install_exlv"
+        style="@style/background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:childDivider="@drawable/line"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

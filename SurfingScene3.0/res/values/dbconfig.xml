@@ -1,0 +1,11 @@
+<resources>
+	<string name="eyes_db_name">globaleyes.db</string>
+	<string name="eyes_db_version">8</string>
+	
+	<string-array name="eyes_db_tables">
+	    <item>cn.ffcs.surfingscene.sqlite.GlobalEye</item>
+	    <item>cn.ffcs.surfingscene.sqlite.AreaList</item>
+	    <item>cn.ffcs.surfingscene.sqlite.RoadCollect</item>
+	    <item>cn.ffcs.surfingscene.sqlite.SearchKey</item>
+	</string-array>
+</resources>

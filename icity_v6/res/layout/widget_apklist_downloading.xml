@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/init_downloading_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/widget_no_data" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none" >
+
+        <cn.ffcs.wisdom.city.download.ApkItemLayout
+            android:id="@+id/apk_list_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+        </cn.ffcs.wisdom.city.download.ApkItemLayout>
+    </ScrollView>
+
+</RelativeLayout>

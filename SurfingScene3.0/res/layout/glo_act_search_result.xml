@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/road_bg">
+     <include
+       layout="@layout/top" /> 
+ <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/search_input" >
+
+            <EditText
+                android:id="@+id/search_edit"
+                style="@style/gray_b4b4b4.16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:background="@android:color/transparent"
+           
+                android:imeOptions="actionSearch"
+                android:paddingBottom="10dip"
+
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_b4b4b4" />
+             
+        </LinearLayout>
+        <ListView 
+     android:id="@+id/road_search_lv"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      >
+     
+ </ListView>-->
+
+</LinearLayout> 
